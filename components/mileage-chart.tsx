@@ -113,9 +113,10 @@ interface MileageChartProps {
   isLoading?: boolean
   className?: string
   animate?: boolean
+  lineType?: "monotone" | "linear" | "natural"
 }
 
-export function MileageChart({ data, highlights, isLoading, className, animate = true }: MileageChartProps) {
+export function MileageChart({ data, highlights, isLoading, className, animate = true, lineType = "monotone" }: MileageChartProps) {
   const height = className ?? "h-[280px]"
 
   if (isLoading) {
@@ -178,7 +179,7 @@ export function MileageChart({ data, highlights, isLoading, className, animate =
         />
         <Line
           dataKey="miles"
-          type="monotone"
+          type={lineType}
           stroke="var(--color-miles)"
           strokeWidth={2}
           dot={<RaceDot />}

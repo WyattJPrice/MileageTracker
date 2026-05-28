@@ -2,7 +2,7 @@
 
 import * as React from "react"
 import { format, addDays } from "date-fns"
-import { SlidersHorizontal } from "lucide-react"
+import { RotateCcw, SlidersHorizontal } from "lucide-react"
 import { ZoomableChart } from "@/components/zoomable-chart"
 import { aggregateActivities } from "@/lib/utils"
 import { seasons, TRACK_COLOR, XC_COLOR } from "@/lib/seasons"
@@ -93,11 +93,15 @@ export function OverviewTab() {
     [dailyData, showTrack, showXC]
   )
 
+  const [viewState, setViewState] = React.useState<{
+    isZoomed: boolean; isDaily: boolean; reset: () => void
+  }>({ isZoomed: false, isDaily: false, reset: () => {} })
+
   const totalMiles = activities.reduce((sum, a) => sum + a.distance_miles, 0)
   const filtersActive = showTrack || showXC
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <div className="mb-3 flex items-center justify-between">
         <div className="flex items-baseline gap-2">
           <span className="font-mono text-lg tabular-nums text-zinc-100">
@@ -108,16 +112,31 @@ export function OverviewTab() {
           </span>
         </div>
 
-        <Popover>
-          <PopoverTrigger
-            className={`rounded-md p-1.5 transition-colors ${
-              filtersActive
-                ? "text-emerald-400"
-                : "text-zinc-600 hover:text-zinc-300"
-            }`}
-          >
-            <SlidersHorizontal className="h-3.5 w-3.5" />
-          </PopoverTrigger>
+        <div className="flex items-center gap-2">
+          {viewState.isDaily && (
+            <span className="rounded-md bg-zinc-800 px-2 py-1 text-[11px] text-zinc-500">
+              Daily
+            </span>
+          )}
+          {viewState.isZoomed && (
+            <button
+              onClick={viewState.reset}
+              className="flex items-center gap-1 rounded-md bg-zinc-800 px-2 py-1 text-[11px] text-zinc-500 transition-colors hover:text-zinc-300"
+            >
+              <RotateCcw className="h-2.5 w-2.5" />
+              Reset
+            </button>
+          )}
+          <Popover>
+            <PopoverTrigger
+              className={`rounded-md p-1.5 transition-colors ${
+                filtersActive
+                  ? "text-emerald-400"
+                  : "text-zinc-600 hover:text-zinc-300"
+              }`}
+            >
+              <SlidersHorizontal className="h-3.5 w-3.5" />
+            </PopoverTrigger>
           <PopoverContent
             className="w-44 border-zinc-800 bg-zinc-900 p-2"
             align="end"
@@ -170,7 +189,8 @@ export function OverviewTab() {
               Cross Country
             </label>
           </PopoverContent>
-        </Popover>
+          </Popover>
+        </div>
       </div>
 
       <div className="border-t border-zinc-800 pt-4">
@@ -180,6 +200,7 @@ export function OverviewTab() {
           weeklyHighlights={weeklyHighlights}
           dailyHighlights={dailyHighlights}
           isLoading={isLoading}
+          onViewChange={setViewState}
         />
       </div>
     </div>
