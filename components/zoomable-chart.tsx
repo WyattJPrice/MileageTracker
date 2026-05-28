@@ -37,6 +37,7 @@ export function ZoomableChart({
   const trackRef = React.useRef<HTMLDivElement>(null)
   const dragRef = React.useRef({ startX: 0, startStart: 0, startEnd: 0 })
   const scrollDragRef = React.useRef({ startX: 0, startStart: 0, startEnd: 0 })
+  const touchRef = React.useRef({ startX: 0, startDist: 0, startStart: 0, startEnd: 0, isTwoFinger: false })
   const hasInteracted = React.useRef(false)
 
   const data = weeklyData
@@ -94,13 +95,14 @@ export function ZoomableChart({
       .filter((h): h is HighlightRange => h !== null)
   }, [weeklyHighlights, dailyHighlights, visibleSlice, data, dailyData, useDaily])
 
-  const clampView = (ns: number, ne: number) => {
+  const clampView = React.useCallback((ns: number, ne: number) => {
     if (ns < fullStart) { ne += fullStart - ns; ns = fullStart }
     if (ne > fullEnd) { ns -= ne - fullEnd; ne = fullEnd }
     setViewStart(Math.max(fullStart, ns))
     setViewEnd(Math.min(fullEnd, ne))
-  }
+  }, [fullStart, fullEnd])
 
+  // --- Mouse wheel zoom ---
   const zoom = React.useCallback(
     (e: WheelEvent) => {
       e.preventDefault()
@@ -124,9 +126,10 @@ export function ZoomableChart({
 
       clampView(viewStart + left, viewEnd - right)
     },
-    [viewStart, viewEnd, viewRange, fullStart, fullEnd, fullRange]
+    [viewStart, viewEnd, viewRange, fullRange, clampView]
   )
 
+  // --- Mouse drag pan ---
   const handleMouseDown = React.useCallback(
     (e: React.MouseEvent) => {
       if (e.button !== 0) return
@@ -145,19 +148,71 @@ export function ZoomableChart({
       const dragRange = dragRef.current.startEnd - dragRef.current.startStart
       const deltaMs = (px / rect.width) * dragRange
 
-      const ns = dragRef.current.startStart + deltaMs
-      const ne = dragRef.current.startEnd + deltaMs
-      clampView(ns, ne)
+      clampView(dragRef.current.startStart + deltaMs, dragRef.current.startEnd + deltaMs)
     },
-    [isDragging, fullStart, fullEnd]
+    [isDragging, clampView]
+  )
+
+  // --- Touch: swipe to pan, pinch to zoom ---
+  const handleTouchStart = React.useCallback(
+    (e: TouchEvent) => {
+      hasInteracted.current = true
+      const t = e.touches
+      if (t.length === 2) {
+        e.preventDefault()
+        const dist = Math.abs(t[0].clientX - t[1].clientX)
+        const centerX = (t[0].clientX + t[1].clientX) / 2
+        touchRef.current = { startX: centerX, startDist: dist, startStart: viewStart, startEnd: viewEnd, isTwoFinger: true }
+      } else if (t.length === 1) {
+        touchRef.current = { startX: t[0].clientX, startDist: 0, startStart: viewStart, startEnd: viewEnd, isTwoFinger: false }
+      }
+    },
+    [viewStart, viewEnd]
+  )
+
+  const handleTouchMove = React.useCallback(
+    (e: TouchEvent) => {
+      const container = containerRef.current
+      if (!container) return
+      const rect = container.getBoundingClientRect()
+      const t = e.touches
+      const ref = touchRef.current
+
+      if (ref.isTwoFinger && t.length === 2) {
+        e.preventDefault()
+        const dist = Math.abs(t[0].clientX - t[1].clientX)
+        const scale = ref.startDist / Math.max(dist, 1)
+        const origRange = ref.startEnd - ref.startStart
+        let nextRange = origRange * scale
+        nextRange = Math.max(MIN_RANGE_MS, Math.min(fullRange, nextRange))
+
+        const centerX = (t[0].clientX + t[1].clientX) / 2
+        const ratio = Math.max(0, Math.min(1, (centerX - rect.left) / rect.width))
+        const delta = origRange - nextRange
+        clampView(ref.startStart + delta * ratio, ref.startEnd - delta * (1 - ratio))
+      } else if (!ref.isTwoFinger && t.length === 1) {
+        e.preventDefault()
+        const px = ref.startX - t[0].clientX
+        const dragRange = ref.startEnd - ref.startStart
+        const deltaMs = (px / rect.width) * dragRange
+        clampView(ref.startStart + deltaMs, ref.startEnd + deltaMs)
+      }
+    },
+    [fullRange, clampView]
   )
 
   React.useEffect(() => {
     const el = containerRef.current
     if (!el) return
     el.addEventListener("wheel", zoom, { passive: false })
-    return () => el.removeEventListener("wheel", zoom)
-  }, [zoom])
+    el.addEventListener("touchstart", handleTouchStart, { passive: false })
+    el.addEventListener("touchmove", handleTouchMove, { passive: false })
+    return () => {
+      el.removeEventListener("wheel", zoom)
+      el.removeEventListener("touchstart", handleTouchStart)
+      el.removeEventListener("touchmove", handleTouchMove)
+    }
+  }, [zoom, handleTouchStart, handleTouchMove])
 
   React.useEffect(() => {
     const up = () => {
@@ -168,6 +223,7 @@ export function ZoomableChart({
     return () => window.removeEventListener("mouseup", up)
   }, [])
 
+  // --- Scrollbar drag ---
   React.useEffect(() => {
     if (!isScrollDragging) return
 
@@ -190,7 +246,7 @@ export function ZoomableChart({
       window.removeEventListener("mousemove", handleMove)
       window.removeEventListener("mouseup", handleUp)
     }
-  }, [isScrollDragging, fullRange, fullStart, fullEnd])
+  }, [isScrollDragging, fullRange, clampView])
 
   const handleScrollThumbDown = (e: React.MouseEvent) => {
     e.stopPropagation()
@@ -229,7 +285,7 @@ export function ZoomableChart({
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={() => setIsDragging(false)}
-        className="zoomable-chart-container select-none"
+        className="zoomable-chart-container select-none touch-none"
         style={{ cursor: isDragging ? "grabbing" : "grab" }}
       >
         <MileageChart
@@ -252,7 +308,7 @@ export function ZoomableChart({
         )}
         <div
           ref={trackRef}
-          className="h-1.5 cursor-pointer rounded-full bg-zinc-800/60"
+          className="h-1.5 cursor-pointer rounded-full bg-zinc-800/60 md:h-1.5"
           onMouseDown={handleTrackClick}
         >
           <div

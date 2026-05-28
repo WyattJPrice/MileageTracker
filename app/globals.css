@@ -161,3 +161,8 @@
   pointer-events: none !important;
   outline: none !important;
 }
+
+@keyframes rock {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(-90deg); }
+}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, JetBrains_Mono } from "next/font/google";
+import { RotatePrompt } from "@/components/rotate-prompt";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -36,6 +37,7 @@ export default function RootLayout({
       className={`dark ${outfit.variable} ${jetbrainsMono.variable} antialiased`}
     >
       <body className="min-h-[100dvh] bg-zinc-950 text-zinc-100">
+        <RotatePrompt />
         {children}
       </body>
     </html>
