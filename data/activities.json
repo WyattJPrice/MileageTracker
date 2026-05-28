@@ -1,0 +1,8073 @@
+[
+  {
+    "id": 18677491061,
+    "name": "Lunch Run",
+    "distance": 4830.0,
+    "start_date": "2026-05-27T00:00:00Z",
+    "moving_time": 1351
+  },
+  {
+    "id": 18668300328,
+    "name": "Threshy Tuesday",
+    "distance": 10470.0,
+    "start_date": "2026-05-26T00:00:00Z",
+    "moving_time": 2807
+  },
+  {
+    "id": 18655452043,
+    "name": "Evening Run",
+    "distance": 8860.0,
+    "start_date": "2026-05-25T00:00:00Z",
+    "moving_time": 2457
+  },
+  {
+    "id": 18653812489,
+    "name": "Lunch Run",
+    "distance": 1220.0,
+    "start_date": "2026-05-25T00:00:00Z",
+    "moving_time": 329
+  },
+  {
+    "id": 18641876695,
+    "name": "Evening Run",
+    "distance": 17710.0,
+    "start_date": "2026-05-24T00:00:00Z",
+    "moving_time": 4860
+  },
+  {
+    "id": 18636008136,
+    "name": "Evening Run",
+    "distance": 2420.0,
+    "start_date": "2026-05-23T00:00:00Z",
+    "moving_time": 745
+  },
+  {
+    "id": 18636000295,
+    "name": "Evening Run",
+    "distance": 1620.0,
+    "start_date": "2026-05-23T00:00:00Z",
+    "moving_time": 408
+  },
+  {
+    "id": 18614927453,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-05-22T00:00:00Z",
+    "moving_time": 1794
+  },
+  {
+    "id": 18602430904,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2026-05-21T00:00:00Z",
+    "moving_time": 851
+  },
+  {
+    "id": 18602430869,
+    "name": "Evening Run",
+    "distance": 2460.0,
+    "start_date": "2026-05-21T00:00:00Z",
+    "moving_time": 560
+  },
+  {
+    "id": 18595517695,
+    "name": "Morning Run",
+    "distance": 4840.0,
+    "start_date": "2026-05-21T00:00:00Z",
+    "moving_time": 1142
+  },
+  {
+    "id": 18585193315,
+    "name": "Lunch Run",
+    "distance": 11270.0,
+    "start_date": "2026-05-20T00:00:00Z",
+    "moving_time": 3174
+  },
+  {
+    "id": 18576024767,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2026-05-19T00:00:00Z",
+    "moving_time": 2233
+  },
+  {
+    "id": 18562097962,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-05-18T00:00:00Z",
+    "moving_time": 1764
+  },
+  {
+    "id": 18553860131,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2026-05-18T00:00:00Z",
+    "moving_time": 1812
+  },
+  {
+    "id": 18543218774,
+    "name": "Morning Run",
+    "distance": 16100.0,
+    "start_date": "2026-05-17T00:00:00Z",
+    "moving_time": 4440
+  },
+  {
+    "id": 18536610417,
+    "name": "Evening Run",
+    "distance": 8060.0,
+    "start_date": "2026-05-16T00:00:00Z",
+    "moving_time": 2186
+  },
+  {
+    "id": 18520178694,
+    "name": "Afternoon Run",
+    "distance": 3230.0,
+    "start_date": "2026-05-15T00:00:00Z",
+    "moving_time": 907
+  },
+  {
+    "id": 18515757523,
+    "name": "Morning Run",
+    "distance": 8060.0,
+    "start_date": "2026-05-15T00:00:00Z",
+    "moving_time": 1775
+  },
+  {
+    "id": 18511398927,
+    "name": "Morning Run",
+    "distance": 8050.0,
+    "start_date": "2026-05-14T00:00:00Z",
+    "moving_time": 2323
+  },
+  {
+    "id": 18502651401,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2026-05-13T00:00:00Z",
+    "moving_time": 2207
+  },
+  {
+    "id": 18492662351,
+    "name": "Morning Run",
+    "distance": 4840.0,
+    "start_date": "2026-05-13T00:00:00Z",
+    "moving_time": 1356
+  },
+  {
+    "id": 18484350228,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2026-05-12T00:00:00Z",
+    "moving_time": 1841
+  },
+  {
+    "id": 18471207968,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2026-05-11T00:00:00Z",
+    "moving_time": 1299
+  },
+  {
+    "id": 18465459616,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2026-05-11T00:00:00Z",
+    "moving_time": 1306
+  },
+  {
+    "id": 18458750355,
+    "name": "Night Run",
+    "distance": 3280.0,
+    "start_date": "2026-05-08T00:00:00Z",
+    "moving_time": 594
+  },
+  {
+    "id": 18458750359,
+    "name": "Evening Run",
+    "distance": 2430.0,
+    "start_date": "2026-05-08T00:00:00Z",
+    "moving_time": 706
+  },
+  {
+    "id": 18458747972,
+    "name": "Evening Run",
+    "distance": 2430.0,
+    "start_date": "2026-05-07T00:00:00Z",
+    "moving_time": 662
+  },
+  {
+    "id": 18406506960,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2026-05-06T00:00:00Z",
+    "moving_time": 871
+  },
+  {
+    "id": 18391468349,
+    "name": "Afternoon Run",
+    "distance": 4840.0,
+    "start_date": "2026-05-05T00:00:00Z",
+    "moving_time": 1109
+  },
+  {
+    "id": 18366758469,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-05-03T00:00:00Z",
+    "moving_time": 1769
+  },
+  {
+    "id": 18352519119,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2026-05-02T00:00:00Z",
+    "moving_time": 1350
+  },
+  {
+    "id": 18339910166,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2026-05-01T00:00:00Z",
+    "moving_time": 2218
+  },
+  {
+    "id": 18324899123,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2026-04-30T00:00:00Z",
+    "moving_time": 2221
+  },
+  {
+    "id": 18324899101,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2026-04-28T00:00:00Z",
+    "moving_time": 509
+  },
+  {
+    "id": 18324894592,
+    "name": "Evening Run",
+    "distance": 3270.0,
+    "start_date": "2026-04-28T00:00:00Z",
+    "moving_time": 619
+  },
+  {
+    "id": 18324894605,
+    "name": "Evening Run",
+    "distance": 1160.0,
+    "start_date": "2026-04-28T00:00:00Z",
+    "moving_time": 346
+  },
+  {
+    "id": 18324894571,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2026-04-28T00:00:00Z",
+    "moving_time": 461
+  },
+  {
+    "id": 18280814612,
+    "name": "Morning Run",
+    "distance": 4030.0,
+    "start_date": "2026-04-27T00:00:00Z",
+    "moving_time": 1071
+  },
+  {
+    "id": 18280814732,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-04-26T00:00:00Z",
+    "moving_time": 1734
+  },
+  {
+    "id": 18259383592,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2026-04-25T00:00:00Z",
+    "moving_time": 1345
+  },
+  {
+    "id": 18254680175,
+    "name": "Morning Run",
+    "distance": 6450.0,
+    "start_date": "2026-04-25T00:00:00Z",
+    "moving_time": 1604
+  },
+  {
+    "id": 18254680130,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-04-24T00:00:00Z",
+    "moving_time": 1832
+  },
+  {
+    "id": 18233297224,
+    "name": "Evening Run",
+    "distance": 1620.0,
+    "start_date": "2026-04-23T00:00:00Z",
+    "moving_time": 474
+  },
+  {
+    "id": 18233159519,
+    "name": "Evening Run",
+    "distance": 3230.0,
+    "start_date": "2026-04-23T00:00:00Z",
+    "moving_time": 666
+  },
+  {
+    "id": 18232785030,
+    "name": "Evening Run",
+    "distance": 810.0,
+    "start_date": "2026-04-23T00:00:00Z",
+    "moving_time": 256
+  },
+  {
+    "id": 18232145501,
+    "name": "Afternoon Run",
+    "distance": 2830.0,
+    "start_date": "2026-04-23T00:00:00Z",
+    "moving_time": 651
+  },
+  {
+    "id": 18213188473,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2026-04-22T00:00:00Z",
+    "moving_time": 1327
+  },
+  {
+    "id": 18205290747,
+    "name": "Afternoon Run",
+    "distance": 10470.0,
+    "start_date": "2026-04-21T00:00:00Z",
+    "moving_time": 2919
+  },
+  {
+    "id": 18191818908,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2026-04-20T00:00:00Z",
+    "moving_time": 2256
+  },
+  {
+    "id": 18178859018,
+    "name": "Evening Run",
+    "distance": 14490.0,
+    "start_date": "2026-04-19T00:00:00Z",
+    "moving_time": 3900
+  },
+  {
+    "id": 18165283050,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2026-04-18T00:00:00Z",
+    "moving_time": 2635
+  },
+  {
+    "id": 18151938943,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-04-17T00:00:00Z",
+    "moving_time": 1795
+  },
+  {
+    "id": 18151081915,
+    "name": "Morning Run",
+    "distance": 4030.0,
+    "start_date": "2026-04-17T00:00:00Z",
+    "moving_time": 1133
+  },
+  {
+    "id": 18140087529,
+    "name": "Evening Run",
+    "distance": 2420.0,
+    "start_date": "2026-04-16T00:00:00Z",
+    "moving_time": 817
+  },
+  {
+    "id": 18140087651,
+    "name": "Grizzly 3200 9:29 🥇",
+    "distance": 3340.0,
+    "start_date": "2026-04-16T00:00:00Z",
+    "moving_time": 572
+  },
+  {
+    "id": 18140087528,
+    "name": "Evening Run",
+    "distance": 2420.0,
+    "start_date": "2026-04-16T00:00:00Z",
+    "moving_time": 731
+  },
+  {
+    "id": 18121038156,
+    "name": "Lunch Run",
+    "distance": 4830.0,
+    "start_date": "2026-04-15T00:00:00Z",
+    "moving_time": 1331
+  },
+  {
+    "id": 18112410839,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2026-04-14T00:00:00Z",
+    "moving_time": 2180
+  },
+  {
+    "id": 18098621236,
+    "name": "800t, 4x400, 4x400, 60sec rest, 70 down to 61",
+    "distance": 8050.0,
+    "start_date": "2026-04-13T00:00:00Z",
+    "moving_time": 1872
+  },
+  {
+    "id": 18093052386,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2026-04-13T00:00:00Z",
+    "moving_time": 884
+  },
+  {
+    "id": 18086352202,
+    "name": "Evening Run",
+    "distance": 13690.0,
+    "start_date": "2026-04-12T00:00:00Z",
+    "moving_time": 3720
+  },
+  {
+    "id": 18072466440,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2026-04-11T00:00:00Z",
+    "moving_time": 887
+  },
+  {
+    "id": 18072323221,
+    "name": "Morning Run",
+    "distance": 810.0,
+    "start_date": "2026-04-11T00:00:00Z",
+    "moving_time": 246
+  },
+  {
+    "id": 18067815283,
+    "name": "Mile fest 4:27.09 PR",
+    "distance": 1660.0,
+    "start_date": "2026-04-11T00:00:00Z",
+    "moving_time": 268
+  },
+  {
+    "id": 18067815278,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2026-04-11T00:00:00Z",
+    "moving_time": 487
+  },
+  {
+    "id": 18059490489,
+    "name": "Evening Run",
+    "distance": 3230.0,
+    "start_date": "2026-04-10T00:00:00Z",
+    "moving_time": 964
+  },
+  {
+    "id": 18048203723,
+    "name": "Evening Run",
+    "distance": 7250.0,
+    "start_date": "2026-04-09T00:00:00Z",
+    "moving_time": 1907
+  },
+  {
+    "id": 18048199524,
+    "name": "Afternoon Run",
+    "distance": 2340.0,
+    "start_date": "2026-04-08T00:00:00Z",
+    "moving_time": 689
+  },
+  {
+    "id": 18025936776,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2026-04-08T00:00:00Z",
+    "moving_time": 1334
+  },
+  {
+    "id": 18020854716,
+    "name": "Evening Run",
+    "distance": 8860.0,
+    "start_date": "2026-04-07T00:00:00Z",
+    "moving_time": 2043
+  },
+  {
+    "id": 18014711010,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-04-06T00:00:00Z",
+    "moving_time": 1749
+  },
+  {
+    "id": 18003840601,
+    "name": "Lunch Run",
+    "distance": 4840.0,
+    "start_date": "2026-04-06T00:00:00Z",
+    "moving_time": 1337
+  },
+  {
+    "id": 17987241805,
+    "name": "Morning Run",
+    "distance": 14490.0,
+    "start_date": "2026-04-05T00:00:00Z",
+    "moving_time": 3960
+  },
+  {
+    "id": 17981314218,
+    "name": "Evening Run",
+    "distance": 3230.0,
+    "start_date": "2026-04-04T00:00:00Z",
+    "moving_time": 936
+  },
+  {
+    "id": 17976934698,
+    "name": "Workout warrior type stuff",
+    "distance": 5650.0,
+    "start_date": "2026-04-04T00:00:00Z",
+    "moving_time": 1269
+  },
+  {
+    "id": 17967928228,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2026-04-03T00:00:00Z",
+    "moving_time": 1299
+  },
+  {
+    "id": 17956417642,
+    "name": "I forgot what music on runs is like",
+    "distance": 11270.0,
+    "start_date": "2026-04-02T00:00:00Z",
+    "moving_time": 2973
+  },
+  {
+    "id": 17944118186,
+    "name": "Evening Run",
+    "distance": 1620.0,
+    "start_date": "2026-04-01T00:00:00Z",
+    "moving_time": 497
+  },
+  {
+    "id": 17944118183,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2026-04-01T00:00:00Z",
+    "moving_time": 479
+  },
+  {
+    "id": 17936948871,
+    "name": "Meet day tempo miles",
+    "distance": 7250.0,
+    "start_date": "2026-04-01T00:00:00Z",
+    "moving_time": 1633
+  },
+  {
+    "id": 17932995460,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2026-03-31T00:00:00Z",
+    "moving_time": 2217
+  },
+  {
+    "id": 17932993457,
+    "name": "Afternoon Run",
+    "distance": 5820.0,
+    "start_date": "2026-03-30T00:00:00Z",
+    "moving_time": 1396
+  },
+  {
+    "id": 17932993432,
+    "name": "Afternoon Run",
+    "distance": 2230.0,
+    "start_date": "2026-03-30T00:00:00Z",
+    "moving_time": 563
+  },
+  {
+    "id": 17907797728,
+    "name": "Evening Run",
+    "distance": 16100.0,
+    "start_date": "2026-03-29T00:00:00Z",
+    "moving_time": 4260
+  },
+  {
+    "id": 17894790216,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2026-03-28T00:00:00Z",
+    "moving_time": 2225
+  },
+  {
+    "id": 17882947546,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2026-03-27T00:00:00Z",
+    "moving_time": 482
+  },
+  {
+    "id": 17882867928,
+    "name": "Wu + 3200m prefontaine workout 🥇",
+    "distance": 3580.0,
+    "start_date": "2026-03-27T00:00:00Z",
+    "moving_time": 724
+  },
+  {
+    "id": 17882960603,
+    "name": "Sulphur 800m 2:01 🥇",
+    "distance": 800.0,
+    "start_date": "2026-03-27T00:00:00Z",
+    "moving_time": 121
+  },
+  {
+    "id": 17882867929,
+    "name": "Evening Run",
+    "distance": 1620.0,
+    "start_date": "2026-03-27T00:00:00Z",
+    "moving_time": 473
+  },
+  {
+    "id": 17866846670,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2026-03-26T00:00:00Z",
+    "moving_time": 1327
+  },
+  {
+    "id": 17860291904,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-03-25T00:00:00Z",
+    "moving_time": 1822
+  },
+  {
+    "id": 17854957520,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2026-03-25T00:00:00Z",
+    "moving_time": 1373
+  },
+  {
+    "id": 17848209848,
+    "name": "Fast reps",
+    "distance": 9660.0,
+    "start_date": "2026-03-24T00:00:00Z",
+    "moving_time": 2157
+  },
+  {
+    "id": 17834098137,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-03-23T00:00:00Z",
+    "moving_time": 2667
+  },
+  {
+    "id": 17822773542,
+    "name": "Evening Run",
+    "distance": 16100.0,
+    "start_date": "2026-03-22T00:00:00Z",
+    "moving_time": 4140
+  },
+  {
+    "id": 17809660918,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2026-03-21T00:00:00Z",
+    "moving_time": 1333
+  },
+  {
+    "id": 17807565374,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2026-03-21T00:00:00Z",
+    "moving_time": 492
+  },
+  {
+    "id": 17807332978,
+    "name": "Pete Boudreaux 4:31",
+    "distance": 1700.0,
+    "start_date": "2026-03-21T00:00:00Z",
+    "moving_time": 278
+  },
+  {
+    "id": 17807332965,
+    "name": "Lunch Run",
+    "distance": 1610.0,
+    "start_date": "2026-03-21T00:00:00Z",
+    "moving_time": 482
+  },
+  {
+    "id": 17792804958,
+    "name": "Lunch Run",
+    "distance": 3220.0,
+    "start_date": "2026-03-20T00:00:00Z",
+    "moving_time": 889
+  },
+  {
+    "id": 17785271152,
+    "name": "Post 4x8",
+    "distance": 4850.0,
+    "start_date": "2026-03-19T00:00:00Z",
+    "moving_time": 1311
+  },
+  {
+    "id": 17785302718,
+    "name": "Sam Houston 4x8",
+    "distance": 800.0,
+    "start_date": "2026-03-19T00:00:00Z",
+    "moving_time": 126
+  },
+  {
+    "id": 17785271087,
+    "name": "Afternoon Run",
+    "distance": 2420.0,
+    "start_date": "2026-03-19T00:00:00Z",
+    "moving_time": 702
+  },
+  {
+    "id": 17773645185,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2026-03-18T00:00:00Z",
+    "moving_time": 1320
+  },
+  {
+    "id": 17768359338,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2026-03-18T00:00:00Z",
+    "moving_time": 1280
+  },
+  {
+    "id": 17760701570,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-03-17T00:00:00Z",
+    "moving_time": 2520
+  },
+  {
+    "id": 17746611288,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2026-03-16T00:00:00Z",
+    "moving_time": 1915
+  },
+  {
+    "id": 17737643394,
+    "name": "Evening Run",
+    "distance": 17710.0,
+    "start_date": "2026-03-15T00:00:00Z",
+    "moving_time": 4800
+  },
+  {
+    "id": 17714409738,
+    "name": "Night Run",
+    "distance": 3230.0,
+    "start_date": "2026-03-13T00:00:00Z",
+    "moving_time": 998
+  },
+  {
+    "id": 17714409748,
+    "name": "Breaux Bridge 3200",
+    "distance": 3280.0,
+    "start_date": "2026-03-13T00:00:00Z",
+    "moving_time": 607
+  },
+  {
+    "id": 17714409741,
+    "name": "Evening Run",
+    "distance": 820.0,
+    "start_date": "2026-03-13T00:00:00Z",
+    "moving_time": 274
+  },
+  {
+    "id": 17714409746,
+    "name": "Evening Run",
+    "distance": 1620.0,
+    "start_date": "2026-03-13T00:00:00Z",
+    "moving_time": 487
+  },
+  {
+    "id": 17702886734,
+    "name": "Evening Run",
+    "distance": 8060.0,
+    "start_date": "2026-03-12T00:00:00Z",
+    "moving_time": 2177
+  },
+  {
+    "id": 17691712109,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2026-03-11T00:00:00Z",
+    "moving_time": 1807
+  },
+  {
+    "id": 17686998627,
+    "name": "Lunch Run",
+    "distance": 4840.0,
+    "start_date": "2026-03-11T00:00:00Z",
+    "moving_time": 1359
+  },
+  {
+    "id": 17680208128,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2026-03-10T00:00:00Z",
+    "moving_time": 2299
+  },
+  {
+    "id": 17666814109,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2026-03-09T00:00:00Z",
+    "moving_time": 2623
+  },
+  {
+    "id": 17650888653,
+    "name": "Ts was not a progression long",
+    "distance": 21320.0,
+    "start_date": "2026-03-08T00:00:00Z",
+    "moving_time": 4980
+  },
+  {
+    "id": 17631101217,
+    "name": "Evening Run",
+    "distance": 810.0,
+    "start_date": "2026-03-06T00:00:00Z",
+    "moving_time": 271
+  },
+  {
+    "id": 17631101224,
+    "name": "Cecilia solo 4:37",
+    "distance": 1650.0,
+    "start_date": "2026-03-06T00:00:00Z",
+    "moving_time": 279
+  },
+  {
+    "id": 17631101223,
+    "name": "Evening Run",
+    "distance": 2020.0,
+    "start_date": "2026-03-06T00:00:00Z",
+    "moving_time": 621
+  },
+  {
+    "id": 17620238430,
+    "name": "Afternoon Run",
+    "distance": 2430.0,
+    "start_date": "2026-03-05T00:00:00Z",
+    "moving_time": 668
+  },
+  {
+    "id": 17620236160,
+    "name": "Afternoon Run",
+    "distance": 4030.0,
+    "start_date": "2026-03-05T00:00:00Z",
+    "moving_time": 1100
+  },
+  {
+    "id": 17607348664,
+    "name": "Afternoon Run",
+    "distance": 6460.0,
+    "start_date": "2026-03-04T00:00:00Z",
+    "moving_time": 1584
+  },
+  {
+    "id": 17594609886,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2026-03-03T00:00:00Z",
+    "moving_time": 1709
+  },
+  {
+    "id": 17594137079,
+    "name": "Pacing",
+    "distance": 4840.0,
+    "start_date": "2026-03-03T00:00:00Z",
+    "moving_time": 1238
+  },
+  {
+    "id": 17582140644,
+    "name": "Cd",
+    "distance": 3220.0,
+    "start_date": "2026-03-02T00:00:00Z",
+    "moving_time": 925
+  },
+  {
+    "id": 17581889065,
+    "name": "3x600 + speed",
+    "distance": 8060.0,
+    "start_date": "2026-03-02T00:00:00Z",
+    "moving_time": 1949
+  },
+  {
+    "id": 17570178605,
+    "name": "Progression long",
+    "distance": 19320.0,
+    "start_date": "2026-03-01T00:00:00Z",
+    "moving_time": 4860
+  },
+  {
+    "id": 17558759700,
+    "name": "Afternoon Run",
+    "distance": 11270.0,
+    "start_date": "2026-02-28T00:00:00Z",
+    "moving_time": 3084
+  },
+  {
+    "id": 17547066623,
+    "name": "Thresh + 6x200",
+    "distance": 11270.0,
+    "start_date": "2026-02-27T00:00:00Z",
+    "moving_time": 2689
+  },
+  {
+    "id": 17536209561,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2026-02-26T00:00:00Z",
+    "moving_time": 1752
+  },
+  {
+    "id": 17535445059,
+    "name": "Pacing",
+    "distance": 4840.0,
+    "start_date": "2026-02-26T00:00:00Z",
+    "moving_time": 1132
+  },
+  {
+    "id": 17524163398,
+    "name": "Afternoon Run",
+    "distance": 8860.0,
+    "start_date": "2026-02-25T00:00:00Z",
+    "moving_time": 2339
+  },
+  {
+    "id": 17512672380,
+    "name": "Afternoon Run",
+    "distance": 10470.0,
+    "start_date": "2026-02-24T00:00:00Z",
+    "moving_time": 2390
+  },
+  {
+    "id": 17501368029,
+    "name": "Afternoon Run",
+    "distance": 9670.0,
+    "start_date": "2026-02-23T00:00:00Z",
+    "moving_time": 2563
+  },
+  {
+    "id": 17488881500,
+    "name": "Afternoon Run",
+    "distance": 14490.0,
+    "start_date": "2026-02-22T00:00:00Z",
+    "moving_time": 3840
+  },
+  {
+    "id": 17477318959,
+    "name": "Afternoon Run",
+    "distance": 2420.0,
+    "start_date": "2026-02-21T00:00:00Z",
+    "moving_time": 747
+  },
+  {
+    "id": 17476774353,
+    "name": "Afternoon Run",
+    "distance": 2100.0,
+    "start_date": "2026-02-21T00:00:00Z",
+    "moving_time": 606
+  },
+  {
+    "id": 17463050088,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2026-02-20T00:00:00Z",
+    "moving_time": 876
+  },
+  {
+    "id": 17410389180,
+    "name": "Afternoon Run",
+    "distance": 16100.0,
+    "start_date": "2026-02-15T00:00:00Z",
+    "moving_time": 4260
+  },
+  {
+    "id": 17400048165,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-02-14T00:00:00Z",
+    "moving_time": 2529
+  },
+  {
+    "id": 17389129725,
+    "name": "Afternoon Run",
+    "distance": 11270.0,
+    "start_date": "2026-02-13T00:00:00Z",
+    "moving_time": 3116
+  },
+  {
+    "id": 17379411246,
+    "name": "1k @ 2:39 (64,65,30)",
+    "distance": 8060.0,
+    "start_date": "2026-02-12T00:00:00Z",
+    "moving_time": 1859
+  },
+  {
+    "id": 17368479656,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2026-02-11T00:00:00Z",
+    "moving_time": 1736
+  },
+  {
+    "id": 17364464356,
+    "name": "Double with Jacob",
+    "distance": 4830.0,
+    "start_date": "2026-02-11T00:00:00Z",
+    "moving_time": 1367
+  },
+  {
+    "id": 17357382716,
+    "name": "3 x 8, 6, 2",
+    "distance": 11270.0,
+    "start_date": "2026-02-10T00:00:00Z",
+    "moving_time": 2634
+  },
+  {
+    "id": 17344873545,
+    "name": "Afternoon Run",
+    "distance": 11270.0,
+    "start_date": "2026-02-09T00:00:00Z",
+    "moving_time": 2951
+  },
+  {
+    "id": 17333893794,
+    "name": "Afternoon Run",
+    "distance": 17710.0,
+    "start_date": "2026-02-08T00:00:00Z",
+    "moving_time": 4740
+  },
+  {
+    "id": 17323656946,
+    "name": "Parking lot cd",
+    "distance": 1620.0,
+    "start_date": "2026-02-07T00:00:00Z",
+    "moving_time": 507
+  },
+  {
+    "id": 17323656844,
+    "name": "Wu",
+    "distance": 940.0,
+    "start_date": "2026-02-07T00:00:00Z",
+    "moving_time": 283
+  },
+  {
+    "id": 17323656857,
+    "name": "Wu",
+    "distance": 3230.0,
+    "start_date": "2026-02-07T00:00:00Z",
+    "moving_time": 987
+  },
+  {
+    "id": 17311207884,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-02-06T00:00:00Z",
+    "moving_time": 2609
+  },
+  {
+    "id": 17301090731,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2026-02-05T00:00:00Z",
+    "moving_time": 1738
+  },
+  {
+    "id": 17301085775,
+    "name": "Pacing Jacob",
+    "distance": 3230.0,
+    "start_date": "2026-02-05T00:00:00Z",
+    "moving_time": 790
+  },
+  {
+    "id": 17289958766,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2026-02-04T00:00:00Z",
+    "moving_time": 2186
+  },
+  {
+    "id": 17285901318,
+    "name": "Morning Run",
+    "distance": 4840.0,
+    "start_date": "2026-02-04T00:00:00Z",
+    "moving_time": 1252
+  },
+  {
+    "id": 17278474081,
+    "name": "400s 1min rest",
+    "distance": 8060.0,
+    "start_date": "2026-02-03T00:00:00Z",
+    "moving_time": 1972
+  },
+  {
+    "id": 17266127997,
+    "name": "Afternoon Run",
+    "distance": 7650.0,
+    "start_date": "2026-02-02T00:00:00Z",
+    "moving_time": 2120
+  },
+  {
+    "id": 17265374192,
+    "name": "55.5 400m",
+    "distance": 2020.0,
+    "start_date": "2026-02-02T00:00:00Z",
+    "moving_time": 516
+  },
+  {
+    "id": 17254630658,
+    "name": "Afternoon Run",
+    "distance": 18510.0,
+    "start_date": "2026-02-01T00:00:00Z",
+    "moving_time": 4620
+  },
+  {
+    "id": 17243743111,
+    "name": "25s overpass sprints",
+    "distance": 8050.0,
+    "start_date": "2026-01-31T00:00:00Z",
+    "moving_time": 1914
+  },
+  {
+    "id": 17232251445,
+    "name": "4 tempo",
+    "distance": 12080.0,
+    "start_date": "2026-01-30T00:00:00Z",
+    "moving_time": 2865
+  },
+  {
+    "id": 17232251587,
+    "name": "Afternoon Run",
+    "distance": 10470.0,
+    "start_date": "2026-01-29T00:00:00Z",
+    "moving_time": 2717
+  },
+  {
+    "id": 17212396130,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-01-28T00:00:00Z",
+    "moving_time": 2529
+  },
+  {
+    "id": 17207402411,
+    "name": "Strides with Jacob",
+    "distance": 1610.0,
+    "start_date": "2026-01-28T00:00:00Z",
+    "moving_time": 387
+  },
+  {
+    "id": 17200241185,
+    "name": "Speedy reps",
+    "distance": 10470.0,
+    "start_date": "2026-01-27T00:00:00Z",
+    "moving_time": 2367
+  },
+  {
+    "id": 17188050185,
+    "name": "Afternoon Run",
+    "distance": 10470.0,
+    "start_date": "2026-01-26T00:00:00Z",
+    "moving_time": 2785
+  },
+  {
+    "id": 17176908839,
+    "name": "Afternoon Run",
+    "distance": 17710.0,
+    "start_date": "2026-01-25T00:00:00Z",
+    "moving_time": 4440
+  },
+  {
+    "id": 17165455985,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2026-01-24T00:00:00Z",
+    "moving_time": 483
+  },
+  {
+    "id": 17165234972,
+    "name": "Afternoon Run",
+    "distance": 1950.0,
+    "start_date": "2026-01-24T00:00:00Z",
+    "moving_time": 563
+  },
+  {
+    "id": 17154795642,
+    "name": "Afternoon Run",
+    "distance": 8860.0,
+    "start_date": "2026-01-23T00:00:00Z",
+    "moving_time": 2245
+  },
+  {
+    "id": 17144622138,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-01-22T00:00:00Z",
+    "moving_time": 2610
+  },
+  {
+    "id": 17133634403,
+    "name": "Tready",
+    "distance": 8050.0,
+    "start_date": "2026-01-21T00:00:00Z",
+    "moving_time": 2247
+  },
+  {
+    "id": 17121245099,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2026-01-20T00:00:00Z",
+    "moving_time": 1839
+  },
+  {
+    "id": 17109715000,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-01-19T00:00:00Z",
+    "moving_time": 2617
+  },
+  {
+    "id": 17096293564,
+    "name": "Race week",
+    "distance": 21090.0,
+    "start_date": "2026-01-18T00:00:00Z",
+    "moving_time": 5580
+  },
+  {
+    "id": 17075146229,
+    "name": "6 tempo + 4x150",
+    "distance": 12890.0,
+    "start_date": "2026-01-16T00:00:00Z",
+    "moving_time": 2914
+  },
+  {
+    "id": 17064508607,
+    "name": "Afternoon Run",
+    "distance": 8860.0,
+    "start_date": "2026-01-15T00:00:00Z",
+    "moving_time": 2339
+  },
+  {
+    "id": 17052736058,
+    "name": "Afternoon Run",
+    "distance": 11280.0,
+    "start_date": "2026-01-14T00:00:00Z",
+    "moving_time": 3026
+  },
+  {
+    "id": 17041690941,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-01-13T00:00:00Z",
+    "moving_time": 2335
+  },
+  {
+    "id": 17028710904,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-01-12T00:00:00Z",
+    "moving_time": 2626
+  },
+  {
+    "id": 17017102738,
+    "name": "Afternoon Run",
+    "distance": 16100.0,
+    "start_date": "2026-01-11T00:00:00Z",
+    "moving_time": 4200
+  },
+  {
+    "id": 17005942619,
+    "name": "Windy overpass repeats",
+    "distance": 9670.0,
+    "start_date": "2026-01-10T00:00:00Z",
+    "moving_time": 2400
+  },
+  {
+    "id": 16996015891,
+    "name": "Treadmill",
+    "distance": 8050.0,
+    "start_date": "2026-01-09T00:00:00Z",
+    "moving_time": 2243
+  },
+  {
+    "id": 16985048524,
+    "name": "Threshold 800s",
+    "distance": 12080.0,
+    "start_date": "2026-01-08T00:00:00Z",
+    "moving_time": 2643
+  },
+  {
+    "id": 16973192035,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2026-01-07T00:00:00Z",
+    "moving_time": 2236
+  },
+  {
+    "id": 16969869541,
+    "name": "+ mobility and g strength",
+    "distance": 3220.0,
+    "start_date": "2026-01-07T00:00:00Z",
+    "moving_time": 947
+  },
+  {
+    "id": 16962911707,
+    "name": "600m TT 1:30",
+    "distance": 8860.0,
+    "start_date": "2026-01-06T00:00:00Z",
+    "moving_time": 2226
+  },
+  {
+    "id": 16950528639,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2026-01-05T00:00:00Z",
+    "moving_time": 2677
+  },
+  {
+    "id": 16939233291,
+    "name": "Afternoon Run",
+    "distance": 19320.0,
+    "start_date": "2026-01-04T00:00:00Z",
+    "moving_time": 4920
+  },
+  {
+    "id": 16928493312,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2026-01-03T00:00:00Z",
+    "moving_time": 1785
+  },
+  {
+    "id": 16917706043,
+    "name": "6 tempo",
+    "distance": 11280.0,
+    "start_date": "2026-01-02T00:00:00Z",
+    "moving_time": 2625
+  },
+  {
+    "id": 16907541669,
+    "name": "Afternoon Run",
+    "distance": 11270.0,
+    "start_date": "2026-01-01T00:00:00Z",
+    "moving_time": 3020
+  },
+  {
+    "id": 16898375793,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-12-31T00:00:00Z",
+    "moving_time": 2202
+  },
+  {
+    "id": 16889270660,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-12-30T00:00:00Z",
+    "moving_time": 2095
+  },
+  {
+    "id": 16878773970,
+    "name": "Peak weather",
+    "distance": 11280.0,
+    "start_date": "2025-12-29T00:00:00Z",
+    "moving_time": 3005
+  },
+  {
+    "id": 16866402224,
+    "name": "Morning Run",
+    "distance": 16100.0,
+    "start_date": "2025-12-28T00:00:00Z",
+    "moving_time": 4500
+  },
+  {
+    "id": 16858934800,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-12-27T00:00:00Z",
+    "moving_time": 2231
+  },
+  {
+    "id": 16856599746,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2025-12-27T00:00:00Z",
+    "moving_time": 1861
+  },
+  {
+    "id": 16849255665,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-12-26T00:00:00Z",
+    "moving_time": 2687
+  },
+  {
+    "id": 16839582563,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-12-25T00:00:00Z",
+    "moving_time": 2710
+  },
+  {
+    "id": 16839581505,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-12-24T00:00:00Z",
+    "moving_time": 2251
+  },
+  {
+    "id": 16815137595,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-12-22T00:00:00Z",
+    "moving_time": 1877
+  },
+  {
+    "id": 16794677483,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-12-19T00:00:00Z",
+    "moving_time": 2199
+  },
+  {
+    "id": 16780613271,
+    "name": "1ks",
+    "distance": 11270.0,
+    "start_date": "2025-12-18T00:00:00Z",
+    "moving_time": 2665
+  },
+  {
+    "id": 16771869441,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-12-17T00:00:00Z",
+    "moving_time": 1816
+  },
+  {
+    "id": 16771869411,
+    "name": "Morning Run",
+    "distance": 6450.0,
+    "start_date": "2025-12-17T00:00:00Z",
+    "moving_time": 1807
+  },
+  {
+    "id": 16763117119,
+    "name": "150s",
+    "distance": 9660.0,
+    "start_date": "2025-12-16T00:00:00Z",
+    "moving_time": 2579
+  },
+  {
+    "id": 16753105571,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-12-15T00:00:00Z",
+    "moving_time": 2130
+  },
+  {
+    "id": 16742738345,
+    "name": "Lunch Run",
+    "distance": 17720.0,
+    "start_date": "2025-12-14T00:00:00Z",
+    "moving_time": 4740
+  },
+  {
+    "id": 16735258463,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-12-13T00:00:00Z",
+    "moving_time": 1812
+  },
+  {
+    "id": 16726064236,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-12-12T00:00:00Z",
+    "moving_time": 2214
+  },
+  {
+    "id": 16717483732,
+    "name": "Overpass 🔁",
+    "distance": 8860.0,
+    "start_date": "2025-12-11T00:00:00Z",
+    "moving_time": 2155
+  },
+  {
+    "id": 16707921164,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-12-10T00:00:00Z",
+    "moving_time": 2625
+  },
+  {
+    "id": 16699235286,
+    "name": "2️⃣0️⃣0️⃣s",
+    "distance": 8050.0,
+    "start_date": "2025-12-09T00:00:00Z",
+    "moving_time": 1959
+  },
+  {
+    "id": 16688794352,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-12-08T00:00:00Z",
+    "moving_time": 2625
+  },
+  {
+    "id": 16679420558,
+    "name": "Afternoon Run",
+    "distance": 19320.0,
+    "start_date": "2025-12-07T00:00:00Z",
+    "moving_time": 5340
+  },
+  {
+    "id": 16670064954,
+    "name": "Overpass repeats",
+    "distance": 8060.0,
+    "start_date": "2025-12-06T00:00:00Z",
+    "moving_time": 1955
+  },
+  {
+    "id": 16660941420,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-12-05T00:00:00Z",
+    "moving_time": 2723
+  },
+  {
+    "id": 16652473884,
+    "name": "Middle 4 tempo",
+    "distance": 11270.0,
+    "start_date": "2025-12-04T00:00:00Z",
+    "moving_time": 2757
+  },
+  {
+    "id": 16643363574,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-12-03T00:00:00Z",
+    "moving_time": 2698
+  },
+  {
+    "id": 16634050639,
+    "name": "2x4x300",
+    "distance": 8050.0,
+    "start_date": "2025-12-02T00:00:00Z",
+    "moving_time": 2025
+  },
+  {
+    "id": 16624127569,
+    "name": "Booo treadmill",
+    "distance": 8050.0,
+    "start_date": "2025-12-01T00:00:00Z",
+    "moving_time": 2255
+  },
+  {
+    "id": 16613976106,
+    "name": "Progression long",
+    "distance": 17710.0,
+    "start_date": "2025-11-30T00:00:00Z",
+    "moving_time": 4620
+  },
+  {
+    "id": 16604546636,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-11-29T00:00:00Z",
+    "moving_time": 2629
+  },
+  {
+    "id": 16595210602,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-11-28T00:00:00Z",
+    "moving_time": 2672
+  },
+  {
+    "id": 16577455737,
+    "name": "lil 4.5 on/off tempo",
+    "distance": 12080.0,
+    "start_date": "2025-11-26T00:00:00Z",
+    "moving_time": 2993
+  },
+  {
+    "id": 16566939642,
+    "name": "Afternoon Run",
+    "distance": 7250.0,
+    "start_date": "2025-11-25T00:00:00Z",
+    "moving_time": 2129
+  },
+  {
+    "id": 16556555653,
+    "name": "Afternoon Run",
+    "distance": 8860.0,
+    "start_date": "2025-11-24T00:00:00Z",
+    "moving_time": 2529
+  },
+  {
+    "id": 16544083763,
+    "name": "Morning Run",
+    "distance": 16100.0,
+    "start_date": "2025-11-23T00:00:00Z",
+    "moving_time": 4500
+  },
+  {
+    "id": 16487040065,
+    "name": "Lunch Run",
+    "distance": 1680.0,
+    "start_date": "2025-11-17T00:00:00Z",
+    "moving_time": 517
+  },
+  {
+    "id": 16480287598,
+    "name": "Afternoon Run",
+    "distance": 2420.0,
+    "start_date": "2025-11-16T00:00:00Z",
+    "moving_time": 669
+  },
+  {
+    "id": 16469795332,
+    "name": "Afternoon Run",
+    "distance": 4840.0,
+    "start_date": "2025-11-15T00:00:00Z",
+    "moving_time": 1332
+  },
+  {
+    "id": 16459688023,
+    "name": "Afternoon Run",
+    "distance": 6110.0,
+    "start_date": "2025-11-14T00:00:00Z",
+    "moving_time": 1556
+  },
+  {
+    "id": 16440770873,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-11-12T00:00:00Z",
+    "moving_time": 1394
+  },
+  {
+    "id": 16430943109,
+    "name": "Afternoon Run",
+    "distance": 6460.0,
+    "start_date": "2025-11-11T00:00:00Z",
+    "moving_time": 1444
+  },
+  {
+    "id": 16418943558,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2025-11-10T00:00:00Z",
+    "moving_time": 2231
+  },
+  {
+    "id": 16409275500,
+    "name": "Afternoon Run",
+    "distance": 16100.0,
+    "start_date": "2025-11-09T00:00:00Z",
+    "moving_time": 4260
+  },
+  {
+    "id": 16396984610,
+    "name": "Morning Run",
+    "distance": 5640.0,
+    "start_date": "2025-11-07T00:00:00Z",
+    "moving_time": 1574
+  },
+  {
+    "id": 16378943125,
+    "name": "Cd",
+    "distance": 2420.0,
+    "start_date": "2025-11-06T00:00:00Z",
+    "moving_time": 845
+  },
+  {
+    "id": 16380130314,
+    "name": "Regionals 15:25",
+    "distance": 4830.0,
+    "start_date": "2025-11-06T00:00:00Z",
+    "moving_time": 925
+  },
+  {
+    "id": 16378182357,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-11-06T00:00:00Z",
+    "moving_time": 482
+  },
+  {
+    "id": 16365321678,
+    "name": "Lunch Run",
+    "distance": 2420.0,
+    "start_date": "2025-11-05T00:00:00Z",
+    "moving_time": 657
+  },
+  {
+    "id": 16357160730,
+    "name": "Afternoon Run",
+    "distance": 5640.0,
+    "start_date": "2025-11-04T00:00:00Z",
+    "moving_time": 1397
+  },
+  {
+    "id": 16354461126,
+    "name": "Lunch Run",
+    "distance": 4830.0,
+    "start_date": "2025-11-04T00:00:00Z",
+    "moving_time": 1312
+  },
+  {
+    "id": 16345993952,
+    "name": "Afternoon Run",
+    "distance": 7250.0,
+    "start_date": "2025-11-03T00:00:00Z",
+    "moving_time": 2030
+  },
+  {
+    "id": 16333554223,
+    "name": "Regionals week workout",
+    "distance": 8860.0,
+    "start_date": "2025-11-02T00:00:00Z",
+    "moving_time": 1906
+  },
+  {
+    "id": 16326083113,
+    "name": "Afternoon Run",
+    "distance": 10470.0,
+    "start_date": "2025-11-01T00:00:00Z",
+    "moving_time": 2848
+  },
+  {
+    "id": 16317309062,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2025-10-31T00:00:00Z",
+    "moving_time": 1695
+  },
+  {
+    "id": 16312993643,
+    "name": "Morning Run",
+    "distance": 4840.0,
+    "start_date": "2025-10-31T00:00:00Z",
+    "moving_time": 1275
+  },
+  {
+    "id": 16306854292,
+    "name": "10min tempo + hills",
+    "distance": 8860.0,
+    "start_date": "2025-10-30T00:00:00Z",
+    "moving_time": 2269
+  },
+  {
+    "id": 16303767547,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2025-10-29T00:00:00Z",
+    "moving_time": 2185
+  },
+  {
+    "id": 16287175000,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2025-10-28T00:00:00Z",
+    "moving_time": 1802
+  },
+  {
+    "id": 16283450765,
+    "name": "Lunch Run",
+    "distance": 4030.0,
+    "start_date": "2025-10-28T00:00:00Z",
+    "moving_time": 1200
+  },
+  {
+    "id": 16276373048,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2025-10-27T00:00:00Z",
+    "moving_time": 510
+  },
+  {
+    "id": 16275951159,
+    "name": "District  🥇",
+    "distance": 4760.0,
+    "start_date": "2025-10-27T00:00:00Z",
+    "moving_time": 964
+  },
+  {
+    "id": 16275587349,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2025-10-27T00:00:00Z",
+    "moving_time": 509
+  },
+  {
+    "id": 16267068537,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2025-10-26T00:00:00Z",
+    "moving_time": 1740
+  },
+  {
+    "id": 16255781908,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-10-25T00:00:00Z",
+    "moving_time": 1804
+  },
+  {
+    "id": 16246934938,
+    "name": "Evening Run",
+    "distance": 6450.0,
+    "start_date": "2025-10-24T00:00:00Z",
+    "moving_time": 1757
+  },
+  {
+    "id": 16245856329,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-10-24T00:00:00Z",
+    "moving_time": 1331
+  },
+  {
+    "id": 16235947431,
+    "name": "1wucd, 4 tempo",
+    "distance": 8060.0,
+    "start_date": "2025-10-23T00:00:00Z",
+    "moving_time": 1873
+  },
+  {
+    "id": 16227563674,
+    "name": "Evening Run",
+    "distance": 8860.0,
+    "start_date": "2025-10-22T00:00:00Z",
+    "moving_time": 2372
+  },
+  {
+    "id": 16215696177,
+    "name": "400s + 2400",
+    "distance": 8050.0,
+    "start_date": "2025-10-21T00:00:00Z",
+    "moving_time": 1774
+  },
+  {
+    "id": 16204865181,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2025-10-20T00:00:00Z",
+    "moving_time": 2306
+  },
+  {
+    "id": 16191758782,
+    "name": "Morning Run",
+    "distance": 18520.0,
+    "start_date": "2025-10-19T00:00:00Z",
+    "moving_time": 4920
+  },
+  {
+    "id": 16185565473,
+    "name": "Evening Run",
+    "distance": 5640.0,
+    "start_date": "2025-10-18T00:00:00Z",
+    "moving_time": 1591
+  },
+  {
+    "id": 16185565626,
+    "name": "Morning Run",
+    "distance": 5050.0,
+    "start_date": "2025-10-18T00:00:00Z",
+    "moving_time": 1058
+  },
+  {
+    "id": 16185565437,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2025-10-18T00:00:00Z",
+    "moving_time": 519
+  },
+  {
+    "id": 16174548483,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-10-17T00:00:00Z",
+    "moving_time": 1748
+  },
+  {
+    "id": 16165007206,
+    "name": "Afternoon Run",
+    "distance": 9670.0,
+    "start_date": "2025-10-16T00:00:00Z",
+    "moving_time": 2577
+  },
+  {
+    "id": 16154565682,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2025-10-15T00:00:00Z",
+    "moving_time": 2242
+  },
+  {
+    "id": 16144712432,
+    "name": "Afternoon Run",
+    "distance": 8860.0,
+    "start_date": "2025-10-14T00:00:00Z",
+    "moving_time": 2483
+  },
+  {
+    "id": 16132499563,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-10-13T00:00:00Z",
+    "moving_time": 1835
+  },
+  {
+    "id": 16128642454,
+    "name": "1.25wucd 8x200 , 1200 in middle",
+    "distance": 4840.0,
+    "start_date": "2025-10-13T00:00:00Z",
+    "moving_time": 1054
+  },
+  {
+    "id": 16122471618,
+    "name": "Recovery + strides",
+    "distance": 6440.0,
+    "start_date": "2025-10-12T00:00:00Z",
+    "moving_time": 1857
+  },
+  {
+    "id": 16106215846,
+    "name": "Morning Run",
+    "distance": 19320.0,
+    "start_date": "2025-10-11T00:00:00Z",
+    "moving_time": 5220
+  },
+  {
+    "id": 16100352691,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-10-10T00:00:00Z",
+    "moving_time": 2227
+  },
+  {
+    "id": 16090660864,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-10-09T00:00:00Z",
+    "moving_time": 1660
+  },
+  {
+    "id": 16086928680,
+    "name": "Morning Run",
+    "distance": 4840.0,
+    "start_date": "2025-10-09T00:00:00Z",
+    "moving_time": 1352
+  },
+  {
+    "id": 16081214612,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2025-10-08T00:00:00Z",
+    "moving_time": 2223
+  },
+  {
+    "id": 16069093813,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2025-10-07T00:00:00Z",
+    "moving_time": 2197
+  },
+  {
+    "id": 16057511865,
+    "name": "Evening Run",
+    "distance": 4030.0,
+    "start_date": "2025-10-06T00:00:00Z",
+    "moving_time": 1131
+  },
+  {
+    "id": 16056212904,
+    "name": "Jacob’s longest run 🔥",
+    "distance": 5790.0,
+    "start_date": "2025-10-06T00:00:00Z",
+    "moving_time": 1803
+  },
+  {
+    "id": 16031630981,
+    "name": "Morning Run",
+    "distance": 1620.0,
+    "start_date": "2025-10-04T00:00:00Z",
+    "moving_time": 539
+  },
+  {
+    "id": 16031217934,
+    "name": "Cade, bad day. Coming back stronger by championship season",
+    "distance": 4790.0,
+    "start_date": "2025-10-04T00:00:00Z",
+    "moving_time": 993
+  },
+  {
+    "id": 16030687513,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2025-10-04T00:00:00Z",
+    "moving_time": 511
+  },
+  {
+    "id": 16024975668,
+    "name": "Shake n stride",
+    "distance": 4030.0,
+    "start_date": "2025-10-03T00:00:00Z",
+    "moving_time": 1125
+  },
+  {
+    "id": 16015376298,
+    "name": "Evening Run",
+    "distance": 6450.0,
+    "start_date": "2025-10-02T00:00:00Z",
+    "moving_time": 1766
+  },
+  {
+    "id": 16015125101,
+    "name": "Lunch Run",
+    "distance": 3230.0,
+    "start_date": "2025-10-02T00:00:00Z",
+    "moving_time": 931
+  },
+  {
+    "id": 16003852429,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2025-10-01T00:00:00Z",
+    "moving_time": 491
+  },
+  {
+    "id": 16003532747,
+    "name": "Bell City “5k”",
+    "distance": 5180.0,
+    "start_date": "2025-10-01T00:00:00Z",
+    "moving_time": 1067
+  },
+  {
+    "id": 16003151920,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2025-10-01T00:00:00Z",
+    "moving_time": 483
+  },
+  {
+    "id": 15992338693,
+    "name": "Afternoon Run",
+    "distance": 5640.0,
+    "start_date": "2025-09-30T00:00:00Z",
+    "moving_time": 1493
+  },
+  {
+    "id": 15992338691,
+    "name": "Lunch Run",
+    "distance": 4030.0,
+    "start_date": "2025-09-30T00:00:00Z",
+    "moving_time": 1147
+  },
+  {
+    "id": 15981208889,
+    "name": "Evening Run",
+    "distance": 5370.0,
+    "start_date": "2025-09-29T00:00:00Z",
+    "moving_time": 1519
+  },
+  {
+    "id": 15981208847,
+    "name": "Practice",
+    "distance": 5900.0,
+    "start_date": "2025-09-29T00:00:00Z",
+    "moving_time": 1800
+  },
+  {
+    "id": 15970942892,
+    "name": "Evening Run",
+    "distance": 16100.0,
+    "start_date": "2025-09-28T00:00:00Z",
+    "moving_time": 4380
+  },
+  {
+    "id": 15946668131,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-09-26T00:00:00Z",
+    "moving_time": 2303
+  },
+  {
+    "id": 15937524255,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-09-25T00:00:00Z",
+    "moving_time": 1764
+  },
+  {
+    "id": 15935885946,
+    "name": "Morning Run",
+    "distance": 4840.0,
+    "start_date": "2025-09-25T00:00:00Z",
+    "moving_time": 1414
+  },
+  {
+    "id": 15925710327,
+    "name": "Morning Run",
+    "distance": 6460.0,
+    "start_date": "2025-09-24T00:00:00Z",
+    "moving_time": 1398
+  },
+  {
+    "id": 15914450761,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2025-09-23T00:00:00Z",
+    "moving_time": 1873
+  },
+  {
+    "id": 15914133587,
+    "name": "Morning Run",
+    "distance": 4030.0,
+    "start_date": "2025-09-23T00:00:00Z",
+    "moving_time": 1156
+  },
+  {
+    "id": 15902934539,
+    "name": "Afternoon Run",
+    "distance": 9670.0,
+    "start_date": "2025-09-22T00:00:00Z",
+    "moving_time": 2761
+  },
+  {
+    "id": 15893894739,
+    "name": "6 easy 5 progressive",
+    "distance": 17720.0,
+    "start_date": "2025-09-21T00:00:00Z",
+    "moving_time": 4740
+  },
+  {
+    "id": 15881948160,
+    "name": "Evening Run",
+    "distance": 8060.0,
+    "start_date": "2025-09-20T00:00:00Z",
+    "moving_time": 2184
+  },
+  {
+    "id": 15870696676,
+    "name": "Teal season",
+    "distance": 4830.0,
+    "start_date": "2025-09-19T00:00:00Z",
+    "moving_time": 1290
+  },
+  {
+    "id": 15866793118,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2025-09-19T00:00:00Z",
+    "moving_time": 1001
+  },
+  {
+    "id": 15848745569,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-09-17T00:00:00Z",
+    "moving_time": 1802
+  },
+  {
+    "id": 15847263942,
+    "name": "Wu race canceled",
+    "distance": 1620.0,
+    "start_date": "2025-09-17T00:00:00Z",
+    "moving_time": 509
+  },
+  {
+    "id": 15836871941,
+    "name": "Wucd 5x1k",
+    "distance": 8060.0,
+    "start_date": "2025-09-16T00:00:00Z",
+    "moving_time": 1832
+  },
+  {
+    "id": 15825152903,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-09-15T00:00:00Z",
+    "moving_time": 1769
+  },
+  {
+    "id": 15823704530,
+    "name": "Pacing duties",
+    "distance": 3160.0,
+    "start_date": "2025-09-15T00:00:00Z",
+    "moving_time": 1026
+  },
+  {
+    "id": 15814619965,
+    "name": "Evening Run",
+    "distance": 16110.0,
+    "start_date": "2025-09-14T00:00:00Z",
+    "moving_time": 4260
+  },
+  {
+    "id": 15797614514,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-09-13T00:00:00Z",
+    "moving_time": 492
+  },
+  {
+    "id": 15797024035,
+    "name": "Round Table 15:43,9th",
+    "distance": 4810.0,
+    "start_date": "2025-09-13T00:00:00Z",
+    "moving_time": 949
+  },
+  {
+    "id": 15797024029,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-09-13T00:00:00Z",
+    "moving_time": 504
+  },
+  {
+    "id": 15794529331,
+    "name": "Morning Run",
+    "distance": 4030.0,
+    "start_date": "2025-09-12T00:00:00Z",
+    "moving_time": 1161
+  },
+  {
+    "id": 15781885334,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-09-11T00:00:00Z",
+    "moving_time": 1791
+  },
+  {
+    "id": 15781883225,
+    "name": "Morning Run",
+    "distance": 3230.0,
+    "start_date": "2025-09-11T00:00:00Z",
+    "moving_time": 917
+  },
+  {
+    "id": 15770027155,
+    "name": "Evening Run",
+    "distance": 6450.0,
+    "start_date": "2025-09-10T00:00:00Z",
+    "moving_time": 1773
+  },
+  {
+    "id": 15768120835,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-09-10T00:00:00Z",
+    "moving_time": 1387
+  },
+  {
+    "id": 15758558245,
+    "name": "1.5wucd, 400 hard, 8x600@xc, 400 harder",
+    "distance": 8060.0,
+    "start_date": "2025-09-09T00:00:00Z",
+    "moving_time": 1687
+  },
+  {
+    "id": 15756360410,
+    "name": "Lunch Run",
+    "distance": 3230.0,
+    "start_date": "2025-09-09T00:00:00Z",
+    "moving_time": 972
+  },
+  {
+    "id": 15746311690,
+    "name": "Evening Run",
+    "distance": 9030.0,
+    "start_date": "2025-09-08T00:00:00Z",
+    "moving_time": 2491
+  },
+  {
+    "id": 15735134672,
+    "name": "Race week ??!",
+    "distance": 16910.0,
+    "start_date": "2025-09-07T00:00:00Z",
+    "moving_time": 4500
+  },
+  {
+    "id": 15719092266,
+    "name": "Morning Run",
+    "distance": 8070.0,
+    "start_date": "2025-09-06T00:00:00Z",
+    "moving_time": 2279
+  },
+  {
+    "id": 15707034382,
+    "name": "Texas tempo ish",
+    "distance": 8060.0,
+    "start_date": "2025-09-05T00:00:00Z",
+    "moving_time": 1857
+  },
+  {
+    "id": 15689567147,
+    "name": "Evening Run",
+    "distance": 6450.0,
+    "start_date": "2025-09-03T00:00:00Z",
+    "moving_time": 1771
+  },
+  {
+    "id": 15689563190,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-09-03T00:00:00Z",
+    "moving_time": 1289
+  },
+  {
+    "id": 15677070147,
+    "name": "Wucd, 2k,1600,1200,800",
+    "distance": 8860.0,
+    "start_date": "2025-09-02T00:00:00Z",
+    "moving_time": 1989
+  },
+  {
+    "id": 15677069946,
+    "name": "Lunch Run",
+    "distance": 2420.0,
+    "start_date": "2025-09-02T00:00:00Z",
+    "moving_time": 734
+  },
+  {
+    "id": 15665458816,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2025-09-01T00:00:00Z",
+    "moving_time": 2670
+  },
+  {
+    "id": 15648756420,
+    "name": "Morning Run",
+    "distance": 19320.0,
+    "start_date": "2025-08-31T00:00:00Z",
+    "moving_time": 5280
+  },
+  {
+    "id": 15631664474,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2025-08-29T00:00:00Z",
+    "moving_time": 2256
+  },
+  {
+    "id": 15621904527,
+    "name": "Sneaux Cone 1 mi",
+    "distance": 1640.0,
+    "start_date": "2025-08-28T00:00:00Z",
+    "moving_time": 281
+  },
+  {
+    "id": 15621904541,
+    "name": "Evening Run",
+    "distance": 2580.0,
+    "start_date": "2025-08-28T00:00:00Z",
+    "moving_time": 774
+  },
+  {
+    "id": 15619949141,
+    "name": "5x3min progressive tempo 90s jog rest",
+    "distance": 6450.0,
+    "start_date": "2025-08-28T00:00:00Z",
+    "moving_time": 1460
+  },
+  {
+    "id": 15610610890,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-08-27T00:00:00Z",
+    "moving_time": 1782
+  },
+  {
+    "id": 15609771679,
+    "name": "Morning Run",
+    "distance": 4840.0,
+    "start_date": "2025-08-27T00:00:00Z",
+    "moving_time": 1371
+  },
+  {
+    "id": 15598451915,
+    "name": "Wucd 20min tempo, 4x300m",
+    "distance": 8860.0,
+    "start_date": "2025-08-26T00:00:00Z",
+    "moving_time": 1973
+  },
+  {
+    "id": 15597079207,
+    "name": "Team",
+    "distance": 2430.0,
+    "start_date": "2025-08-26T00:00:00Z",
+    "moving_time": 741
+  },
+  {
+    "id": 15586924840,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2025-08-25T00:00:00Z",
+    "moving_time": 2240
+  },
+  {
+    "id": 15568932279,
+    "name": "Jennings longy",
+    "distance": 20150.0,
+    "start_date": "2025-08-24T00:00:00Z",
+    "moving_time": 5460
+  },
+  {
+    "id": 15558090492,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-08-23T00:00:00Z",
+    "moving_time": 498
+  },
+  {
+    "id": 15557729391,
+    "name": "Pelican Tri Run",
+    "distance": 3170.0,
+    "start_date": "2025-08-23T00:00:00Z",
+    "moving_time": 663
+  },
+  {
+    "id": 15557120816,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-08-23T00:00:00Z",
+    "moving_time": 520
+  },
+  {
+    "id": 15552261567,
+    "name": "Evening Run",
+    "distance": 6450.0,
+    "start_date": "2025-08-22T00:00:00Z",
+    "moving_time": 1837
+  },
+  {
+    "id": 15552261554,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2025-08-22T00:00:00Z",
+    "moving_time": 920
+  },
+  {
+    "id": 15541853331,
+    "name": "Middle 5 progression",
+    "distance": 11280.0,
+    "start_date": "2025-08-21T00:00:00Z",
+    "moving_time": 2723
+  },
+  {
+    "id": 15541248519,
+    "name": "Morning Run",
+    "distance": 3230.0,
+    "start_date": "2025-08-21T00:00:00Z",
+    "moving_time": 919
+  },
+  {
+    "id": 15530785117,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-08-20T00:00:00Z",
+    "moving_time": 1821
+  },
+  {
+    "id": 15526578093,
+    "name": "Lunch Run",
+    "distance": 4840.0,
+    "start_date": "2025-08-20T00:00:00Z",
+    "moving_time": 1417
+  },
+  {
+    "id": 15518963038,
+    "name": "1.5 wucd 4x3x400 74.5 avg",
+    "distance": 7250.0,
+    "start_date": "2025-08-19T00:00:00Z",
+    "moving_time": 1598
+  },
+  {
+    "id": 15518962964,
+    "name": "Easy + strides w/ gang",
+    "distance": 3230.0,
+    "start_date": "2025-08-19T00:00:00Z",
+    "moving_time": 937
+  },
+  {
+    "id": 15495811077,
+    "name": "Evening Run",
+    "distance": 16100.0,
+    "start_date": "2025-08-17T00:00:00Z",
+    "moving_time": 4560
+  },
+  {
+    "id": 15479425539,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-08-16T00:00:00Z",
+    "moving_time": 473
+  },
+  {
+    "id": 15479425547,
+    "name": "Miles Perret Tri Run",
+    "distance": 3760.0,
+    "start_date": "2025-08-16T00:00:00Z",
+    "moving_time": 773
+  },
+  {
+    "id": 15479425373,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-08-16T00:00:00Z",
+    "moving_time": 520
+  },
+  {
+    "id": 15472751050,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2025-08-15T00:00:00Z",
+    "moving_time": 1355
+  },
+  {
+    "id": 15472103923,
+    "name": "150’s with possible teammates",
+    "distance": 4040.0,
+    "start_date": "2025-08-15T00:00:00Z",
+    "moving_time": 1172
+  },
+  {
+    "id": 15461877863,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2025-08-14T00:00:00Z",
+    "moving_time": 2253
+  },
+  {
+    "id": 15450999802,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-08-13T00:00:00Z",
+    "moving_time": 1834
+  },
+  {
+    "id": 15449086410,
+    "name": "Doubles yipee",
+    "distance": 4840.0,
+    "start_date": "2025-08-13T00:00:00Z",
+    "moving_time": 1353
+  },
+  {
+    "id": 15438450944,
+    "name": "wucd 4x(800,200)",
+    "distance": 6450.0,
+    "start_date": "2025-08-12T00:00:00Z",
+    "moving_time": 1490
+  },
+  {
+    "id": 15437232126,
+    "name": "150’s",
+    "distance": 4040.0,
+    "start_date": "2025-08-12T00:00:00Z",
+    "moving_time": 1137
+  },
+  {
+    "id": 15427681808,
+    "name": "Evening Run",
+    "distance": 8860.0,
+    "start_date": "2025-08-11T00:00:00Z",
+    "moving_time": 2494
+  },
+  {
+    "id": 15416322692,
+    "name": "Holy progression",
+    "distance": 18520.0,
+    "start_date": "2025-08-10T00:00:00Z",
+    "moving_time": 5160
+  },
+  {
+    "id": 15393193628,
+    "name": "Evening Run",
+    "distance": 8070.0,
+    "start_date": "2025-08-08T00:00:00Z",
+    "moving_time": 2177
+  },
+  {
+    "id": 15382779569,
+    "name": "Evening Run",
+    "distance": 8860.0,
+    "start_date": "2025-08-07T00:00:00Z",
+    "moving_time": 2475
+  },
+  {
+    "id": 15371913236,
+    "name": "Middle 5 prog",
+    "distance": 11280.0,
+    "start_date": "2025-08-06T00:00:00Z",
+    "moving_time": 2717
+  },
+  {
+    "id": 15359715839,
+    "name": "Evening Run",
+    "distance": 7250.0,
+    "start_date": "2025-08-05T00:00:00Z",
+    "moving_time": 2026
+  },
+  {
+    "id": 15347158426,
+    "name": "+ strides",
+    "distance": 9660.0,
+    "start_date": "2025-08-04T00:00:00Z",
+    "moving_time": 2654
+  },
+  {
+    "id": 15336867844,
+    "name": "Evening Run",
+    "distance": 17710.0,
+    "start_date": "2025-08-03T00:00:00Z",
+    "moving_time": 5040
+  },
+  {
+    "id": 15318484558,
+    "name": "Morning Run",
+    "distance": 9660.0,
+    "start_date": "2025-08-02T00:00:00Z",
+    "moving_time": 2779
+  },
+  {
+    "id": 15313653647,
+    "name": "Evening Run",
+    "distance": 8060.0,
+    "start_date": "2025-08-01T00:00:00Z",
+    "moving_time": 2280
+  },
+  {
+    "id": 15303580894,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2025-07-31T00:00:00Z",
+    "moving_time": 2714
+  },
+  {
+    "id": 15286118229,
+    "name": "Post lift tread double",
+    "distance": 3220.0,
+    "start_date": "2025-07-30T00:00:00Z",
+    "moving_time": 912
+  },
+  {
+    "id": 15269383848,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-07-28T00:00:00Z",
+    "moving_time": 1809
+  },
+  {
+    "id": 15258866217,
+    "name": "Evening Run",
+    "distance": 12880.0,
+    "start_date": "2025-07-27T00:00:00Z",
+    "moving_time": 3720
+  },
+  {
+    "id": 15230411329,
+    "name": "NC camp day 5",
+    "distance": 10110.0,
+    "start_date": "2025-07-25T00:00:00Z",
+    "moving_time": 2933
+  },
+  {
+    "id": 15222448569,
+    "name": "Cd",
+    "distance": 3220.0,
+    "start_date": "2025-07-24T00:00:00Z",
+    "moving_time": 979
+  },
+  {
+    "id": 15222254683,
+    "name": "NC camp 3k",
+    "distance": 2940.0,
+    "start_date": "2025-07-24T00:00:00Z",
+    "moving_time": 596
+  },
+  {
+    "id": 15222023265,
+    "name": "Wu",
+    "distance": 2410.0,
+    "start_date": "2025-07-24T00:00:00Z",
+    "moving_time": 720
+  },
+  {
+    "id": 15212927919,
+    "name": "NC camp day 3 PM",
+    "distance": 6450.0,
+    "start_date": "2025-07-23T00:00:00Z",
+    "moving_time": 2003
+  },
+  {
+    "id": 15210759933,
+    "name": "NC camp day 3 AM",
+    "distance": 9660.0,
+    "start_date": "2025-07-23T00:00:00Z",
+    "moving_time": 2759
+  },
+  {
+    "id": 15201905894,
+    "name": "NC camp day 2 PM",
+    "distance": 4020.0,
+    "start_date": "2025-07-22T00:00:00Z",
+    "moving_time": 1256
+  },
+  {
+    "id": 15199314457,
+    "name": "NC camp day 2 AM",
+    "distance": 13900.0,
+    "start_date": "2025-07-22T00:00:00Z",
+    "moving_time": 3600
+  },
+  {
+    "id": 15188071160,
+    "name": "NC camp day 1",
+    "distance": 14490.0,
+    "start_date": "2025-07-21T00:00:00Z",
+    "moving_time": 3660
+  },
+  {
+    "id": 15181043293,
+    "name": "NC camp day 0",
+    "distance": 8430.0,
+    "start_date": "2025-07-20T00:00:00Z",
+    "moving_time": 2577
+  },
+  {
+    "id": 15170933666,
+    "name": "Altitude?!",
+    "distance": 8050.0,
+    "start_date": "2025-07-19T00:00:00Z",
+    "moving_time": 2354
+  },
+  {
+    "id": 15149850322,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2025-07-17T00:00:00Z",
+    "moving_time": 2213
+  },
+  {
+    "id": 15139465443,
+    "name": "1 mi wu, alternating tempo",
+    "distance": 9660.0,
+    "start_date": "2025-07-16T00:00:00Z",
+    "moving_time": 2304
+  },
+  {
+    "id": 15128325363,
+    "name": "Evening Run",
+    "distance": 7630.0,
+    "start_date": "2025-07-15T00:00:00Z",
+    "moving_time": 2145
+  },
+  {
+    "id": 15116721347,
+    "name": "Evening Run",
+    "distance": 8640.0,
+    "start_date": "2025-07-14T00:00:00Z",
+    "moving_time": 2401
+  },
+  {
+    "id": 15106125359,
+    "name": "📈",
+    "distance": 16100.0,
+    "start_date": "2025-07-13T00:00:00Z",
+    "moving_time": 4380
+  },
+  {
+    "id": 15095090379,
+    "name": "Evening Run",
+    "distance": 7240.0,
+    "start_date": "2025-07-12T00:00:00Z",
+    "moving_time": 2012
+  },
+  {
+    "id": 15084118548,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-07-11T00:00:00Z",
+    "moving_time": 1796
+  },
+  {
+    "id": 15074409587,
+    "name": "Middle 6 tempo",
+    "distance": 12870.0,
+    "start_date": "2025-07-10T00:00:00Z",
+    "moving_time": 3144
+  },
+  {
+    "id": 15055985507,
+    "name": "FFA 5k",
+    "distance": 6450.0,
+    "start_date": "2025-07-09T00:00:00Z",
+    "moving_time": 1748
+  },
+  {
+    "id": 15051961963,
+    "name": "1mi wu 7x2:00s repeats w/ jog recovery, 3x150 strides",
+    "distance": 9660.0,
+    "start_date": "2025-07-08T00:00:00Z",
+    "moving_time": 2427
+  },
+  {
+    "id": 15039261246,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-07-07T00:00:00Z",
+    "moving_time": 1814
+  },
+  {
+    "id": 15030757193,
+    "name": "😁",
+    "distance": 15290.0,
+    "start_date": "2025-07-06T00:00:00Z",
+    "moving_time": 4260
+  },
+  {
+    "id": 15020024775,
+    "name": "Evening Run",
+    "distance": 4020.0,
+    "start_date": "2025-07-05T00:00:00Z",
+    "moving_time": 1125
+  },
+  {
+    "id": 15004925732,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-07-04T00:00:00Z",
+    "moving_time": 494
+  },
+  {
+    "id": 15004920234,
+    "name": "4 on the fourth 🥇",
+    "distance": 6480.0,
+    "start_date": "2025-07-04T00:00:00Z",
+    "moving_time": 1396
+  },
+  {
+    "id": 15004920230,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-07-04T00:00:00Z",
+    "moving_time": 520
+  },
+  {
+    "id": 14999979322,
+    "name": "+strides",
+    "distance": 4830.0,
+    "start_date": "2025-07-03T00:00:00Z",
+    "moving_time": 1362
+  },
+  {
+    "id": 14989547269,
+    "name": "New trainers",
+    "distance": 8050.0,
+    "start_date": "2025-07-02T00:00:00Z",
+    "moving_time": 2298
+  },
+  {
+    "id": 14979074227,
+    "name": "Middle 3 ON OFF 200s",
+    "distance": 7240.0,
+    "start_date": "2025-07-01T00:00:00Z",
+    "moving_time": 1810
+  },
+  {
+    "id": 14968040904,
+    "name": "Shuffling",
+    "distance": 6440.0,
+    "start_date": "2025-06-30T00:00:00Z",
+    "moving_time": 1903
+  },
+  {
+    "id": 14958166888,
+    "name": "Evening Run",
+    "distance": 12880.0,
+    "start_date": "2025-06-29T00:00:00Z",
+    "moving_time": 3600
+  },
+  {
+    "id": 14947208873,
+    "name": "Back",
+    "distance": 4840.0,
+    "start_date": "2025-06-28T00:00:00Z",
+    "moving_time": 1340
+  },
+  {
+    "id": 14861129115,
+    "name": "Cd",
+    "distance": 800.0,
+    "start_date": "2025-06-20T00:00:00Z",
+    "moving_time": 292
+  },
+  {
+    "id": 14861082121,
+    "name": "NBNO Frosh 2 mile",
+    "distance": 3280.0,
+    "start_date": "2025-06-20T00:00:00Z",
+    "moving_time": 604
+  },
+  {
+    "id": 14860396308,
+    "name": "Morning Run",
+    "distance": 1620.0,
+    "start_date": "2025-06-20T00:00:00Z",
+    "moving_time": 553
+  },
+  {
+    "id": 14855595633,
+    "name": "Night Run",
+    "distance": 810.0,
+    "start_date": "2025-06-19T00:00:00Z",
+    "moving_time": 304
+  },
+  {
+    "id": 14855491316,
+    "name": "4:32 full mile PR",
+    "distance": 1660.0,
+    "start_date": "2025-06-19T00:00:00Z",
+    "moving_time": 275
+  },
+  {
+    "id": 14855226269,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2025-06-19T00:00:00Z",
+    "moving_time": 565
+  },
+  {
+    "id": 14842896164,
+    "name": "Franklin field 🏟️",
+    "distance": 810.0,
+    "start_date": "2025-06-18T00:00:00Z",
+    "moving_time": 207
+  },
+  {
+    "id": 14829821635,
+    "name": "Lunch Run",
+    "distance": 1610.0,
+    "start_date": "2025-06-17T00:00:00Z",
+    "moving_time": 472
+  },
+  {
+    "id": 14821722938,
+    "name": "Strava tax on every workout 👎",
+    "distance": 6440.0,
+    "start_date": "2025-06-16T00:00:00Z",
+    "moving_time": 1738
+  },
+  {
+    "id": 14801362426,
+    "name": "New balance 1 mile 🔜",
+    "distance": 8050.0,
+    "start_date": "2025-06-14T00:00:00Z",
+    "moving_time": 2310
+  },
+  {
+    "id": 14791165546,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-06-13T00:00:00Z",
+    "moving_time": 1820
+  },
+  {
+    "id": 14782297780,
+    "name": "Workout 👍",
+    "distance": 6440.0,
+    "start_date": "2025-06-12T00:00:00Z",
+    "moving_time": 1523
+  },
+  {
+    "id": 14771895381,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-06-11T00:00:00Z",
+    "moving_time": 1779
+  },
+  {
+    "id": 14761225693,
+    "name": "1k 2:12 thru 800 + 4x200",
+    "distance": 3220.0,
+    "start_date": "2025-06-10T00:00:00Z",
+    "moving_time": 711
+  },
+  {
+    "id": 14760848605,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2025-06-10T00:00:00Z",
+    "moving_time": 463
+  },
+  {
+    "id": 14739667109,
+    "name": "Evening Run",
+    "distance": 12890.0,
+    "start_date": "2025-06-08T00:00:00Z",
+    "moving_time": 3660
+  },
+  {
+    "id": 14728806989,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-06-07T00:00:00Z",
+    "moving_time": 1821
+  },
+  {
+    "id": 14714419075,
+    "name": "Toasty",
+    "distance": 8040.0,
+    "start_date": "2025-06-06T00:00:00Z",
+    "moving_time": 1799
+  },
+  {
+    "id": 14704323585,
+    "name": "Post workout shakey",
+    "distance": 3220.0,
+    "start_date": "2025-06-05T00:00:00Z",
+    "moving_time": 926
+  },
+  {
+    "id": 14700001248,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2025-06-04T00:00:00Z",
+    "moving_time": 1348
+  },
+  {
+    "id": 14688628734,
+    "name": "Longer reps",
+    "distance": 8050.0,
+    "start_date": "2025-06-03T00:00:00Z",
+    "moving_time": 1688
+  },
+  {
+    "id": 14678626858,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2025-06-02T00:00:00Z",
+    "moving_time": 968
+  },
+  {
+    "id": 14668140987,
+    "name": "👍👍👍",
+    "distance": 14490.0,
+    "start_date": "2025-06-01T00:00:00Z",
+    "moving_time": 4020
+  },
+  {
+    "id": 14657083297,
+    "name": "Evening Run",
+    "distance": 5640.0,
+    "start_date": "2025-05-31T00:00:00Z",
+    "moving_time": 1576
+  },
+  {
+    "id": 14646427984,
+    "name": "3mi easy, 2mi  30on 45off",
+    "distance": 8050.0,
+    "start_date": "2025-05-30T00:00:00Z",
+    "moving_time": 2091
+  },
+  {
+    "id": 14636823004,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-05-29T00:00:00Z",
+    "moving_time": 1806
+  },
+  {
+    "id": 14626113490,
+    "name": "Threshold 800s",
+    "distance": 7250.0,
+    "start_date": "2025-05-28T00:00:00Z",
+    "moving_time": 1548
+  },
+  {
+    "id": 14620591162,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-05-28T00:00:00Z",
+    "moving_time": 1382
+  },
+  {
+    "id": 14605186057,
+    "name": "+strides",
+    "distance": 8050.0,
+    "start_date": "2025-05-26T00:00:00Z",
+    "moving_time": 2262
+  },
+  {
+    "id": 14590303276,
+    "name": "Morning Run",
+    "distance": 16100.0,
+    "start_date": "2025-05-25T00:00:00Z",
+    "moving_time": 4680
+  },
+  {
+    "id": 14584799482,
+    "name": "Evening Run",
+    "distance": 4040.0,
+    "start_date": "2025-05-24T00:00:00Z",
+    "moving_time": 1122
+  },
+  {
+    "id": 14573486811,
+    "name": "Recovery",
+    "distance": 4830.0,
+    "start_date": "2025-05-23T00:00:00Z",
+    "moving_time": 1393
+  },
+  {
+    "id": 14565983684,
+    "name": "Longer track workout 🤯",
+    "distance": 7240.0,
+    "start_date": "2025-05-22T00:00:00Z",
+    "moving_time": 1577
+  },
+  {
+    "id": 14555049917,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-05-21T00:00:00Z",
+    "moving_time": 1784
+  },
+  {
+    "id": 14543546291,
+    "name": "1.5 wu, 600’s 200’s, 1k cd",
+    "distance": 6440.0,
+    "start_date": "2025-05-20T00:00:00Z",
+    "moving_time": 1506
+  },
+  {
+    "id": 14534507598,
+    "name": "Easy",
+    "distance": 4830.0,
+    "start_date": "2025-05-19T00:00:00Z",
+    "moving_time": 1319
+  },
+  {
+    "id": 14519710346,
+    "name": "Meh",
+    "distance": 14480.0,
+    "start_date": "2025-05-18T00:00:00Z",
+    "moving_time": 4320
+  },
+  {
+    "id": 14513519570,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2025-05-17T00:00:00Z",
+    "moving_time": 899
+  },
+  {
+    "id": 14502892253,
+    "name": "Tempo yo",
+    "distance": 6440.0,
+    "start_date": "2025-05-16T00:00:00Z",
+    "moving_time": 1380
+  },
+  {
+    "id": 14493947792,
+    "name": "Feels like summer running",
+    "distance": 4830.0,
+    "start_date": "2025-05-15T00:00:00Z",
+    "moving_time": 1364
+  },
+  {
+    "id": 14483297626,
+    "name": "Workout",
+    "distance": 4830.0,
+    "start_date": "2025-05-14T00:00:00Z",
+    "moving_time": 1052
+  },
+  {
+    "id": 14472674523,
+    "name": "Ez + strides",
+    "distance": 6440.0,
+    "start_date": "2025-05-13T00:00:00Z",
+    "moving_time": 1797
+  },
+  {
+    "id": 14461528095,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2025-05-12T00:00:00Z",
+    "moving_time": 2140
+  },
+  {
+    "id": 14430249996,
+    "name": "State 3200 🥇!!!!! 9:53",
+    "distance": 3310.0,
+    "start_date": "2025-05-09T00:00:00Z",
+    "moving_time": 623
+  },
+  {
+    "id": 14429990824,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-05-09T00:00:00Z",
+    "moving_time": 472
+  },
+  {
+    "id": 14415524733,
+    "name": "Easy + ice bath",
+    "distance": 2420.0,
+    "start_date": "2025-05-08T00:00:00Z",
+    "moving_time": 664
+  },
+  {
+    "id": 14410395108,
+    "name": "2mi wu, 1,2,2,1, rest cd",
+    "distance": 4840.0,
+    "start_date": "2025-05-07T00:00:00Z",
+    "moving_time": 1303
+  },
+  {
+    "id": 14398793175,
+    "name": "Lunch Run",
+    "distance": 1610.0,
+    "start_date": "2025-05-06T00:00:00Z",
+    "moving_time": 456
+  },
+  {
+    "id": 14388730478,
+    "name": "1,2,6 + cd",
+    "distance": 1620.0,
+    "start_date": "2025-05-05T00:00:00Z",
+    "moving_time": 338
+  },
+  {
+    "id": 14388574130,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-05-05T00:00:00Z",
+    "moving_time": 448
+  },
+  {
+    "id": 14388334793,
+    "name": "Lunch Run",
+    "distance": 3230.0,
+    "start_date": "2025-05-05T00:00:00Z",
+    "moving_time": 886
+  },
+  {
+    "id": 14380681616,
+    "name": "Tready recovery",
+    "distance": 2410.0,
+    "start_date": "2025-05-04T00:00:00Z",
+    "moving_time": 676
+  },
+  {
+    "id": 14369028185,
+    "name": "Afternoon Run",
+    "distance": 11270.0,
+    "start_date": "2025-05-03T00:00:00Z",
+    "moving_time": 3072
+  },
+  {
+    "id": 14358633605,
+    "name": "Easy + surges",
+    "distance": 4830.0,
+    "start_date": "2025-05-02T00:00:00Z",
+    "moving_time": 1266
+  },
+  {
+    "id": 14349788909,
+    "name": "Evening Run",
+    "distance": 4250.0,
+    "start_date": "2025-05-01T00:00:00Z",
+    "moving_time": 1165
+  },
+  {
+    "id": 14348198683,
+    "name": "2 easy + strides",
+    "distance": 3800.0,
+    "start_date": "2025-05-01T00:00:00Z",
+    "moving_time": 979
+  },
+  {
+    "id": 14328485758,
+    "name": "Cd",
+    "distance": 810.0,
+    "start_date": "2025-04-29T00:00:00Z",
+    "moving_time": 260
+  },
+  {
+    "id": 14328485601,
+    "name": "Regional 3200 🥈",
+    "distance": 3270.0,
+    "start_date": "2025-04-29T00:00:00Z",
+    "moving_time": 614
+  },
+  {
+    "id": 14328485220,
+    "name": "Wu",
+    "distance": 800.0,
+    "start_date": "2025-04-29T00:00:00Z",
+    "moving_time": 269
+  },
+  {
+    "id": 14327671838,
+    "name": "Regionals 1600 🥉",
+    "distance": 1630.0,
+    "start_date": "2025-04-29T00:00:00Z",
+    "moving_time": 285
+  },
+  {
+    "id": 14327671522,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-04-29T00:00:00Z",
+    "moving_time": 510
+  },
+  {
+    "id": 14317728697,
+    "name": "Easy + surges",
+    "distance": 4830.0,
+    "start_date": "2025-04-28T00:00:00Z",
+    "moving_time": 1357
+  },
+  {
+    "id": 14306404108,
+    "name": "Recovery + strides",
+    "distance": 1610.0,
+    "start_date": "2025-04-27T00:00:00Z",
+    "moving_time": 461
+  },
+  {
+    "id": 14296503499,
+    "name": "Track workout",
+    "distance": 6440.0,
+    "start_date": "2025-04-26T00:00:00Z",
+    "moving_time": 1596
+  },
+  {
+    "id": 14286137453,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-04-25T00:00:00Z",
+    "moving_time": 1720
+  },
+  {
+    "id": 14277535220,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-04-24T00:00:00Z",
+    "moving_time": 1770
+  },
+  {
+    "id": 14268155699,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-04-23T00:00:00Z",
+    "moving_time": 482
+  },
+  {
+    "id": 14267941299,
+    "name": "District 3200 🥉",
+    "distance": 3270.0,
+    "start_date": "2025-04-23T00:00:00Z",
+    "moving_time": 636
+  },
+  {
+    "id": 14267940869,
+    "name": "Wu",
+    "distance": 810.0,
+    "start_date": "2025-04-23T00:00:00Z",
+    "moving_time": 262
+  },
+  {
+    "id": 14267153176,
+    "name": "1600m 🥉",
+    "distance": 1630.0,
+    "start_date": "2025-04-23T00:00:00Z",
+    "moving_time": 289
+  },
+  {
+    "id": 14266929661,
+    "name": "Wu",
+    "distance": 800.0,
+    "start_date": "2025-04-23T00:00:00Z",
+    "moving_time": 255
+  },
+  {
+    "id": 14266337370,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-04-23T00:00:00Z",
+    "moving_time": 513
+  },
+  {
+    "id": 14253127947,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-04-22T00:00:00Z",
+    "moving_time": 1394
+  },
+  {
+    "id": 14247476052,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2025-04-21T00:00:00Z",
+    "moving_time": 1343
+  },
+  {
+    "id": 14246178309,
+    "name": "Pacing + speed work",
+    "distance": 3220.0,
+    "start_date": "2025-04-21T00:00:00Z",
+    "moving_time": 838
+  },
+  {
+    "id": 14236889057,
+    "name": "1mi wu, cutdown 600’s 150’s .5 cd",
+    "distance": 5630.0,
+    "start_date": "2025-04-20T00:00:00Z",
+    "moving_time": 1326
+  },
+  {
+    "id": 14227165862,
+    "name": "Meh",
+    "distance": 9660.0,
+    "start_date": "2025-04-19T00:00:00Z",
+    "moving_time": 2717
+  },
+  {
+    "id": 14208417481,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2025-04-17T00:00:00Z",
+    "moving_time": 1731
+  },
+  {
+    "id": 14199536565,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-04-16T00:00:00Z",
+    "moving_time": 562
+  },
+  {
+    "id": 14199536311,
+    "name": "3200 5th 9:48 PR SR",
+    "distance": 3290.0,
+    "start_date": "2025-04-16T00:00:00Z",
+    "moving_time": 597
+  },
+  {
+    "id": 14199190469,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-04-16T00:00:00Z",
+    "moving_time": 515
+  },
+  {
+    "id": 14188345214,
+    "name": "3200 tomorrow",
+    "distance": 4830.0,
+    "start_date": "2025-04-15T00:00:00Z",
+    "moving_time": 1393
+  },
+  {
+    "id": 14179454443,
+    "name": "200s + 400 tune up",
+    "distance": 3220.0,
+    "start_date": "2025-04-14T00:00:00Z",
+    "moving_time": 775
+  },
+  {
+    "id": 14178135037,
+    "name": "W/ surges",
+    "distance": 4830.0,
+    "start_date": "2025-04-14T00:00:00Z",
+    "moving_time": 1376
+  },
+  {
+    "id": 14170390463,
+    "name": "Afternoon Run",
+    "distance": 12870.0,
+    "start_date": "2025-04-13T00:00:00Z",
+    "moving_time": 3505
+  },
+  {
+    "id": 14157113604,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-04-12T00:00:00Z",
+    "moving_time": 544
+  },
+  {
+    "id": 14157101774,
+    "name": "LA mile festival 4:32 PR!!",
+    "distance": 1620.0,
+    "start_date": "2025-04-12T00:00:00Z",
+    "moving_time": 272
+  },
+  {
+    "id": 14156399206,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-04-12T00:00:00Z",
+    "moving_time": 510
+  },
+  {
+    "id": 14147320252,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-04-11T00:00:00Z",
+    "moving_time": 1341
+  },
+  {
+    "id": 14140691710,
+    "name": "1mi wu 1 mi 5:34 4x200 1.5mi cd",
+    "distance": 6440.0,
+    "start_date": "2025-04-10T00:00:00Z",
+    "moving_time": 1613
+  },
+  {
+    "id": 14132079204,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2025-04-09T00:00:00Z",
+    "moving_time": 1394
+  },
+  {
+    "id": 14121045538,
+    "name": "1mi wu 4x broken 800 (600,200) 1mi cd",
+    "distance": 6440.0,
+    "start_date": "2025-04-08T00:00:00Z",
+    "moving_time": 1479
+  },
+  {
+    "id": 14110574926,
+    "name": "Ez + hill strides",
+    "distance": 3220.0,
+    "start_date": "2025-04-07T00:00:00Z",
+    "moving_time": 891
+  },
+  {
+    "id": 14108444125,
+    "name": "Lunch Run",
+    "distance": 4830.0,
+    "start_date": "2025-04-07T00:00:00Z",
+    "moving_time": 1400
+  },
+  {
+    "id": 14101427412,
+    "name": "Can this weather stay pls",
+    "distance": 16100.0,
+    "start_date": "2025-04-06T00:00:00Z",
+    "moving_time": 4140
+  },
+  {
+    "id": 14088818045,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2025-04-05T00:00:00Z",
+    "moving_time": 1838
+  },
+  {
+    "id": 14082772573,
+    "name": "Cd",
+    "distance": 810.0,
+    "start_date": "2025-04-04T00:00:00Z",
+    "moving_time": 276
+  },
+  {
+    "id": 14082733513,
+    "name": "Warm ups",
+    "distance": 1610.0,
+    "start_date": "2025-04-04T00:00:00Z",
+    "moving_time": 540
+  },
+  {
+    "id": 14082698559,
+    "name": "🥈10:20",
+    "distance": 3280.0,
+    "start_date": "2025-04-04T00:00:00Z",
+    "moving_time": 621
+  },
+  {
+    "id": 14082365156,
+    "name": "4:44🥇",
+    "distance": 1630.0,
+    "start_date": "2025-04-04T00:00:00Z",
+    "moving_time": 285
+  },
+  {
+    "id": 14081948989,
+    "name": "2:10 4x8 split",
+    "distance": 820.0,
+    "start_date": "2025-04-04T00:00:00Z",
+    "moving_time": 134
+  },
+  {
+    "id": 14081733819,
+    "name": "Wu",
+    "distance": 1620.0,
+    "start_date": "2025-04-04T00:00:00Z",
+    "moving_time": 518
+  },
+  {
+    "id": 14072375089,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2025-04-03T00:00:00Z",
+    "moving_time": 1401
+  },
+  {
+    "id": 14063974637,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-04-02T00:00:00Z",
+    "moving_time": 1786
+  },
+  {
+    "id": 14052892310,
+    "name": "1mi wu 2 x (8,6,4,2) 0.5 cd",
+    "distance": 6440.0,
+    "start_date": "2025-04-01T00:00:00Z",
+    "moving_time": 1405
+  },
+  {
+    "id": 14043702175,
+    "name": "“Better” weather",
+    "distance": 6440.0,
+    "start_date": "2025-03-31T00:00:00Z",
+    "moving_time": 1642
+  },
+  {
+    "id": 14040169023,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-03-31T00:00:00Z",
+    "moving_time": 1399
+  },
+  {
+    "id": 14034495960,
+    "name": "6 easy, progressive 800s",
+    "distance": 13700.0,
+    "start_date": "2025-03-30T00:00:00Z",
+    "moving_time": 3587
+  },
+  {
+    "id": 14022896675,
+    "name": "Warmup, but meet canceled as we walked up to the line ☹️",
+    "distance": 1620.0,
+    "start_date": "2025-03-29T00:00:00Z",
+    "moving_time": 504
+  },
+  {
+    "id": 14014000390,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2025-03-28T00:00:00Z",
+    "moving_time": 824
+  },
+  {
+    "id": 14006044964,
+    "name": "Race tomorrow canceled, LSU Saturday tho",
+    "distance": 3220.0,
+    "start_date": "2025-03-27T00:00:00Z",
+    "moving_time": 972
+  },
+  {
+    "id": 13997388739,
+    "name": "+ 4x 8s hill sprints",
+    "distance": 6440.0,
+    "start_date": "2025-03-26T00:00:00Z",
+    "moving_time": 1905
+  },
+  {
+    "id": 13987071612,
+    "name": "1mi wu 8x400 @ 67.3 avg",
+    "distance": 4910.0,
+    "start_date": "2025-03-25T00:00:00Z",
+    "moving_time": 1048
+  },
+  {
+    "id": 13968017237,
+    "name": "Afternoon Run",
+    "distance": 16100.0,
+    "start_date": "2025-03-23T00:00:00Z",
+    "moving_time": 4380
+  },
+  {
+    "id": 13959129234,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2025-03-22T00:00:00Z",
+    "moving_time": 1230
+  },
+  {
+    "id": 13957574814,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-03-22T00:00:00Z",
+    "moving_time": 1773
+  },
+  {
+    "id": 13946628781,
+    "name": "Lunch Run",
+    "distance": 3210.0,
+    "start_date": "2025-03-21T00:00:00Z",
+    "moving_time": 1036
+  },
+  {
+    "id": 13941510655,
+    "name": "Cd",
+    "distance": 800.0,
+    "start_date": "2025-03-20T00:00:00Z",
+    "moving_time": 265
+  },
+  {
+    "id": 13941368624,
+    "name": "Sam Houston 3200m 🥇 PR 10:20",
+    "distance": 3250.0,
+    "start_date": "2025-03-20T00:00:00Z",
+    "moving_time": 620
+  },
+  {
+    "id": 13941368226,
+    "name": "Evening Run",
+    "distance": 820.0,
+    "start_date": "2025-03-20T00:00:00Z",
+    "moving_time": 134
+  },
+  {
+    "id": 13940772611,
+    "name": "Sam Houston 🥇 PR 1600 4:38",
+    "distance": 1640.0,
+    "start_date": "2025-03-20T00:00:00Z",
+    "moving_time": 278
+  },
+  {
+    "id": 13940772113,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-03-20T00:00:00Z",
+    "moving_time": 551
+  },
+  {
+    "id": 13930172038,
+    "name": "Lunch Run",
+    "distance": 4830.0,
+    "start_date": "2025-03-19T00:00:00Z",
+    "moving_time": 1396
+  },
+  {
+    "id": 13920887504,
+    "name": "1mi wu 6x300 @ 800pace cd till 4",
+    "distance": 6440.0,
+    "start_date": "2025-03-18T00:00:00Z",
+    "moving_time": 1616
+  },
+  {
+    "id": 13910047368,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2025-03-17T00:00:00Z",
+    "moving_time": 1306
+  },
+  {
+    "id": 13907306213,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-03-17T00:00:00Z",
+    "moving_time": 1366
+  },
+  {
+    "id": 13902468972,
+    "name": "Afternoon Run",
+    "distance": 16100.0,
+    "start_date": "2025-03-16T00:00:00Z",
+    "moving_time": 4500
+  },
+  {
+    "id": 13893548292,
+    "name": "Afternoon Run",
+    "distance": 3230.0,
+    "start_date": "2025-03-15T00:00:00Z",
+    "moving_time": 983
+  },
+  {
+    "id": 13884974490,
+    "name": "Evening Run",
+    "distance": 800.0,
+    "start_date": "2025-03-14T00:00:00Z",
+    "moving_time": 278
+  },
+  {
+    "id": 13884974496,
+    "name": "10:41 3200m 🥇",
+    "distance": 3260.0,
+    "start_date": "2025-03-14T00:00:00Z",
+    "moving_time": 642
+  },
+  {
+    "id": 13884574798,
+    "name": "1600 4:44 🥈",
+    "distance": 1610.0,
+    "start_date": "2025-03-14T00:00:00Z",
+    "moving_time": 283
+  },
+  {
+    "id": 13884574276,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2025-03-14T00:00:00Z",
+    "moving_time": 539
+  },
+  {
+    "id": 13875156581,
+    "name": "Breaux bridge tomorrow",
+    "distance": 3220.0,
+    "start_date": "2025-03-13T00:00:00Z",
+    "moving_time": 874
+  },
+  {
+    "id": 13865908706,
+    "name": "1.5 wu 2x200 400 4x100 cd till 5",
+    "distance": 8050.0,
+    "start_date": "2025-03-12T00:00:00Z",
+    "moving_time": 2181
+  },
+  {
+    "id": 13855037159,
+    "name": "1mi wu 3x 600 2mi cd",
+    "distance": 6440.0,
+    "start_date": "2025-03-11T00:00:00Z",
+    "moving_time": 1778
+  },
+  {
+    "id": 13846645235,
+    "name": "1mi wu 3min on 3min off Hills .5 cd",
+    "distance": 6440.0,
+    "start_date": "2025-03-10T00:00:00Z",
+    "moving_time": 2612
+  },
+  {
+    "id": 13845902080,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-03-10T00:00:00Z",
+    "moving_time": 1389
+  },
+  {
+    "id": 13838647406,
+    "name": "Afternoon Run",
+    "distance": 16110.0,
+    "start_date": "2025-03-09T00:00:00Z",
+    "moving_time": 4380
+  },
+  {
+    "id": 13826896065,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-03-08T00:00:00Z",
+    "moving_time": 1893
+  },
+  {
+    "id": 13818867724,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-03-07T00:00:00Z",
+    "moving_time": 552
+  },
+  {
+    "id": 13818867292,
+    "name": "4:45 1600 3rd",
+    "distance": 1630.0,
+    "start_date": "2025-03-07T00:00:00Z",
+    "moving_time": 286
+  },
+  {
+    "id": 13818866867,
+    "name": "Wu",
+    "distance": 810.0,
+    "start_date": "2025-03-07T00:00:00Z",
+    "moving_time": 296
+  },
+  {
+    "id": 13818866716,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-03-07T00:00:00Z",
+    "moving_time": 531
+  },
+  {
+    "id": 13809804481,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2025-03-06T00:00:00Z",
+    "moving_time": 899
+  },
+  {
+    "id": 13807091419,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-03-06T00:00:00Z",
+    "moving_time": 1483
+  },
+  {
+    "id": 13800393573,
+    "name": "1mi wu 3x800 1.5 mi cd",
+    "distance": 6440.0,
+    "start_date": "2025-03-05T00:00:00Z",
+    "moving_time": 1626
+  },
+  {
+    "id": 13799909922,
+    "name": "Lunch Run",
+    "distance": 3220.0,
+    "start_date": "2025-03-05T00:00:00Z",
+    "moving_time": 1000
+  },
+  {
+    "id": 13791345837,
+    "name": "Outdoor 🔜",
+    "distance": 8050.0,
+    "start_date": "2025-03-04T00:00:00Z",
+    "moving_time": 2428
+  },
+  {
+    "id": 13781432910,
+    "name": "Workout",
+    "distance": 4830.0,
+    "start_date": "2025-03-03T00:00:00Z",
+    "moving_time": 1061
+  },
+  {
+    "id": 13778262098,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2025-03-03T00:00:00Z",
+    "moving_time": 1851
+  },
+  {
+    "id": 13763566052,
+    "name": "Afternoon Run",
+    "distance": 15290.0,
+    "start_date": "2025-03-01T00:00:00Z",
+    "moving_time": 4440
+  },
+  {
+    "id": 13754050092,
+    "name": "Afternoon Run",
+    "distance": 8040.0,
+    "start_date": "2025-02-28T00:00:00Z",
+    "moving_time": 2325
+  },
+  {
+    "id": 13746244109,
+    "name": "Afternoon Run",
+    "distance": 7250.0,
+    "start_date": "2025-02-27T00:00:00Z",
+    "moving_time": 2038
+  },
+  {
+    "id": 13743823667,
+    "name": "1 mi wu 200 800 400 200, 800cd",
+    "distance": 4020.0,
+    "start_date": "2025-02-27T00:00:00Z",
+    "moving_time": 1027
+  },
+  {
+    "id": 13737439581,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-02-26T00:00:00Z",
+    "moving_time": 2708
+  },
+  {
+    "id": 13727835436,
+    "name": "800 workout",
+    "distance": 6440.0,
+    "start_date": "2025-02-25T00:00:00Z",
+    "moving_time": 1607
+  },
+  {
+    "id": 13718016144,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2025-02-24T00:00:00Z",
+    "moving_time": 1676
+  },
+  {
+    "id": 13717378061,
+    "name": "Morning run",
+    "distance": 4830.0,
+    "start_date": "2025-02-24T00:00:00Z",
+    "moving_time": 1419
+  },
+  {
+    "id": 13699339414,
+    "name": "Afternoon Run",
+    "distance": 14490.0,
+    "start_date": "2025-02-22T00:00:00Z",
+    "moving_time": 4020
+  },
+  {
+    "id": 13690360383,
+    "name": "1mi wu, 6x400m,800m cd",
+    "distance": 4830.0,
+    "start_date": "2025-02-21T00:00:00Z",
+    "moving_time": 1132
+  },
+  {
+    "id": 13689929561,
+    "name": "Cd",
+    "distance": 1210.0,
+    "start_date": "2025-02-21T00:00:00Z",
+    "moving_time": 393
+  },
+  {
+    "id": 13690047230,
+    "name": "400 wu, 800, 800cd",
+    "distance": 2020.0,
+    "start_date": "2025-02-21T00:00:00Z",
+    "moving_time": 557
+  },
+  {
+    "id": 13673900147,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-02-19T00:00:00Z",
+    "moving_time": 2202
+  },
+  {
+    "id": 13673207562,
+    "name": "Lunch Run",
+    "distance": 3220.0,
+    "start_date": "2025-02-19T00:00:00Z",
+    "moving_time": 782
+  },
+  {
+    "id": 13664853695,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-02-18T00:00:00Z",
+    "moving_time": 2730
+  },
+  {
+    "id": 13655291708,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-02-17T00:00:00Z",
+    "moving_time": 2179
+  },
+  {
+    "id": 13646323024,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-02-16T00:00:00Z",
+    "moving_time": 2357
+  },
+  {
+    "id": 13637095959,
+    "name": "Afternoon Run",
+    "distance": 14490.0,
+    "start_date": "2025-02-15T00:00:00Z",
+    "moving_time": 4200
+  },
+  {
+    "id": 13628747542,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-02-14T00:00:00Z",
+    "moving_time": 1764
+  },
+  {
+    "id": 13620602144,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-02-13T00:00:00Z",
+    "moving_time": 2628
+  },
+  {
+    "id": 13603429111,
+    "name": "600 + 450",
+    "distance": 1020.0,
+    "start_date": "2025-02-11T00:00:00Z",
+    "moving_time": 174
+  },
+  {
+    "id": 13603429169,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2025-02-11T00:00:00Z",
+    "moving_time": 459
+  },
+  {
+    "id": 13594376209,
+    "name": "Sum hills",
+    "distance": 8050.0,
+    "start_date": "2025-02-10T00:00:00Z",
+    "moving_time": 2227
+  },
+  {
+    "id": 13586357839,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-02-09T00:00:00Z",
+    "moving_time": 1942
+  },
+  {
+    "id": 13577579877,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2025-02-08T00:00:00Z",
+    "moving_time": 540
+  },
+  {
+    "id": 13577576970,
+    "name": "Last chance 1600",
+    "distance": 1610.0,
+    "start_date": "2025-02-08T00:00:00Z",
+    "moving_time": 293
+  },
+  {
+    "id": 13576310017,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-02-08T00:00:00Z",
+    "moving_time": 538
+  },
+  {
+    "id": 13565681301,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-02-07T00:00:00Z",
+    "moving_time": 1382
+  },
+  {
+    "id": 13560394042,
+    "name": "Cd",
+    "distance": 4840.0,
+    "start_date": "2025-02-06T00:00:00Z",
+    "moving_time": 1383
+  },
+  {
+    "id": 13560252828,
+    "name": "Wu 1mi 2x400 400 800",
+    "distance": 1620.0,
+    "start_date": "2025-02-06T00:00:00Z",
+    "moving_time": 508
+  },
+  {
+    "id": 13551139306,
+    "name": "Afternoon Run",
+    "distance": 12880.0,
+    "start_date": "2025-02-05T00:00:00Z",
+    "moving_time": 3720
+  },
+  {
+    "id": 13541667446,
+    "name": "Afternoon Run",
+    "distance": 9680.0,
+    "start_date": "2025-02-04T00:00:00Z",
+    "moving_time": 2741
+  },
+  {
+    "id": 13523077146,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-02-02T00:00:00Z",
+    "moving_time": 2278
+  },
+  {
+    "id": 13513898640,
+    "name": "Wu",
+    "distance": 800.0,
+    "start_date": "2025-02-01T00:00:00Z",
+    "moving_time": 271
+  },
+  {
+    "id": 13512607274,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2025-02-01T00:00:00Z",
+    "moving_time": 555
+  },
+  {
+    "id": 13504788865,
+    "name": "Meet tomorrow",
+    "distance": 3220.0,
+    "start_date": "2025-01-31T00:00:00Z",
+    "moving_time": 949
+  },
+  {
+    "id": 13496801399,
+    "name": "Bit windy eh",
+    "distance": 6440.0,
+    "start_date": "2025-01-30T00:00:00Z",
+    "moving_time": 2039
+  },
+  {
+    "id": 13488014743,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-01-29T00:00:00Z",
+    "moving_time": 2876
+  },
+  {
+    "id": 13479007267,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2025-01-28T00:00:00Z",
+    "moving_time": 2482
+  },
+  {
+    "id": 13460781801,
+    "name": "808’s",
+    "distance": 12880.0,
+    "start_date": "2025-01-26T00:00:00Z",
+    "moving_time": 3900
+  },
+  {
+    "id": 13451441971,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-01-25T00:00:00Z",
+    "moving_time": 1976
+  },
+  {
+    "id": 13443663772,
+    "name": "Cd",
+    "distance": 810.0,
+    "start_date": "2025-01-24T00:00:00Z",
+    "moving_time": 270
+  },
+  {
+    "id": 13443444057,
+    "name": "1200, 1000 @ rep pace. 2x200 sprint",
+    "distance": 2650.0,
+    "start_date": "2025-01-24T00:00:00Z",
+    "moving_time": 482
+  },
+  {
+    "id": 13443147258,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2025-01-24T00:00:00Z",
+    "moving_time": 531
+  },
+  {
+    "id": 13441153241,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2025-01-24T00:00:00Z",
+    "moving_time": 1492
+  },
+  {
+    "id": 13435345200,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2025-01-23T00:00:00Z",
+    "moving_time": 2972
+  },
+  {
+    "id": 13409163566,
+    "name": "Afternoon Run",
+    "distance": 9670.0,
+    "start_date": "2025-01-20T00:00:00Z",
+    "moving_time": 2879
+  },
+  {
+    "id": 13401226261,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2025-01-19T00:00:00Z",
+    "moving_time": 2527
+  },
+  {
+    "id": 13392046685,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2025-01-18T00:00:00Z",
+    "moving_time": 1583
+  },
+  {
+    "id": 13389536381,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2025-01-18T00:00:00Z",
+    "moving_time": 2006
+  },
+  {
+    "id": 13382476674,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2025-01-17T00:00:00Z",
+    "moving_time": 1027
+  },
+  {
+    "id": 13374872993,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2025-01-16T00:00:00Z",
+    "moving_time": 1590
+  },
+  {
+    "id": 13259110305,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2025-01-03T00:00:00Z",
+    "moving_time": 506
+  },
+  {
+    "id": 13259109384,
+    "name": "8 x 400m @ ~ 75",
+    "distance": 3270.0,
+    "start_date": "2025-01-03T00:00:00Z",
+    "moving_time": 589
+  },
+  {
+    "id": 13259106964,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2025-01-03T00:00:00Z",
+    "moving_time": 511
+  },
+  {
+    "id": 13247966780,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2025-01-02T00:00:00Z",
+    "moving_time": 1976
+  },
+  {
+    "id": 13241831677,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2025-01-01T00:00:00Z",
+    "moving_time": 1922
+  },
+  {
+    "id": 13219041761,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-12-29T00:00:00Z",
+    "moving_time": 1916
+  },
+  {
+    "id": 13209286934,
+    "name": "Morning Run",
+    "distance": 14490.0,
+    "start_date": "2024-12-28T00:00:00Z",
+    "moving_time": 4560
+  },
+  {
+    "id": 13204169900,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-12-27T00:00:00Z",
+    "moving_time": 1973
+  },
+  {
+    "id": 13197499767,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2024-12-26T00:00:00Z",
+    "moving_time": 501
+  },
+  {
+    "id": 13197499726,
+    "name": "1 2 3 4 8 4 2 @ 1600m and 3200m",
+    "distance": 2420.0,
+    "start_date": "2024-12-26T00:00:00Z",
+    "moving_time": 436
+  },
+  {
+    "id": 13197498971,
+    "name": "Afternoon Run",
+    "distance": 2410.0,
+    "start_date": "2024-12-26T00:00:00Z",
+    "moving_time": 760
+  },
+  {
+    "id": 13189748312,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-12-25T00:00:00Z",
+    "moving_time": 2418
+  },
+  {
+    "id": 13184248018,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2024-12-24T00:00:00Z",
+    "moving_time": 2945
+  },
+  {
+    "id": 13170808617,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-12-22T00:00:00Z",
+    "moving_time": 1892
+  },
+  {
+    "id": 13164280252,
+    "name": "Afternoon Run",
+    "distance": 12880.0,
+    "start_date": "2024-12-21T00:00:00Z",
+    "moving_time": 3840
+  },
+  {
+    "id": 13151676044,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2024-12-19T00:00:00Z",
+    "moving_time": 2893
+  },
+  {
+    "id": 13143226241,
+    "name": "Morning Run",
+    "distance": 8050.0,
+    "start_date": "2024-12-18T00:00:00Z",
+    "moving_time": 2484
+  },
+  {
+    "id": 13138361450,
+    "name": "Still sick",
+    "distance": 8050.0,
+    "start_date": "2024-12-17T00:00:00Z",
+    "moving_time": 2437
+  },
+  {
+    "id": 13130907878,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-12-16T00:00:00Z",
+    "moving_time": 2409
+  },
+  {
+    "id": 13130664835,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-12-14T00:00:00Z",
+    "moving_time": 2382
+  },
+  {
+    "id": 13089714867,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-12-10T00:00:00Z",
+    "moving_time": 2401
+  },
+  {
+    "id": 13082104853,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-12-09T00:00:00Z",
+    "moving_time": 2440
+  },
+  {
+    "id": 13068472440,
+    "name": "Afternoon Run",
+    "distance": 11270.0,
+    "start_date": "2024-12-07T00:00:00Z",
+    "moving_time": 3403
+  },
+  {
+    "id": 13055318061,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-12-05T00:00:00Z",
+    "moving_time": 1462
+  },
+  {
+    "id": 13048040431,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2024-12-04T00:00:00Z",
+    "moving_time": 1842
+  },
+  {
+    "id": 13041396828,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-12-03T00:00:00Z",
+    "moving_time": 2409
+  },
+  {
+    "id": 13033744671,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-12-02T00:00:00Z",
+    "moving_time": 1893
+  },
+  {
+    "id": 13017583389,
+    "name": "Morning Run",
+    "distance": 9660.0,
+    "start_date": "2024-11-30T00:00:00Z",
+    "moving_time": 2937
+  },
+  {
+    "id": 13005623613,
+    "name": "Gobble gobble",
+    "distance": 6440.0,
+    "start_date": "2024-11-28T00:00:00Z",
+    "moving_time": 1929
+  },
+  {
+    "id": 12990578175,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-11-26T00:00:00Z",
+    "moving_time": 1484
+  },
+  {
+    "id": 12931237164,
+    "name": "Lunch Run",
+    "distance": 800.0,
+    "start_date": "2024-11-18T00:00:00Z",
+    "moving_time": 306
+  },
+  {
+    "id": 12930855345,
+    "name": "Freshman state 8th place 17:03",
+    "distance": 4930.0,
+    "start_date": "2024-11-18T00:00:00Z",
+    "moving_time": 1042
+  },
+  {
+    "id": 12930484552,
+    "name": "Lunch Run",
+    "distance": 1760.0,
+    "start_date": "2024-11-18T00:00:00Z",
+    "moving_time": 613
+  },
+  {
+    "id": 12925737880,
+    "name": "Afternoon Run",
+    "distance": 2420.0,
+    "start_date": "2024-11-17T00:00:00Z",
+    "moving_time": 807
+  },
+  {
+    "id": 12909183600,
+    "name": "Lunch Run",
+    "distance": 1610.0,
+    "start_date": "2024-11-15T00:00:00Z",
+    "moving_time": 469
+  },
+  {
+    "id": 12909183197,
+    "name": "2 4 8 2 2",
+    "distance": 1850.0,
+    "start_date": "2024-11-15T00:00:00Z",
+    "moving_time": 352
+  },
+  {
+    "id": 12909182866,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2024-11-15T00:00:00Z",
+    "moving_time": 486
+  },
+  {
+    "id": 12887308207,
+    "name": "Afternoon Run",
+    "distance": 13680.0,
+    "start_date": "2024-11-12T00:00:00Z",
+    "moving_time": 4080
+  },
+  {
+    "id": 12879486053,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-11-11T00:00:00Z",
+    "moving_time": 2277
+  },
+  {
+    "id": 12871107822,
+    "name": "Afternoon Run",
+    "distance": 8060.0,
+    "start_date": "2024-11-10T00:00:00Z",
+    "moving_time": 2556
+  },
+  {
+    "id": 12854480623,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-11-08T00:00:00Z",
+    "moving_time": 1379
+  },
+  {
+    "id": 12848441296,
+    "name": "Afternoon Run",
+    "distance": 1790.0,
+    "start_date": "2024-11-07T00:00:00Z",
+    "moving_time": 624
+  },
+  {
+    "id": 12848440756,
+    "name": "Regionals 2024 —-Watch off by a bit 15:59",
+    "distance": 4750.0,
+    "start_date": "2024-11-07T00:00:00Z",
+    "moving_time": 962
+  },
+  {
+    "id": 12848439867,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-11-07T00:00:00Z",
+    "moving_time": 540
+  },
+  {
+    "id": 12847276237,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2024-11-07T00:00:00Z",
+    "moving_time": 505
+  },
+  {
+    "id": 12840443067,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2024-11-06T00:00:00Z",
+    "moving_time": 981
+  },
+  {
+    "id": 12832967876,
+    "name": "Middle mile 8x200",
+    "distance": 4030.0,
+    "start_date": "2024-11-05T00:00:00Z",
+    "moving_time": 996
+  },
+  {
+    "id": 12822088213,
+    "name": "Middle mile 8x200@4:40 each",
+    "distance": 4830.0,
+    "start_date": "2024-11-04T00:00:00Z",
+    "moving_time": 1295
+  },
+  {
+    "id": 12816998919,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-11-03T00:00:00Z",
+    "moving_time": 2287
+  },
+  {
+    "id": 12805930969,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2024-11-02T00:00:00Z",
+    "moving_time": 1882
+  },
+  {
+    "id": 12799654720,
+    "name": "1mi wu 3x 0.5 progressive 1.5 cd",
+    "distance": 6440.0,
+    "start_date": "2024-11-01T00:00:00Z",
+    "moving_time": 1679
+  },
+  {
+    "id": 12792114074,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2024-10-31T00:00:00Z",
+    "moving_time": 1347
+  },
+  {
+    "id": 12777534482,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-10-29T00:00:00Z",
+    "moving_time": 1418
+  },
+  {
+    "id": 12769496910,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-10-28T00:00:00Z",
+    "moving_time": 527
+  },
+  {
+    "id": 12769496909,
+    "name": "16:26 3rd in district",
+    "distance": 4800.0,
+    "start_date": "2024-10-28T00:00:00Z",
+    "moving_time": 983
+  },
+  {
+    "id": 12769496320,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-10-28T00:00:00Z",
+    "moving_time": 537
+  },
+  {
+    "id": 12761820006,
+    "name": "Evening Run",
+    "distance": 1620.0,
+    "start_date": "2024-10-27T00:00:00Z",
+    "moving_time": 477
+  },
+  {
+    "id": 12750414794,
+    "name": "1mi wu 1200m, 400m @ race pace 1 mi cd",
+    "distance": 4830.0,
+    "start_date": "2024-10-26T00:00:00Z",
+    "moving_time": 1290
+  },
+  {
+    "id": 12744789966,
+    "name": "Evening Run",
+    "distance": 12880.0,
+    "start_date": "2024-10-25T00:00:00Z",
+    "moving_time": 3720
+  },
+  {
+    "id": 12737226635,
+    "name": "Afternoon Run",
+    "distance": 4030.0,
+    "start_date": "2024-10-24T00:00:00Z",
+    "moving_time": 1181
+  },
+  {
+    "id": 12729261310,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2024-10-23T00:00:00Z",
+    "moving_time": 540
+  },
+  {
+    "id": 12729261318,
+    "name": "16:13 3 Mile PR",
+    "distance": 4790.0,
+    "start_date": "2024-10-23T00:00:00Z",
+    "moving_time": 974
+  },
+  {
+    "id": 12729260643,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2024-10-23T00:00:00Z",
+    "moving_time": 523
+  },
+  {
+    "id": 12721130521,
+    "name": "1mi wu 3x800m @ 5:20 ish 1 mi cd",
+    "distance": 5640.0,
+    "start_date": "2024-10-22T00:00:00Z",
+    "moving_time": 1371
+  },
+  {
+    "id": 12705320152,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-10-20T00:00:00Z",
+    "moving_time": 2217
+  },
+  {
+    "id": 12693868885,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2024-10-19T00:00:00Z",
+    "moving_time": 1901
+  },
+  {
+    "id": 12686551786,
+    "name": "Lunch Run",
+    "distance": 12870.0,
+    "start_date": "2024-10-18T00:00:00Z",
+    "moving_time": 3840
+  },
+  {
+    "id": 12681206252,
+    "name": "Hills w/ rest + .5 mi cd",
+    "distance": 4020.0,
+    "start_date": "2024-10-17T00:00:00Z",
+    "moving_time": 973
+  },
+  {
+    "id": 12681204994,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2024-10-17T00:00:00Z",
+    "moving_time": 487
+  },
+  {
+    "id": 12681204564,
+    "name": "Evening Run",
+    "distance": 7250.0,
+    "start_date": "2024-10-15T00:00:00Z",
+    "moving_time": 2055
+  },
+  {
+    "id": 12681203821,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2024-10-14T00:00:00Z",
+    "moving_time": 2791
+  },
+  {
+    "id": 12681202031,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-10-13T00:00:00Z",
+    "moving_time": 1826
+  },
+  {
+    "id": 12637180719,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2024-10-12T00:00:00Z",
+    "moving_time": 529
+  },
+  {
+    "id": 12636976028,
+    "name": "Fell at the start still prd tho, big mental race",
+    "distance": 4790.0,
+    "start_date": "2024-10-12T00:00:00Z",
+    "moving_time": 981
+  },
+  {
+    "id": 12636973941,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2024-10-12T00:00:00Z",
+    "moving_time": 531
+  },
+  {
+    "id": 12632243927,
+    "name": "Afternoon Run",
+    "distance": 3230.0,
+    "start_date": "2024-10-11T00:00:00Z",
+    "moving_time": 972
+  },
+  {
+    "id": 12624781841,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2024-10-10T00:00:00Z",
+    "moving_time": 1198
+  },
+  {
+    "id": 12617919296,
+    "name": "Middle mile 5:30",
+    "distance": 4830.0,
+    "start_date": "2024-10-09T00:00:00Z",
+    "moving_time": 1288
+  },
+  {
+    "id": 12609995550,
+    "name": "Middle mile 5:32",
+    "distance": 4840.0,
+    "start_date": "2024-10-08T00:00:00Z",
+    "moving_time": 1295
+  },
+  {
+    "id": 12594197448,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-10-06T00:00:00Z",
+    "moving_time": 1771
+  },
+  {
+    "id": 12585422892,
+    "name": "Evening Run",
+    "distance": 12880.0,
+    "start_date": "2024-10-05T00:00:00Z",
+    "moving_time": 3780
+  },
+  {
+    "id": 12575116793,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-10-04T00:00:00Z",
+    "moving_time": 2218
+  },
+  {
+    "id": 12568859203,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2024-10-03T00:00:00Z",
+    "moving_time": 480
+  },
+  {
+    "id": 12568780029,
+    "name": "2 x 1200m w/ 60 sec rest",
+    "distance": 2410.0,
+    "start_date": "2024-10-03T00:00:00Z",
+    "moving_time": 505
+  },
+  {
+    "id": 12568698636,
+    "name": "Wu",
+    "distance": 2420.0,
+    "start_date": "2024-10-03T00:00:00Z",
+    "moving_time": 736
+  },
+  {
+    "id": 12560625555,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-10-02T00:00:00Z",
+    "moving_time": 2307
+  },
+  {
+    "id": 12544182697,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2024-09-30T00:00:00Z",
+    "moving_time": 2831
+  },
+  {
+    "id": 12536686515,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-09-29T00:00:00Z",
+    "moving_time": 1866
+  },
+  {
+    "id": 12527629604,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2024-09-28T00:00:00Z",
+    "moving_time": 964
+  },
+  {
+    "id": 12524793224,
+    "name": "Morning Run",
+    "distance": 1620.0,
+    "start_date": "2024-09-28T00:00:00Z",
+    "moving_time": 550
+  },
+  {
+    "id": 12524789283,
+    "name": "No shade in cade 2024",
+    "distance": 4760.0,
+    "start_date": "2024-09-28T00:00:00Z",
+    "moving_time": 1002
+  },
+  {
+    "id": 12524780391,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2024-09-28T00:00:00Z",
+    "moving_time": 544
+  },
+  {
+    "id": 12519472202,
+    "name": "Meet tomorrow!?",
+    "distance": 4830.0,
+    "start_date": "2024-09-27T00:00:00Z",
+    "moving_time": 1557
+  },
+  {
+    "id": 12511742396,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2024-09-26T00:00:00Z",
+    "moving_time": 2810
+  },
+  {
+    "id": 12505097967,
+    "name": "Tready to hit mileage",
+    "distance": 1610.0,
+    "start_date": "2024-09-25T00:00:00Z",
+    "moving_time": 480
+  },
+  {
+    "id": 12505072735,
+    "name": "10 x 30 sec @ 5:20-5:40 pace, 30 sec cd between reps",
+    "distance": 4150.0,
+    "start_date": "2024-09-25T00:00:00Z",
+    "moving_time": 1127
+  },
+  {
+    "id": 12505071860,
+    "name": "Wu",
+    "distance": 2410.0,
+    "start_date": "2024-09-25T00:00:00Z",
+    "moving_time": 738
+  },
+  {
+    "id": 12488045505,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-09-23T00:00:00Z",
+    "moving_time": 2418
+  },
+  {
+    "id": 12480254329,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-09-22T00:00:00Z",
+    "moving_time": 1861
+  },
+  {
+    "id": 12471292735,
+    "name": "Evening Run",
+    "distance": 12880.0,
+    "start_date": "2024-09-21T00:00:00Z",
+    "moving_time": 3840
+  },
+  {
+    "id": 12454979339,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-09-19T00:00:00Z",
+    "moving_time": 2446
+  },
+  {
+    "id": 12446055779,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-09-18T00:00:00Z",
+    "moving_time": 550
+  },
+  {
+    "id": 12446055341,
+    "name": "Mcneese 3K 3rd place (first varsity meet)",
+    "distance": 2980.0,
+    "start_date": "2024-09-18T00:00:00Z",
+    "moving_time": 604
+  },
+  {
+    "id": 12446054657,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-09-18T00:00:00Z",
+    "moving_time": 542
+  },
+  {
+    "id": 12437730827,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2024-09-17T00:00:00Z",
+    "moving_time": 1353
+  },
+  {
+    "id": 12428394590,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-09-16T00:00:00Z",
+    "moving_time": 2345
+  },
+  {
+    "id": 12420814822,
+    "name": "Evening Run",
+    "distance": 8040.0,
+    "start_date": "2024-09-15T00:00:00Z",
+    "moving_time": 2390
+  },
+  {
+    "id": 12402965826,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-09-13T00:00:00Z",
+    "moving_time": 1888
+  },
+  {
+    "id": 12396135534,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2024-09-12T00:00:00Z",
+    "moving_time": 2838
+  },
+  {
+    "id": 12375815262,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2024-09-10T00:00:00Z",
+    "moving_time": 1982
+  },
+  {
+    "id": 12370693023,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-09-09T00:00:00Z",
+    "moving_time": 1867
+  },
+  {
+    "id": 12362868297,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-09-08T00:00:00Z",
+    "moving_time": 2258
+  },
+  {
+    "id": 12350590887,
+    "name": "5th place first HS jv meet?!! 17:53 official time",
+    "distance": 4810.0,
+    "start_date": "2024-09-07T00:00:00Z",
+    "moving_time": 1083
+  },
+  {
+    "id": 12350203732,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2024-09-07T00:00:00Z",
+    "moving_time": 540
+  },
+  {
+    "id": 12344452030,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-09-06T00:00:00Z",
+    "moving_time": 1808
+  },
+  {
+    "id": 12337296038,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2024-09-05T00:00:00Z",
+    "moving_time": 2648
+  },
+  {
+    "id": 12320200746,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2024-09-03T00:00:00Z",
+    "moving_time": 558
+  },
+  {
+    "id": 12320123848,
+    "name": "4:50 full mile (UL Sno-cone race)",
+    "distance": 1660.0,
+    "start_date": "2024-09-03T00:00:00Z",
+    "moving_time": 291
+  },
+  {
+    "id": 12320123321,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2024-09-03T00:00:00Z",
+    "moving_time": 528
+  },
+  {
+    "id": 12310989994,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-09-02T00:00:00Z",
+    "moving_time": 1825
+  },
+  {
+    "id": 12307932874,
+    "name": "Lunch Run",
+    "distance": 4820.0,
+    "start_date": "2024-09-02T00:00:00Z",
+    "moving_time": 1440
+  },
+  {
+    "id": 12302674792,
+    "name": "Cd",
+    "distance": 4030.0,
+    "start_date": "2024-09-01T00:00:00Z",
+    "moving_time": 1239
+  },
+  {
+    "id": 12302601139,
+    "name": "800@ 1600m pace",
+    "distance": 800.0,
+    "start_date": "2024-09-01T00:00:00Z",
+    "moving_time": 148
+  },
+  {
+    "id": 12302566912,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2024-09-01T00:00:00Z",
+    "moving_time": 501
+  },
+  {
+    "id": 12293657235,
+    "name": "Evening Run",
+    "distance": 12880.0,
+    "start_date": "2024-08-31T00:00:00Z",
+    "moving_time": 3840
+  },
+  {
+    "id": 12284886401,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-08-30T00:00:00Z",
+    "moving_time": 1833
+  },
+  {
+    "id": 12268974837,
+    "name": "I love post rain runs",
+    "distance": 8060.0,
+    "start_date": "2024-08-28T00:00:00Z",
+    "moving_time": 2208
+  },
+  {
+    "id": 12260349815,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-08-27T00:00:00Z",
+    "moving_time": 1901
+  },
+  {
+    "id": 12250939638,
+    "name": "Evening Run",
+    "distance": 8060.0,
+    "start_date": "2024-08-26T00:00:00Z",
+    "moving_time": 2273
+  },
+  {
+    "id": 12242970357,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-08-25T00:00:00Z",
+    "moving_time": 2298
+  },
+  {
+    "id": 12229814518,
+    "name": "Morning Run",
+    "distance": 12880.0,
+    "start_date": "2024-08-24T00:00:00Z",
+    "moving_time": 3960
+  },
+  {
+    "id": 12225890584,
+    "name": "Evening Run",
+    "distance": 8060.0,
+    "start_date": "2024-08-23T00:00:00Z",
+    "moving_time": 2376
+  },
+  {
+    "id": 12209660125,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-08-21T00:00:00Z",
+    "moving_time": 1441
+  },
+  {
+    "id": 12201176117,
+    "name": "Evening Run",
+    "distance": 4020.0,
+    "start_date": "2024-08-19T00:00:00Z",
+    "moving_time": 1131
+  },
+  {
+    "id": 12186262310,
+    "name": "Morning Run",
+    "distance": 4030.0,
+    "start_date": "2024-08-19T00:00:00Z",
+    "moving_time": 1208
+  },
+  {
+    "id": 12183712980,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2024-08-18T00:00:00Z",
+    "moving_time": 538
+  },
+  {
+    "id": 12183731902,
+    "name": "4x400m @  average w/ 2 min rest",
+    "distance": 1610.0,
+    "start_date": "2024-08-18T00:00:00Z",
+    "moving_time": 310
+  },
+  {
+    "id": 12183608638,
+    "name": "Wu",
+    "distance": 1620.0,
+    "start_date": "2024-08-18T00:00:00Z",
+    "moving_time": 499
+  },
+  {
+    "id": 12178864437,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2024-08-18T00:00:00Z",
+    "moving_time": 1502
+  },
+  {
+    "id": 12175061434,
+    "name": "Evening Run",
+    "distance": 12070.0,
+    "start_date": "2024-08-17T00:00:00Z",
+    "moving_time": 3720
+  },
+  {
+    "id": 12166501242,
+    "name": "Evening Run",
+    "distance": 5630.0,
+    "start_date": "2024-08-16T00:00:00Z",
+    "moving_time": 1708
+  },
+  {
+    "id": 12158723825,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-08-15T00:00:00Z",
+    "moving_time": 2509
+  },
+  {
+    "id": 12150019177,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-08-14T00:00:00Z",
+    "moving_time": 2519
+  },
+  {
+    "id": 12141695537,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-08-13T00:00:00Z",
+    "moving_time": 2485
+  },
+  {
+    "id": 12124464242,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-08-11T00:00:00Z",
+    "moving_time": 1912
+  },
+  {
+    "id": 12111009337,
+    "name": "Morning Run",
+    "distance": 12070.0,
+    "start_date": "2024-08-10T00:00:00Z",
+    "moving_time": 3720
+  },
+  {
+    "id": 12107140513,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-08-09T00:00:00Z",
+    "moving_time": 1917
+  },
+  {
+    "id": 12097860301,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-08-08T00:00:00Z",
+    "moving_time": 1414
+  },
+  {
+    "id": 12076497053,
+    "name": "Morning Run",
+    "distance": 8050.0,
+    "start_date": "2024-08-06T00:00:00Z",
+    "moving_time": 2480
+  },
+  {
+    "id": 12073183383,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-08-05T00:00:00Z",
+    "moving_time": 1934
+  },
+  {
+    "id": 12064896934,
+    "name": "Evening Run",
+    "distance": 12070.0,
+    "start_date": "2024-08-04T00:00:00Z",
+    "moving_time": 3720
+  },
+  {
+    "id": 12048577485,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-08-02T00:00:00Z",
+    "moving_time": 1997
+  },
+  {
+    "id": 12043089318,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2024-08-02T00:00:00Z",
+    "moving_time": 1475
+  },
+  {
+    "id": 12040236323,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-08-01T00:00:00Z",
+    "moving_time": 2494
+  },
+  {
+    "id": 12031919285,
+    "name": "Evening Run",
+    "distance": 7240.0,
+    "start_date": "2024-07-31T00:00:00Z",
+    "moving_time": 2307
+  },
+  {
+    "id": 12028314401,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2024-07-31T00:00:00Z",
+    "moving_time": 952
+  },
+  {
+    "id": 11998107024,
+    "name": "Recovery",
+    "distance": 2410.0,
+    "start_date": "2024-07-27T00:00:00Z",
+    "moving_time": 694
+  },
+  {
+    "id": 11985465193,
+    "name": "Morning Run",
+    "distance": 8050.0,
+    "start_date": "2024-07-26T00:00:00Z",
+    "moving_time": 2351
+  },
+  {
+    "id": 11981733611,
+    "name": "Afternoon Run",
+    "distance": 6520.0,
+    "start_date": "2024-07-25T00:00:00Z",
+    "moving_time": 1924
+  },
+  {
+    "id": 11977878151,
+    "name": "Morning Run",
+    "distance": 9660.0,
+    "start_date": "2024-07-25T00:00:00Z",
+    "moving_time": 2675
+  },
+  {
+    "id": 11973350910,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-07-24T00:00:00Z",
+    "moving_time": 2295
+  },
+  {
+    "id": 11969864589,
+    "name": "Morning Run",
+    "distance": 9660.0,
+    "start_date": "2024-07-24T00:00:00Z",
+    "moving_time": 3456
+  },
+  {
+    "id": 11964617592,
+    "name": "Afternoon Run",
+    "distance": 1410.0,
+    "start_date": "2024-07-23T00:00:00Z",
+    "moving_time": 389
+  },
+  {
+    "id": 11981792800,
+    "name": "Scavenger hunt",
+    "distance": 1450.0,
+    "start_date": "2024-07-23T00:00:00Z",
+    "moving_time": 390
+  },
+  {
+    "id": 11960188061,
+    "name": "Morning Run",
+    "distance": 9660.0,
+    "start_date": "2024-07-23T00:00:00Z",
+    "moving_time": 2872
+  },
+  {
+    "id": 11956739609,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-07-22T00:00:00Z",
+    "moving_time": 2334
+  },
+  {
+    "id": 11939739736,
+    "name": "Evening Run",
+    "distance": 11270.0,
+    "start_date": "2024-07-20T00:00:00Z",
+    "moving_time": 3590
+  },
+  {
+    "id": 11931264734,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2024-07-19T00:00:00Z",
+    "moving_time": 1381
+  },
+  {
+    "id": 11927244601,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2024-07-19T00:00:00Z",
+    "moving_time": 1505
+  },
+  {
+    "id": 11923746840,
+    "name": "Evening Run",
+    "distance": 6920.0,
+    "start_date": "2024-07-18T00:00:00Z",
+    "moving_time": 2181
+  },
+  {
+    "id": 11906184792,
+    "name": "Luh hard trail run",
+    "distance": 4390.0,
+    "start_date": "2024-07-16T00:00:00Z",
+    "moving_time": 1613
+  },
+  {
+    "id": 11898208181,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-07-15T00:00:00Z",
+    "moving_time": 2015
+  },
+  {
+    "id": 11890622661,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-07-14T00:00:00Z",
+    "moving_time": 2031
+  },
+  {
+    "id": 11881733967,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-07-13T00:00:00Z",
+    "moving_time": 629
+  },
+  {
+    "id": 11862839433,
+    "name": "Morning Run",
+    "distance": 6440.0,
+    "start_date": "2024-07-11T00:00:00Z",
+    "moving_time": 2024
+  },
+  {
+    "id": 11858694768,
+    "name": "Evening Run",
+    "distance": 5630.0,
+    "start_date": "2024-07-10T00:00:00Z",
+    "moving_time": 1722
+  },
+  {
+    "id": 11854275077,
+    "name": "Morning Run",
+    "distance": 4030.0,
+    "start_date": "2024-07-10T00:00:00Z",
+    "moving_time": 1251
+  },
+  {
+    "id": 11850600140,
+    "name": "Evening Run",
+    "distance": 11270.0,
+    "start_date": "2024-07-09T00:00:00Z",
+    "moving_time": 3600
+  },
+  {
+    "id": 11842369191,
+    "name": "Evening Run",
+    "distance": 5630.0,
+    "start_date": "2024-07-08T00:00:00Z",
+    "moving_time": 1661
+  },
+  {
+    "id": 11837654915,
+    "name": "Morning Run",
+    "distance": 4030.0,
+    "start_date": "2024-07-08T00:00:00Z",
+    "moving_time": 1243
+  },
+  {
+    "id": 11825891673,
+    "name": "Evening Run",
+    "distance": 11270.0,
+    "start_date": "2024-07-06T00:00:00Z",
+    "moving_time": 3565
+  },
+  {
+    "id": 11822416683,
+    "name": "Evening Run",
+    "distance": 1620.0,
+    "start_date": "2024-07-05T00:00:00Z",
+    "moving_time": 504
+  },
+  {
+    "id": 11806220060,
+    "name": "Morning Run",
+    "distance": 810.0,
+    "start_date": "2024-07-04T00:00:00Z",
+    "moving_time": 276
+  },
+  {
+    "id": 11806126505,
+    "name": "Morning Run",
+    "distance": 5020.0,
+    "start_date": "2024-07-04T00:00:00Z",
+    "moving_time": 1140
+  },
+  {
+    "id": 11805862626,
+    "name": "Morning Run",
+    "distance": 800.0,
+    "start_date": "2024-07-04T00:00:00Z",
+    "moving_time": 267
+  },
+  {
+    "id": 11802973783,
+    "name": "Evening Run",
+    "distance": 5630.0,
+    "start_date": "2024-07-03T00:00:00Z",
+    "moving_time": 1762
+  },
+  {
+    "id": 11798896794,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2024-07-03T00:00:00Z",
+    "moving_time": 984
+  },
+  {
+    "id": 11794906101,
+    "name": "Evening Run",
+    "distance": 9650.0,
+    "start_date": "2024-07-02T00:00:00Z",
+    "moving_time": 3166
+  },
+  {
+    "id": 11790783086,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-07-01T00:00:00Z",
+    "moving_time": 1996
+  },
+  {
+    "id": 11782747466,
+    "name": "Morning Run",
+    "distance": 4020.0,
+    "start_date": "2024-07-01T00:00:00Z",
+    "moving_time": 1263
+  },
+  {
+    "id": 11766874732,
+    "name": "Morning Run",
+    "distance": 10460.0,
+    "start_date": "2024-06-29T00:00:00Z",
+    "moving_time": 3430
+  },
+  {
+    "id": 11763295055,
+    "name": "Evening Run",
+    "distance": 2410.0,
+    "start_date": "2024-06-28T00:00:00Z",
+    "moving_time": 748
+  },
+  {
+    "id": 11756101641,
+    "name": "Evening Run",
+    "distance": 810.0,
+    "start_date": "2024-06-27T00:00:00Z",
+    "moving_time": 286
+  },
+  {
+    "id": 11756101475,
+    "name": "Evening Run",
+    "distance": 1620.0,
+    "start_date": "2024-06-27T00:00:00Z",
+    "moving_time": 329
+  },
+  {
+    "id": 11756101004,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-06-27T00:00:00Z",
+    "moving_time": 561
+  },
+  {
+    "id": 11748630568,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-06-26T00:00:00Z",
+    "moving_time": 1984
+  },
+  {
+    "id": 11745074407,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2024-06-26T00:00:00Z",
+    "moving_time": 1014
+  },
+  {
+    "id": 11740563576,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2024-06-25T00:00:00Z",
+    "moving_time": 2495
+  },
+  {
+    "id": 11732102942,
+    "name": "Evening Run",
+    "distance": 6430.0,
+    "start_date": "2024-06-24T00:00:00Z",
+    "moving_time": 1971
+  },
+  {
+    "id": 11727679522,
+    "name": "Morning Run",
+    "distance": 4020.0,
+    "start_date": "2024-06-24T00:00:00Z",
+    "moving_time": 1253
+  },
+  {
+    "id": 11715910630,
+    "name": "Evening Run",
+    "distance": 10470.0,
+    "start_date": "2024-06-22T00:00:00Z",
+    "moving_time": 3328
+  },
+  {
+    "id": 11708029383,
+    "name": "Evening Run",
+    "distance": 7240.0,
+    "start_date": "2024-06-21T00:00:00Z",
+    "moving_time": 2134
+  },
+  {
+    "id": 11701549499,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-06-20T00:00:00Z",
+    "moving_time": 1911
+  },
+  {
+    "id": 11697375677,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2024-06-20T00:00:00Z",
+    "moving_time": 925
+  },
+  {
+    "id": 11693955240,
+    "name": "Evening Run",
+    "distance": 7250.0,
+    "start_date": "2024-06-19T00:00:00Z",
+    "moving_time": 2148
+  },
+  {
+    "id": 11685655825,
+    "name": "Evening Run",
+    "distance": 7250.0,
+    "start_date": "2024-06-18T00:00:00Z",
+    "moving_time": 2245
+  },
+  {
+    "id": 11661913699,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2024-06-15T00:00:00Z",
+    "moving_time": 2996
+  },
+  {
+    "id": 11654161765,
+    "name": "Evening Run",
+    "distance": 7240.0,
+    "start_date": "2024-06-14T00:00:00Z",
+    "moving_time": 2299
+  },
+  {
+    "id": 11645464324,
+    "name": "Dead watch",
+    "distance": 7240.0,
+    "start_date": "2024-06-13T00:00:00Z",
+    "moving_time": 2185
+  },
+  {
+    "id": 11639706328,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-06-12T00:00:00Z",
+    "moving_time": 1911
+  },
+  {
+    "id": 11623256273,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2024-06-10T00:00:00Z",
+    "moving_time": 1463
+  },
+  {
+    "id": 11618992636,
+    "name": "Morning Run",
+    "distance": 3220.0,
+    "start_date": "2024-06-10T00:00:00Z",
+    "moving_time": 989
+  },
+  {
+    "id": 11607678167,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2024-06-08T00:00:00Z",
+    "moving_time": 2976
+  },
+  {
+    "id": 11599528202,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-06-07T00:00:00Z",
+    "moving_time": 2109
+  },
+  {
+    "id": 11592158338,
+    "name": "Evening Run",
+    "distance": 5640.0,
+    "start_date": "2024-06-06T00:00:00Z",
+    "moving_time": 1718
+  },
+  {
+    "id": 11584215529,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2024-06-05T00:00:00Z",
+    "moving_time": 1527
+  },
+  {
+    "id": 11579448563,
+    "name": "Morning Run",
+    "distance": 2420.0,
+    "start_date": "2024-06-05T00:00:00Z",
+    "moving_time": 758
+  },
+  {
+    "id": 11567528224,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-06-03T00:00:00Z",
+    "moving_time": 2000
+  },
+  {
+    "id": 11559961750,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2024-06-02T00:00:00Z",
+    "moving_time": 1444
+  },
+  {
+    "id": 11543665348,
+    "name": "Evening Run",
+    "distance": 6420.0,
+    "start_date": "2024-05-31T00:00:00Z",
+    "moving_time": 1956
+  },
+  {
+    "id": 11528796370,
+    "name": "Afternoon Run",
+    "distance": 5790.0,
+    "start_date": "2024-05-29T00:00:00Z",
+    "moving_time": 1791
+  },
+  {
+    "id": 11505944669,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2024-05-26T00:00:00Z",
+    "moving_time": 1568
+  },
+  {
+    "id": 11497711233,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2024-05-25T00:00:00Z",
+    "moving_time": 1395
+  },
+  {
+    "id": 11463142975,
+    "name": "Beach treadmill 2mi",
+    "distance": 3220.0,
+    "start_date": "2024-05-21T00:00:00Z",
+    "moving_time": 956
+  },
+  {
+    "id": 11451709065,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2024-05-19T00:00:00Z",
+    "moving_time": 1395
+  },
+  {
+    "id": 11372272897,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-05-09T00:00:00Z",
+    "moving_time": 479
+  },
+  {
+    "id": 11357764966,
+    "name": "Evening Run",
+    "distance": 1630.0,
+    "start_date": "2024-05-07T00:00:00Z",
+    "moving_time": 314
+  },
+  {
+    "id": 11356872548,
+    "name": "Afternoon Run",
+    "distance": 3270.0,
+    "start_date": "2024-05-07T00:00:00Z",
+    "moving_time": 711
+  },
+  {
+    "id": 11356625664,
+    "name": "Afternoon Run",
+    "distance": 400.0,
+    "start_date": "2024-05-07T00:00:00Z",
+    "moving_time": 121
+  },
+  {
+    "id": 11348163355,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-05-06T00:00:00Z",
+    "moving_time": 469
+  },
+  {
+    "id": 11342224587,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2024-05-05T00:00:00Z",
+    "moving_time": 1425
+  },
+  {
+    "id": 11333886028,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-05-04T00:00:00Z",
+    "moving_time": 1802
+  },
+  {
+    "id": 11311784058,
+    "name": "1mi WU, 3x 800m @ 2:55, 2:52, 2:52",
+    "distance": 4020.0,
+    "start_date": "2024-05-01T00:00:00Z",
+    "moving_time": 975
+  },
+  {
+    "id": 11302868929,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-04-30T00:00:00Z",
+    "moving_time": 1884
+  },
+  {
+    "id": 11287433383,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2024-04-28T00:00:00Z",
+    "moving_time": 921
+  },
+  {
+    "id": 11276225254,
+    "name": "Morning Run",
+    "distance": 1600.0,
+    "start_date": "2024-04-27T00:00:00Z",
+    "moving_time": 471
+  },
+  {
+    "id": 11276849690,
+    "name": "400m easy 3,2,1 hard",
+    "distance": 1130.0,
+    "start_date": "2024-04-27T00:00:00Z",
+    "moving_time": 273
+  },
+  {
+    "id": 11264861488,
+    "name": "Evening Run",
+    "distance": 800.0,
+    "start_date": "2024-04-25T00:00:00Z",
+    "moving_time": 133
+  },
+  {
+    "id": 11257089462,
+    "name": "Afternoon Run",
+    "distance": 420.0,
+    "start_date": "2024-04-24T00:00:00Z",
+    "moving_time": 126
+  },
+  {
+    "id": 11250550585,
+    "name": "Hills",
+    "distance": 3230.0,
+    "start_date": "2024-04-23T00:00:00Z",
+    "moving_time": 914
+  },
+  {
+    "id": 11235673069,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-04-21T00:00:00Z",
+    "moving_time": 1815
+  },
+  {
+    "id": 11227325974,
+    "name": "Afternoon Run",
+    "distance": 4920.0,
+    "start_date": "2024-04-20T00:00:00Z",
+    "moving_time": 1400
+  },
+  {
+    "id": 11213720235,
+    "name": "Evening Run",
+    "distance": 810.0,
+    "start_date": "2024-04-18T00:00:00Z",
+    "moving_time": 288
+  },
+  {
+    "id": 11213663170,
+    "name": "Evening Run",
+    "distance": 1650.0,
+    "start_date": "2024-04-18T00:00:00Z",
+    "moving_time": 295
+  },
+  {
+    "id": 11213364063,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2024-04-18T00:00:00Z",
+    "moving_time": 547
+  },
+  {
+    "id": 11206410451,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2024-04-17T00:00:00Z",
+    "moving_time": 512
+  },
+  {
+    "id": 11199691568,
+    "name": "4x4 400m split - 59.5 PR",
+    "distance": 320.0,
+    "start_date": "2024-04-16T00:00:00Z",
+    "moving_time": 60
+  },
+  {
+    "id": 11199208947,
+    "name": "800m PR 2:16",
+    "distance": 810.0,
+    "start_date": "2024-04-16T00:00:00Z",
+    "moving_time": 136
+  },
+  {
+    "id": 11199054565,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2024-04-16T00:00:00Z",
+    "moving_time": 544
+  },
+  {
+    "id": 11184615080,
+    "name": "Evening Run",
+    "distance": 10460.0,
+    "start_date": "2024-04-14T00:00:00Z",
+    "moving_time": 3029
+  },
+  {
+    "id": 11175991865,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-04-13T00:00:00Z",
+    "moving_time": 1846
+  },
+  {
+    "id": 11167180770,
+    "name": "Afternoon Run",
+    "distance": 870.0,
+    "start_date": "2024-04-12T00:00:00Z",
+    "moving_time": 216
+  },
+  {
+    "id": 11167180425,
+    "name": "Afternoon Run",
+    "distance": 1600.0,
+    "start_date": "2024-04-12T00:00:00Z",
+    "moving_time": 524
+  },
+  {
+    "id": 11172298524,
+    "name": "400m in wheels 500m @ 65 sec 400m",
+    "distance": 970.0,
+    "start_date": "2024-04-12T00:00:00Z",
+    "moving_time": 234
+  },
+  {
+    "id": 11160465005,
+    "name": "Afternoon Run",
+    "distance": 450.0,
+    "start_date": "2024-04-11T00:00:00Z",
+    "moving_time": 149
+  },
+  {
+    "id": 11160411064,
+    "name": "Afternoon Run",
+    "distance": 800.0,
+    "start_date": "2024-04-11T00:00:00Z",
+    "moving_time": 221
+  },
+  {
+    "id": 11153670321,
+    "name": "Evening Run",
+    "distance": 6440.0,
+    "start_date": "2024-04-10T00:00:00Z",
+    "moving_time": 1735
+  },
+  {
+    "id": 11138687257,
+    "name": "Evening Run",
+    "distance": 1210.0,
+    "start_date": "2024-04-08T00:00:00Z",
+    "moving_time": 391
+  },
+  {
+    "id": 11138534938,
+    "name": "Evening Run",
+    "distance": 1640.0,
+    "start_date": "2024-04-08T00:00:00Z",
+    "moving_time": 308
+  },
+  {
+    "id": 11138345980,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2024-04-08T00:00:00Z",
+    "moving_time": 533
+  },
+  {
+    "id": 11131293512,
+    "name": "Evening Run",
+    "distance": 10460.0,
+    "start_date": "2024-04-07T00:00:00Z",
+    "moving_time": 3064
+  },
+  {
+    "id": 11122548067,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-04-06T00:00:00Z",
+    "moving_time": 1819
+  },
+  {
+    "id": 11107098012,
+    "name": "Morning Run",
+    "distance": 930.0,
+    "start_date": "2024-04-04T00:00:00Z",
+    "moving_time": 274
+  },
+  {
+    "id": 11112248305,
+    "name": "5x fly by 150’s w/ jog back rest",
+    "distance": 800.0,
+    "start_date": "2024-04-04T00:00:00Z",
+    "moving_time": 180
+  },
+  {
+    "id": 11107080509,
+    "name": "Morning Run",
+    "distance": 4030.0,
+    "start_date": "2024-04-04T00:00:00Z",
+    "moving_time": 1109
+  },
+  {
+    "id": 11099427323,
+    "name": "Lunch Run",
+    "distance": 800.0,
+    "start_date": "2024-04-03T00:00:00Z",
+    "moving_time": 238
+  },
+  {
+    "id": 11099419191,
+    "name": "6x 400m @ 70 - 75",
+    "distance": 2410.0,
+    "start_date": "2024-04-03T00:00:00Z",
+    "moving_time": 450
+  },
+  {
+    "id": 11098328241,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2024-04-03T00:00:00Z",
+    "moving_time": 483
+  },
+  {
+    "id": 11091203587,
+    "name": "Morning Run",
+    "distance": 2220.0,
+    "start_date": "2024-04-02T00:00:00Z",
+    "moving_time": 547
+  },
+  {
+    "id": 11091032688,
+    "name": "5 x 200m @ 31-33",
+    "distance": 1000.0,
+    "start_date": "2024-04-02T00:00:00Z",
+    "moving_time": 270
+  },
+  {
+    "id": 11091203053,
+    "name": "Morning Run",
+    "distance": 1620.0,
+    "start_date": "2024-04-02T00:00:00Z",
+    "moving_time": 478
+  },
+  {
+    "id": 11086684896,
+    "name": "Afternoon Run",
+    "distance": 10460.0,
+    "start_date": "2024-04-01T00:00:00Z",
+    "moving_time": 3103
+  },
+  {
+    "id": 11079520656,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-03-31T00:00:00Z",
+    "moving_time": 1405
+  },
+  {
+    "id": 11065218780,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-03-29T00:00:00Z",
+    "moving_time": 1424
+  },
+  {
+    "id": 11058471261,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2024-03-28T00:00:00Z",
+    "moving_time": 1002
+  },
+  {
+    "id": 11052547189,
+    "name": "Evening Run",
+    "distance": 830.0,
+    "start_date": "2024-03-27T00:00:00Z",
+    "moving_time": 153
+  },
+  {
+    "id": 11052546956,
+    "name": "Afternoon Run",
+    "distance": 3260.0,
+    "start_date": "2024-03-27T00:00:00Z",
+    "moving_time": 663
+  },
+  {
+    "id": 11052152568,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-03-27T00:00:00Z",
+    "moving_time": 540
+  },
+  {
+    "id": 11044598254,
+    "name": "Afternoon Run",
+    "distance": 2420.0,
+    "start_date": "2024-03-26T00:00:00Z",
+    "moving_time": 716
+  },
+  {
+    "id": 11024710479,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2024-03-23T00:00:00Z",
+    "moving_time": 996
+  },
+  {
+    "id": 11024710173,
+    "name": "Afternoon Run",
+    "distance": 540.0,
+    "start_date": "2024-03-23T00:00:00Z",
+    "moving_time": 184
+  },
+  {
+    "id": 11024710045,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2024-03-23T00:00:00Z",
+    "moving_time": 326
+  },
+  {
+    "id": 11022972355,
+    "name": "Lunch Run",
+    "distance": 800.0,
+    "start_date": "2024-03-23T00:00:00Z",
+    "moving_time": 141
+  },
+  {
+    "id": 11022482160,
+    "name": "Lunch Run",
+    "distance": 1610.0,
+    "start_date": "2024-03-23T00:00:00Z",
+    "moving_time": 545
+  },
+  {
+    "id": 11017677913,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2024-03-22T00:00:00Z",
+    "moving_time": 991
+  },
+  {
+    "id": 11003412439,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2024-03-20T00:00:00Z",
+    "moving_time": 1014
+  },
+  {
+    "id": 10996703799,
+    "name": "Afternoon Run",
+    "distance": 1630.0,
+    "start_date": "2024-03-19T00:00:00Z",
+    "moving_time": 306
+  },
+  {
+    "id": 10996613510,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-03-19T00:00:00Z",
+    "moving_time": 544
+  },
+  {
+    "id": 10988759943,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-03-18T00:00:00Z",
+    "moving_time": 508
+  },
+  {
+    "id": 10983023327,
+    "name": "Evening Run",
+    "distance": 9660.0,
+    "start_date": "2024-03-17T00:00:00Z",
+    "moving_time": 2922
+  },
+  {
+    "id": 10975407723,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2024-03-16T00:00:00Z",
+    "moving_time": 1442
+  },
+  {
+    "id": 10967394307,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-03-15T00:00:00Z",
+    "moving_time": 443
+  },
+  {
+    "id": 10960702003,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-03-14T00:00:00Z",
+    "moving_time": 1387
+  },
+  {
+    "id": 10946419606,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-03-12T00:00:00Z",
+    "moving_time": 1466
+  },
+  {
+    "id": 10940263217,
+    "name": "Evening Run",
+    "distance": 810.0,
+    "start_date": "2024-03-11T00:00:00Z",
+    "moving_time": 154
+  },
+  {
+    "id": 10940263321,
+    "name": "Afternoon Run",
+    "distance": 3240.0,
+    "start_date": "2024-03-11T00:00:00Z",
+    "moving_time": 675
+  },
+  {
+    "id": 10940263507,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-03-11T00:00:00Z",
+    "moving_time": 495
+  },
+  {
+    "id": 10926892984,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2024-03-09T00:00:00Z",
+    "moving_time": 2467
+  },
+  {
+    "id": 10919224524,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2024-03-08T00:00:00Z",
+    "moving_time": 977
+  },
+  {
+    "id": 10913395265,
+    "name": "Workout",
+    "distance": 1700.0,
+    "start_date": "2024-03-07T00:00:00Z",
+    "moving_time": 444
+  },
+  {
+    "id": 10913331432,
+    "name": "Afternoon Run",
+    "distance": 800.0,
+    "start_date": "2024-03-07T00:00:00Z",
+    "moving_time": 252
+  },
+  {
+    "id": 10906439061,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-03-06T00:00:00Z",
+    "moving_time": 1474
+  },
+  {
+    "id": 10898888341,
+    "name": "Afternoon Run",
+    "distance": 2410.0,
+    "start_date": "2024-03-05T00:00:00Z",
+    "moving_time": 758
+  },
+  {
+    "id": 10890914104,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2024-03-04T00:00:00Z",
+    "moving_time": 512
+  },
+  {
+    "id": 10838253061,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-02-25T00:00:00Z",
+    "moving_time": 474
+  },
+  {
+    "id": 10828515261,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2024-02-24T00:00:00Z",
+    "moving_time": 518
+  },
+  {
+    "id": 10828514779,
+    "name": "Morning Run",
+    "distance": 820.0,
+    "start_date": "2024-02-24T00:00:00Z",
+    "moving_time": 241
+  },
+  {
+    "id": 10828514397,
+    "name": "Morning Run",
+    "distance": 820.0,
+    "start_date": "2024-02-24T00:00:00Z",
+    "moving_time": 253
+  },
+  {
+    "id": 10828563079,
+    "name": "LA Classic Indoor meet, 1600m: 1st, 5:09",
+    "distance": 1610.0,
+    "start_date": "2024-02-24T00:00:00Z",
+    "moving_time": 309
+  },
+  {
+    "id": 10828513878,
+    "name": "Morning Run",
+    "distance": 1370.0,
+    "start_date": "2024-02-24T00:00:00Z",
+    "moving_time": 401
+  },
+  {
+    "id": 10828513403,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2024-02-23T00:00:00Z",
+    "moving_time": 450
+  },
+  {
+    "id": 10828513331,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-02-21T00:00:00Z",
+    "moving_time": 1879
+  },
+  {
+    "id": 10803912031,
+    "name": "Afternoon Run",
+    "distance": 810.0,
+    "start_date": "2024-02-20T00:00:00Z",
+    "moving_time": 236
+  },
+  {
+    "id": 10790685223,
+    "name": "Afternoon Run",
+    "distance": 10460.0,
+    "start_date": "2024-02-18T00:00:00Z",
+    "moving_time": 3057
+  },
+  {
+    "id": 10783335477,
+    "name": "Afternoon Run",
+    "distance": 3230.0,
+    "start_date": "2024-02-17T00:00:00Z",
+    "moving_time": 930
+  },
+  {
+    "id": 10769872425,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-02-15T00:00:00Z",
+    "moving_time": 1875
+  },
+  {
+    "id": 10763551055,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-02-14T00:00:00Z",
+    "moving_time": 1920
+  },
+  {
+    "id": 10754371285,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2024-02-13T00:00:00Z",
+    "moving_time": 507
+  },
+  {
+    "id": 10754424235,
+    "name": "Nd Workout feb 13th",
+    "distance": 900.0,
+    "start_date": "2024-02-13T00:00:00Z",
+    "moving_time": 600
+  },
+  {
+    "id": 10754091957,
+    "name": "Wu",
+    "distance": 2410.0,
+    "start_date": "2024-02-13T00:00:00Z",
+    "moving_time": 725
+  },
+  {
+    "id": 10744525236,
+    "name": "Afternoon Run",
+    "distance": 10460.0,
+    "start_date": "2024-02-11T00:00:00Z",
+    "moving_time": 3141
+  },
+  {
+    "id": 10736989068,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2024-02-10T00:00:00Z",
+    "moving_time": 532
+  },
+  {
+    "id": 10736928100,
+    "name": "Afternoon Run",
+    "distance": 1280.0,
+    "start_date": "2024-02-10T00:00:00Z",
+    "moving_time": 300
+  },
+  {
+    "id": 10736879004,
+    "name": "Afternoon Run",
+    "distance": 2420.0,
+    "start_date": "2024-02-10T00:00:00Z",
+    "moving_time": 740
+  },
+  {
+    "id": 10729873609,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-02-09T00:00:00Z",
+    "moving_time": 1912
+  },
+  {
+    "id": 10717999791,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-02-07T00:00:00Z",
+    "moving_time": 1882
+  },
+  {
+    "id": 10711197246,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2024-02-06T00:00:00Z",
+    "moving_time": 998
+  },
+  {
+    "id": 10698134857,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2024-02-04T00:00:00Z",
+    "moving_time": 2877
+  },
+  {
+    "id": 10683612669,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-02-02T00:00:00Z",
+    "moving_time": 1966
+  },
+  {
+    "id": 10676777597,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-02-01T00:00:00Z",
+    "moving_time": 1455
+  },
+  {
+    "id": 10670573657,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2024-01-31T00:00:00Z",
+    "moving_time": 1946
+  },
+  {
+    "id": 10663808484,
+    "name": "Cooldown",
+    "distance": 800.0,
+    "start_date": "2024-01-30T00:00:00Z",
+    "moving_time": 245
+  },
+  {
+    "id": 10663804828,
+    "name": "ND Track Workout",
+    "distance": 960.0,
+    "start_date": "2024-01-30T00:00:00Z",
+    "moving_time": 181
+  },
+  {
+    "id": 10663789166,
+    "name": "wu",
+    "distance": 950.0,
+    "start_date": "2024-01-30T00:00:00Z",
+    "moving_time": 270
+  },
+  {
+    "id": 10656408803,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-01-29T00:00:00Z",
+    "moving_time": 1266
+  },
+  {
+    "id": 10650525078,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-28T00:00:00Z",
+    "moving_time": 1902
+  },
+  {
+    "id": 10642906199,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2024-01-27T00:00:00Z",
+    "moving_time": 1840
+  },
+  {
+    "id": 10629898339,
+    "name": "Afternoon Run",
+    "distance": 9670.0,
+    "start_date": "2024-01-25T00:00:00Z",
+    "moving_time": 2848
+  },
+  {
+    "id": 10616800832,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2024-01-23T00:00:00Z",
+    "moving_time": 1304
+  },
+  {
+    "id": 10609914616,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-22T00:00:00Z",
+    "moving_time": 1866
+  },
+  {
+    "id": 10597327416,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2024-01-20T00:00:00Z",
+    "moving_time": 1907
+  },
+  {
+    "id": 10591065983,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-19T00:00:00Z",
+    "moving_time": 1896
+  },
+  {
+    "id": 10578940984,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-17T00:00:00Z",
+    "moving_time": 1931
+  },
+  {
+    "id": 10559715627,
+    "name": "Afternoon Run",
+    "distance": 9660.0,
+    "start_date": "2024-01-14T00:00:00Z",
+    "moving_time": 2910
+  },
+  {
+    "id": 10553162050,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2024-01-13T00:00:00Z",
+    "moving_time": 1905
+  },
+  {
+    "id": 10546373917,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-12T00:00:00Z",
+    "moving_time": 1878
+  },
+  {
+    "id": 10540572802,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-11T00:00:00Z",
+    "moving_time": 1933
+  },
+  {
+    "id": 10527793736,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2024-01-09T00:00:00Z",
+    "moving_time": 1857
+  },
+  {
+    "id": 10514907165,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2024-01-07T00:00:00Z",
+    "moving_time": 1934
+  },
+  {
+    "id": 10508145248,
+    "name": "Afternoon Run",
+    "distance": 8860.0,
+    "start_date": "2024-01-06T00:00:00Z",
+    "moving_time": 2670
+  },
+  {
+    "id": 10507937845,
+    "name": "Lunch Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-03T00:00:00Z",
+    "moving_time": 1925
+  },
+  {
+    "id": 10482279736,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-02T00:00:00Z",
+    "moving_time": 1911
+  },
+  {
+    "id": 10477003078,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2024-01-01T00:00:00Z",
+    "moving_time": 1913
+  },
+  {
+    "id": 10464491144,
+    "name": "Afternoon Run",
+    "distance": 8860.0,
+    "start_date": "2023-12-30T00:00:00Z",
+    "moving_time": 2598
+  },
+  {
+    "id": 10458901192,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2023-12-29T00:00:00Z",
+    "moving_time": 1887
+  },
+  {
+    "id": 10446712184,
+    "name": "Lunch Run",
+    "distance": 6450.0,
+    "start_date": "2023-12-27T00:00:00Z",
+    "moving_time": 1916
+  },
+  {
+    "id": 10441083277,
+    "name": "Lunch Run",
+    "distance": 6440.0,
+    "start_date": "2023-12-26T00:00:00Z",
+    "moving_time": 1910
+  },
+  {
+    "id": 10435081000,
+    "name": "🎄",
+    "distance": 4830.0,
+    "start_date": "2023-12-25T00:00:00Z",
+    "moving_time": 1363
+  },
+  {
+    "id": 10426798216,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2023-12-23T00:00:00Z",
+    "moving_time": 2412
+  },
+  {
+    "id": 10421782086,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2023-12-22T00:00:00Z",
+    "moving_time": 1938
+  },
+  {
+    "id": 10412082957,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2023-12-20T00:00:00Z",
+    "moving_time": 1933
+  },
+  {
+    "id": 10407162684,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2023-12-19T00:00:00Z",
+    "moving_time": 1454
+  },
+  {
+    "id": 10401901833,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2023-12-18T00:00:00Z",
+    "moving_time": 1936
+  },
+  {
+    "id": 10397239003,
+    "name": "Afternoon Run",
+    "distance": 8050.0,
+    "start_date": "2023-12-17T00:00:00Z",
+    "moving_time": 2450
+  },
+  {
+    "id": 10381401584,
+    "name": "Afternoon Run",
+    "distance": 5640.0,
+    "start_date": "2023-12-14T00:00:00Z",
+    "moving_time": 1692
+  },
+  {
+    "id": 10376458760,
+    "name": "Afternoon Run",
+    "distance": 6450.0,
+    "start_date": "2023-12-13T00:00:00Z",
+    "moving_time": 1941
+  },
+  {
+    "id": 10371282838,
+    "name": "Afternoon Run",
+    "distance": 5630.0,
+    "start_date": "2023-12-12T00:00:00Z",
+    "moving_time": 1702
+  },
+  {
+    "id": 10360854724,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2023-12-10T00:00:00Z",
+    "moving_time": 1430
+  },
+  {
+    "id": 10353619146,
+    "name": "Morning Run",
+    "distance": 7240.0,
+    "start_date": "2023-12-09T00:00:00Z",
+    "moving_time": 2189
+  },
+  {
+    "id": 10345490320,
+    "name": "Afternoon Run",
+    "distance": 5070.0,
+    "start_date": "2023-12-07T00:00:00Z",
+    "moving_time": 1520
+  },
+  {
+    "id": 10340211613,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2023-12-06T00:00:00Z",
+    "moving_time": 1437
+  },
+  {
+    "id": 10334961274,
+    "name": "Afternoon Run",
+    "distance": 4020.0,
+    "start_date": "2023-12-05T00:00:00Z",
+    "moving_time": 1232
+  },
+  {
+    "id": 10324165573,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-12-03T00:00:00Z",
+    "moving_time": 984
+  },
+  {
+    "id": 10318760458,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2023-12-02T00:00:00Z",
+    "moving_time": 1492
+  },
+  {
+    "id": 10304003707,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2023-11-29T00:00:00Z",
+    "moving_time": 495
+  },
+  {
+    "id": 10286992489,
+    "name": "Afternoon Run",
+    "distance": 6440.0,
+    "start_date": "2023-11-26T00:00:00Z",
+    "moving_time": 2011
+  },
+  {
+    "id": 10275146975,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-11-24T00:00:00Z",
+    "moving_time": 973
+  },
+  {
+    "id": 10252938428,
+    "name": "Afternoon Run",
+    "distance": 2410.0,
+    "start_date": "2023-11-20T00:00:00Z",
+    "moving_time": 738
+  },
+  {
+    "id": 10231298955,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-11-16T00:00:00Z",
+    "moving_time": 992
+  },
+  {
+    "id": 10208699277,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2023-11-12T00:00:00Z",
+    "moving_time": 503
+  },
+  {
+    "id": 10200324135,
+    "name": "Cd",
+    "distance": 770.0,
+    "start_date": "2023-11-11T00:00:00Z",
+    "moving_time": 249
+  },
+  {
+    "id": 10200186151,
+    "name": "Louisiana Junior High XC State Championship 2023, Pineville LA",
+    "distance": 3210.0,
+    "start_date": "2023-11-11T00:00:00Z",
+    "moving_time": 681
+  },
+  {
+    "id": 10199897517,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2023-11-11T00:00:00Z",
+    "moving_time": 548
+  },
+  {
+    "id": 10191196374,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2023-11-09T00:00:00Z",
+    "moving_time": 460
+  },
+  {
+    "id": 10185577404,
+    "name": "Afternoon Run",
+    "distance": 2420.0,
+    "start_date": "2023-11-08T00:00:00Z",
+    "moving_time": 697
+  },
+  {
+    "id": 10179503434,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2023-11-07T00:00:00Z",
+    "moving_time": 500
+  },
+  {
+    "id": 10173415861,
+    "name": "Afternoon Run",
+    "distance": 800.0,
+    "start_date": "2023-11-06T00:00:00Z",
+    "moving_time": 276
+  },
+  {
+    "id": 10173377591,
+    "name": "Christian league meet, placed 1st. Not a pr cuz it got championships Saturday‼️",
+    "distance": 3230.0,
+    "start_date": "2023-11-06T00:00:00Z",
+    "moving_time": 708
+  },
+  {
+    "id": 10173241580,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2023-11-06T00:00:00Z",
+    "moving_time": 508
+  },
+  {
+    "id": 10167549969,
+    "name": "Afternoon Run",
+    "distance": 2410.0,
+    "start_date": "2023-11-05T00:00:00Z",
+    "moving_time": 728
+  },
+  {
+    "id": 10161364301,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-11-04T00:00:00Z",
+    "moving_time": 919
+  },
+  {
+    "id": 10150279857,
+    "name": "Afternoon Run",
+    "distance": 1930.0,
+    "start_date": "2023-11-02T00:00:00Z",
+    "moving_time": 615
+  },
+  {
+    "id": 10150279558,
+    "name": "Afternoon Run",
+    "distance": 1290.0,
+    "start_date": "2023-11-02T00:00:00Z",
+    "moving_time": 302
+  },
+  {
+    "id": 10150279268,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2023-11-02T00:00:00Z",
+    "moving_time": 502
+  },
+  {
+    "id": 10139081412,
+    "name": "Cd",
+    "distance": 810.0,
+    "start_date": "2023-10-31T00:00:00Z",
+    "moving_time": 259
+  },
+  {
+    "id": 10138929509,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2023-10-31T00:00:00Z",
+    "moving_time": 459
+  },
+  {
+    "id": 10139110507,
+    "name": "3 x 800m @ 2:36 ; 2:35 ; 2:37 /w 3min rest in between",
+    "distance": 2410.0,
+    "start_date": "2023-10-31T00:00:00Z",
+    "moving_time": 468
+  },
+  {
+    "id": 10128308397,
+    "name": "Evening Run",
+    "distance": 3230.0,
+    "start_date": "2023-10-29T00:00:00Z",
+    "moving_time": 979
+  },
+  {
+    "id": 10118626978,
+    "name": "Morning Run",
+    "distance": 8050.0,
+    "start_date": "2023-10-28T00:00:00Z",
+    "moving_time": 2456
+  },
+  {
+    "id": 10118371761,
+    "name": "Afternoon Run",
+    "distance": 4030.0,
+    "start_date": "2023-10-27T00:00:00Z",
+    "moving_time": 1202
+  },
+  {
+    "id": 10110707255,
+    "name": "Cd",
+    "distance": 800.0,
+    "start_date": "2023-10-26T00:00:00Z",
+    "moving_time": 230
+  },
+  {
+    "id": 10110751444,
+    "name": "5 x 300m @ 52-57.2 secs",
+    "distance": 1610.0,
+    "start_date": "2023-10-26T00:00:00Z",
+    "moving_time": 420
+  },
+  {
+    "id": 10110707131,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2023-10-26T00:00:00Z",
+    "moving_time": 517
+  },
+  {
+    "id": 10099145502,
+    "name": "Afternoon Run",
+    "distance": 4840.0,
+    "start_date": "2023-10-24T00:00:00Z",
+    "moving_time": 1468
+  },
+  {
+    "id": 10093205972,
+    "name": "Evening Run",
+    "distance": 5030.0,
+    "start_date": "2023-10-23T00:00:00Z",
+    "moving_time": 1498
+  },
+  {
+    "id": 10087439794,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-10-22T00:00:00Z",
+    "moving_time": 990
+  },
+  {
+    "id": 10077925224,
+    "name": "Cd",
+    "distance": 1570.0,
+    "start_date": "2023-10-21T00:00:00Z",
+    "moving_time": 489
+  },
+  {
+    "id": 10077863923,
+    "name": "Rice fest 5k 4th overall, raced 3 days ago so felt 💩",
+    "distance": 5050.0,
+    "start_date": "2023-10-21T00:00:00Z",
+    "moving_time": 1174
+  },
+  {
+    "id": 10077647454,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2023-10-21T00:00:00Z",
+    "moving_time": 501
+  },
+  {
+    "id": 10075730015,
+    "name": "Evening Run",
+    "distance": 3230.0,
+    "start_date": "2023-10-20T00:00:00Z",
+    "moving_time": 949
+  },
+  {
+    "id": 10075729571,
+    "name": "Afternoon Run",
+    "distance": 810.0,
+    "start_date": "2023-10-18T00:00:00Z",
+    "moving_time": 300
+  },
+  {
+    "id": 10075729496,
+    "name": "Afternoon Run",
+    "distance": 3180.0,
+    "start_date": "2023-10-18T00:00:00Z",
+    "moving_time": 671
+  },
+  {
+    "id": 10075729063,
+    "name": "Afternoon Run",
+    "distance": 1620.0,
+    "start_date": "2023-10-18T00:00:00Z",
+    "moving_time": 542
+  },
+  {
+    "id": 10078396625,
+    "name": "Teurlings 2mi race; 1st place 🥇 11:09",
+    "distance": 3220.0,
+    "start_date": "2023-10-18T00:00:00Z",
+    "moving_time": 669
+  },
+  {
+    "id": 10075728804,
+    "name": "Evening Run",
+    "distance": 4020.0,
+    "start_date": "2023-10-16T00:00:00Z",
+    "moving_time": 1233
+  },
+  {
+    "id": 10075728318,
+    "name": "Afternoon Run",
+    "distance": 7250.0,
+    "start_date": "2023-10-15T00:00:00Z",
+    "moving_time": 2245
+  },
+  {
+    "id": 10038598910,
+    "name": "10x30 workout",
+    "distance": 2400.0,
+    "start_date": "2023-10-14T00:00:00Z",
+    "moving_time": 602
+  },
+  {
+    "id": 10033484161,
+    "name": "Afternoon Run",
+    "distance": 4830.0,
+    "start_date": "2023-10-13T00:00:00Z",
+    "moving_time": 1532
+  },
+  {
+    "id": 10028348338,
+    "name": ".5 easy 1mi @ 6:07 .5 easy",
+    "distance": 3630.0,
+    "start_date": "2023-10-12T00:00:00Z",
+    "moving_time": 1029
+  },
+  {
+    "id": 10009724243,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2023-10-09T00:00:00Z",
+    "moving_time": 1495
+  },
+  {
+    "id": 10003667415,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-10-08T00:00:00Z",
+    "moving_time": 1018
+  },
+  {
+    "id": 9996689295,
+    "name": "Cd?",
+    "distance": 1260.0,
+    "start_date": "2023-10-07T00:00:00Z",
+    "moving_time": 430
+  },
+  {
+    "id": 9996689103,
+    "name": "Run for a cure 2 miler, 2nd place 11:36",
+    "distance": 3160.0,
+    "start_date": "2023-10-07T00:00:00Z",
+    "moving_time": 697
+  },
+  {
+    "id": 9996688764,
+    "name": "Morning Run",
+    "distance": 1610.0,
+    "start_date": "2023-10-07T00:00:00Z",
+    "moving_time": 482
+  },
+  {
+    "id": 9989943224,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-10-06T00:00:00Z",
+    "moving_time": 906
+  },
+  {
+    "id": 9978604262,
+    "name": "Luh easy race pace intervals ✅👍",
+    "distance": 2410.0,
+    "start_date": "2023-10-04T00:00:00Z",
+    "moving_time": 720
+  },
+  {
+    "id": 9978582240,
+    "name": "Wu ‼️⁉️",
+    "distance": 1610.0,
+    "start_date": "2023-10-04T00:00:00Z",
+    "moving_time": 514
+  },
+  {
+    "id": 9978582036,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2023-10-02T00:00:00Z",
+    "moving_time": 1492
+  },
+  {
+    "id": 9978581512,
+    "name": "Afternoon Run",
+    "distance": 5630.0,
+    "start_date": "2023-09-30T00:00:00Z",
+    "moving_time": 1762
+  },
+  {
+    "id": 9942318972,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2023-09-28T00:00:00Z",
+    "moving_time": 489
+  },
+  {
+    "id": 9933724448,
+    "name": "Cd (might have gotten lost)",
+    "distance": 1610.0,
+    "start_date": "2023-09-27T00:00:00Z",
+    "moving_time": 586
+  },
+  {
+    "id": 9933622308,
+    "name": "First race back 3rd, 12:38, pr: 11:48 🤮not the best race but 3rd is 3rd ig",
+    "distance": 3200.0,
+    "start_date": "2023-09-27T00:00:00Z",
+    "moving_time": 758
+  },
+  {
+    "id": 9933427268,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2023-09-27T00:00:00Z",
+    "moving_time": 530
+  },
+  {
+    "id": 9914811791,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2023-09-24T00:00:00Z",
+    "moving_time": 1549
+  },
+  {
+    "id": 9907007714,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-09-23T00:00:00Z",
+    "moving_time": 991
+  },
+  {
+    "id": 9901464652,
+    "name": "Evening Run",
+    "distance": 6630.0,
+    "start_date": "2023-09-22T00:00:00Z",
+    "moving_time": 2065
+  },
+  {
+    "id": 9883345354,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2023-09-19T00:00:00Z",
+    "moving_time": 1530
+  },
+  {
+    "id": 9876719896,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2023-09-18T00:00:00Z",
+    "moving_time": 1480
+  },
+  {
+    "id": 9870981258,
+    "name": "First normal run since minor hip injury",
+    "distance": 4020.0,
+    "start_date": "2023-09-17T00:00:00Z",
+    "moving_time": 1249
+  },
+  {
+    "id": 9863772241,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2023-09-16T00:00:00Z",
+    "moving_time": 469
+  },
+  {
+    "id": 9844699098,
+    "name": "Haven’t run in a week hip injury from fb",
+    "distance": 800.0,
+    "start_date": "2023-09-13T00:00:00Z",
+    "moving_time": 251
+  },
+  {
+    "id": 9778874134,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-09-03T00:00:00Z",
+    "moving_time": 1032
+  },
+  {
+    "id": 9771887182,
+    "name": "Evening Run",
+    "distance": 2410.0,
+    "start_date": "2023-09-02T00:00:00Z",
+    "moving_time": 793
+  },
+  {
+    "id": 9746439372,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-08-29T00:00:00Z",
+    "moving_time": 970
+  },
+  {
+    "id": 9739800728,
+    "name": "Cd",
+    "distance": 1610.0,
+    "start_date": "2023-08-28T00:00:00Z",
+    "moving_time": 528
+  },
+  {
+    "id": 9739800614,
+    "name": "First 8th grade xc race! - 1st - 11:50",
+    "distance": 3220.0,
+    "start_date": "2023-08-28T00:00:00Z",
+    "moving_time": 709
+  },
+  {
+    "id": 9739800091,
+    "name": "Wu",
+    "distance": 1610.0,
+    "start_date": "2023-08-28T00:00:00Z",
+    "moving_time": 528
+  },
+  {
+    "id": 9734045819,
+    "name": ".5 easy .5 6minute pace .5 easy",
+    "distance": 2420.0,
+    "start_date": "2023-08-27T00:00:00Z",
+    "moving_time": 681
+  },
+  {
+    "id": 9715303022,
+    "name": "Cooldown",
+    "distance": 1610.0,
+    "start_date": "2023-08-24T00:00:00Z",
+    "moving_time": 568
+  },
+  {
+    "id": 9715302752,
+    "name": "Sneaux cone 1 mi",
+    "distance": 1610.0,
+    "start_date": "2023-08-24T00:00:00Z",
+    "moving_time": 334
+  },
+  {
+    "id": 9715302434,
+    "name": "Warmup",
+    "distance": 1600.0,
+    "start_date": "2023-08-24T00:00:00Z",
+    "moving_time": 521
+  },
+  {
+    "id": 9702446603,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-08-22T00:00:00Z",
+    "moving_time": 964
+  },
+  {
+    "id": 9689042397,
+    "name": "Evening Run",
+    "distance": 8860.0,
+    "start_date": "2023-08-20T00:00:00Z",
+    "moving_time": 2696
+  },
+  {
+    "id": 9682206833,
+    "name": "Post tri",
+    "distance": 1610.0,
+    "start_date": "2023-08-19T00:00:00Z",
+    "moving_time": 495
+  },
+  {
+    "id": 9679304088,
+    "name": "Spar tri: swim 100 yards @ 2:06, bike 3 mi @ 17.8 mph, 1k run @ 5:35   1ST OVERALL",
+    "distance": 1030.0,
+    "start_date": "2023-08-19T00:00:00Z",
+    "moving_time": 221
+  },
+  {
+    "id": 9669726394,
+    "name": "Evening Run",
+    "distance": 4030.0,
+    "start_date": "2023-08-17T00:00:00Z",
+    "moving_time": 1222
+  },
+  {
+    "id": 9668845843,
+    "name": "Evening Run",
+    "distance": 2420.0,
+    "start_date": "2023-08-16T00:00:00Z",
+    "moving_time": 737
+  },
+  {
+    "id": 9668846204,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-08-15T00:00:00Z",
+    "moving_time": 964
+  },
+  {
+    "id": 9668846749,
+    "name": "Evening Run",
+    "distance": 3370.0,
+    "start_date": "2023-08-13T00:00:00Z",
+    "moving_time": 926
+  },
+  {
+    "id": 9636082561,
+    "name": "Evening Run",
+    "distance": 8050.0,
+    "start_date": "2023-08-12T00:00:00Z",
+    "moving_time": 2463
+  },
+  {
+    "id": 9629759756,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-08-11T00:00:00Z",
+    "moving_time": 947
+  },
+  {
+    "id": 9623497268,
+    "name": "30x10 cd",
+    "distance": 720.0,
+    "start_date": "2023-08-10T00:00:00Z",
+    "moving_time": 225
+  },
+  {
+    "id": 9623497034,
+    "name": "30x10 @ 5:17 - 6:03 , 7:40 - 8:23",
+    "distance": 2500.0,
+    "start_date": "2023-08-10T00:00:00Z",
+    "moving_time": 602
+  },
+  {
+    "id": 9623496568,
+    "name": "30x10 wu",
+    "distance": 1610.0,
+    "start_date": "2023-08-10T00:00:00Z",
+    "moving_time": 492
+  },
+  {
+    "id": 9616806171,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-08-09T00:00:00Z",
+    "moving_time": 973
+  },
+  {
+    "id": 9606064661,
+    "name": "On pace 150s",
+    "distance": 3220.0,
+    "start_date": "2023-08-07T00:00:00Z",
+    "moving_time": 0
+  },
+  {
+    "id": 9597133142,
+    "name": "Evening Run",
+    "distance": 3260.0,
+    "start_date": "2023-08-06T00:00:00Z",
+    "moving_time": 969
+  },
+  {
+    "id": 9590874464,
+    "name": "Longest run this summer",
+    "distance": 8050.0,
+    "start_date": "2023-08-05T00:00:00Z",
+    "moving_time": 2471
+  },
+  {
+    "id": 9578683688,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2023-08-03T00:00:00Z",
+    "moving_time": 1472
+  },
+  {
+    "id": 9566120492,
+    "name": "1 mile super easy 8:42 with little brother, other mile 6:09 race tempo",
+    "distance": 3230.0,
+    "start_date": "2023-08-01T00:00:00Z",
+    "moving_time": 892
+  },
+  {
+    "id": 9553256591,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2023-07-30T00:00:00Z",
+    "moving_time": 1468
+  },
+  {
+    "id": 9546666795,
+    "name": "Evening Run",
+    "distance": 7240.0,
+    "start_date": "2023-07-29T00:00:00Z",
+    "moving_time": 2213
+  },
+  {
+    "id": 9522168624,
+    "name": "Evening Run",
+    "distance": 3230.0,
+    "start_date": "2023-07-25T00:00:00Z",
+    "moving_time": 991
+  },
+  {
+    "id": 9491134209,
+    "name": "Evening Run",
+    "distance": 1630.0,
+    "start_date": "2023-07-20T00:00:00Z",
+    "moving_time": 427
+  },
+  {
+    "id": 9478179104,
+    "name": "Brick workout 2/2:    .5mi - 3:01 (race pace)… 1.0mi - 8:30-9:20 (easy)",
+    "distance": 2420.0,
+    "start_date": "2023-07-18T00:00:00Z",
+    "moving_time": 701
+  },
+  {
+    "id": 9465281623,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-07-16T00:00:00Z",
+    "moving_time": 952
+  },
+  {
+    "id": 9458850183,
+    "name": "Evening Run",
+    "distance": 7250.0,
+    "start_date": "2023-07-15T00:00:00Z",
+    "moving_time": 2213
+  },
+  {
+    "id": 9446902189,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2023-07-13T00:00:00Z",
+    "moving_time": 1469
+  },
+  {
+    "id": 9434325537,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2023-07-11T00:00:00Z",
+    "moving_time": 1465
+  },
+  {
+    "id": 9421663162,
+    "name": "Evening Run",
+    "distance": 4040.0,
+    "start_date": "2023-07-09T00:00:00Z",
+    "moving_time": 1198
+  },
+  {
+    "id": 9415031432,
+    "name": "Evening Run",
+    "distance": 6450.0,
+    "start_date": "2023-07-08T00:00:00Z",
+    "moving_time": 1951
+  },
+  {
+    "id": 9402861125,
+    "name": "Easy post rain 2 miles",
+    "distance": 3230.0,
+    "start_date": "2023-07-06T00:00:00Z",
+    "moving_time": 984
+  },
+  {
+    "id": 9392491140,
+    "name": "LAR 4 miler cooldown",
+    "distance": 800.0,
+    "start_date": "2023-07-04T00:00:00Z",
+    "moving_time": 274
+  },
+  {
+    "id": 9392483758,
+    "name": "LAR 4 miler",
+    "distance": 6440.0,
+    "start_date": "2023-07-04T00:00:00Z",
+    "moving_time": 1617
+  },
+  {
+    "id": 9385882974,
+    "name": "LAR 4 miler warmup. Didn’t save race/cooldown. 26:56 , ran way below goal. Still won age group, 6th overall",
+    "distance": 810.0,
+    "start_date": "2023-07-04T00:00:00Z",
+    "moving_time": 278
+  },
+  {
+    "id": 9383804885,
+    "name": "4 mile LAR — 1/3 warmup 1/3 easy 1/3 race pace",
+    "distance": 1620.0,
+    "start_date": "2023-07-03T00:00:00Z",
+    "moving_time": 470
+  },
+  {
+    "id": 9371293911,
+    "name": "Evening Run",
+    "distance": 4850.0,
+    "start_date": "2023-07-01T00:00:00Z",
+    "moving_time": 1476
+  },
+  {
+    "id": 9359825398,
+    "name": "Evening Run",
+    "distance": 4850.0,
+    "start_date": "2023-06-29T00:00:00Z",
+    "moving_time": 1484
+  },
+  {
+    "id": 9341087696,
+    "name": "L short run",
+    "distance": 3220.0,
+    "start_date": "2023-06-26T00:00:00Z",
+    "moving_time": 976
+  },
+  {
+    "id": 9328665980,
+    "name": "I have a fear of speed bumps. But I'm slowly getting over it.",
+    "distance": 6450.0,
+    "start_date": "2023-06-24T00:00:00Z",
+    "moving_time": 1979
+  },
+  {
+    "id": 9316727922,
+    "name": "Sno Cone race - cool down",
+    "distance": 1610.0,
+    "start_date": "2023-06-22T00:00:00Z",
+    "moving_time": 550
+  },
+  {
+    "id": 9316727597,
+    "name": "Sno cone race - 5:37",
+    "distance": 1620.0,
+    "start_date": "2023-06-22T00:00:00Z",
+    "moving_time": 339
+  },
+  {
+    "id": 9316727281,
+    "name": "Sno cone race - warm up",
+    "distance": 1620.0,
+    "start_date": "2023-06-22T00:00:00Z",
+    "moving_time": 533
+  },
+  {
+    "id": 9308490839,
+    "name": "Are we eating or are we not eating?",
+    "distance": 4020.0,
+    "start_date": "2023-06-20T00:00:00Z",
+    "moving_time": 1215
+  },
+  {
+    "id": 9288799183,
+    "name": "Brick Workout",
+    "distance": 2430.0,
+    "start_date": "2023-06-18T00:00:00Z",
+    "moving_time": 723
+  },
+  {
+    "id": 9282057450,
+    "name": "Morning Run",
+    "distance": 5640.0,
+    "start_date": "2023-06-17T00:00:00Z",
+    "moving_time": 1713
+  },
+  {
+    "id": 9273752928,
+    "name": "Evening Run",
+    "distance": 2430.0,
+    "start_date": "2023-06-15T00:00:00Z",
+    "moving_time": 715
+  },
+  {
+    "id": 9261205881,
+    "name": "Evening Run",
+    "distance": 4840.0,
+    "start_date": "2023-06-13T00:00:00Z",
+    "moving_time": 1403
+  },
+  {
+    "id": 9248891332,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-06-11T00:00:00Z",
+    "moving_time": 934
+  },
+  {
+    "id": 9238591324,
+    "name": "Morning Run",
+    "distance": 4830.0,
+    "start_date": "2023-06-10T00:00:00Z",
+    "moving_time": 1454
+  },
+  {
+    "id": 9229674416,
+    "name": "Evening Run",
+    "distance": 4040.0,
+    "start_date": "2023-06-08T00:00:00Z",
+    "moving_time": 1187
+  },
+  {
+    "id": 9217152192,
+    "name": "Evening Run",
+    "distance": 2430.0,
+    "start_date": "2023-06-06T00:00:00Z",
+    "moving_time": 715
+  },
+  {
+    "id": 9204709014,
+    "name": "Evening Run",
+    "distance": 4830.0,
+    "start_date": "2023-06-04T00:00:00Z",
+    "moving_time": 1371
+  },
+  {
+    "id": 9197784192,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-06-03T00:00:00Z",
+    "moving_time": 974
+  },
+  {
+    "id": 9190344908,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-06-01T00:00:00Z",
+    "moving_time": 982
+  },
+  {
+    "id": 9163239180,
+    "name": "Morning Run",
+    "distance": 3210.0,
+    "start_date": "2023-05-29T00:00:00Z",
+    "moving_time": 1005
+  },
+  {
+    "id": 9159851475,
+    "name": "Evening Run",
+    "distance": 2410.0,
+    "start_date": "2023-05-27T00:00:00Z",
+    "moving_time": 773
+  },
+  {
+    "id": 9159851555,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2023-05-26T00:00:00Z",
+    "moving_time": 539
+  },
+  {
+    "id": 9159851502,
+    "name": "Evening Run",
+    "distance": 800.0,
+    "start_date": "2023-05-11T00:00:00Z",
+    "moving_time": 149
+  },
+  {
+    "id": 9160139854,
+    "name": "800m PR",
+    "distance": 800.0,
+    "start_date": "2023-05-11T00:00:00Z",
+    "moving_time": 148
+  },
+  {
+    "id": 9159851455,
+    "name": "Evening Run",
+    "distance": 3200.0,
+    "start_date": "2023-05-11T00:00:00Z",
+    "moving_time": 719
+  },
+  {
+    "id": 9160137182,
+    "name": "Mile PR",
+    "distance": 1610.0,
+    "start_date": "2023-05-11T00:00:00Z",
+    "moving_time": 328
+  },
+  {
+    "id": 9159851515,
+    "name": "Afternoon Run",
+    "distance": 1610.0,
+    "start_date": "2023-05-11T00:00:00Z",
+    "moving_time": 504
+  },
+  {
+    "id": 9159851518,
+    "name": "Evening Run",
+    "distance": 810.0,
+    "start_date": "2023-05-10T00:00:00Z",
+    "moving_time": 232
+  },
+  {
+    "id": 9159851565,
+    "name": "Afternoon Run",
+    "distance": 720.0,
+    "start_date": "2023-05-09T00:00:00Z",
+    "moving_time": 221
+  },
+  {
+    "id": 9159851561,
+    "name": "Evening Run",
+    "distance": 1600.0,
+    "start_date": "2023-05-08T00:00:00Z",
+    "moving_time": 360
+  },
+  {
+    "id": 9159851526,
+    "name": "Evening Run",
+    "distance": 1610.0,
+    "start_date": "2023-05-08T00:00:00Z",
+    "moving_time": 488
+  },
+  {
+    "id": 9159851517,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-05-07T00:00:00Z",
+    "moving_time": 961
+  },
+  {
+    "id": 9159851513,
+    "name": "Lunch Run",
+    "distance": 4070.0,
+    "start_date": "2023-05-06T00:00:00Z",
+    "moving_time": 1157
+  },
+  {
+    "id": 9159851454,
+    "name": "Afternoon Run",
+    "distance": 4820.0,
+    "start_date": "2023-05-04T00:00:00Z",
+    "moving_time": 1461
+  },
+  {
+    "id": 9159851510,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-05-02T00:00:00Z",
+    "moving_time": 914
+  },
+  {
+    "id": 9159851460,
+    "name": "Evening Run",
+    "distance": 5630.0,
+    "start_date": "2023-04-30T00:00:00Z",
+    "moving_time": 1561
+  },
+  {
+    "id": 9159851562,
+    "name": "Evening Run",
+    "distance": 3220.0,
+    "start_date": "2023-04-29T00:00:00Z",
+    "moving_time": 968
+  },
+  {
+    "id": 9159851453,
+    "name": "Afternoon Run",
+    "distance": 3220.0,
+    "start_date": "2023-04-28T00:00:00Z",
+    "moving_time": 874
+  },
+  {
+    "id": 9159851541,
+    "name": "Evening Run",
+    "distance": 5640.0,
+    "start_date": "2023-04-27T00:00:00Z",
+    "moving_time": 1702
+  },
+  {
+    "id": 9159851514,
+    "name": "Evening Run",
+    "distance": 1600.0,
+    "start_date": "2023-04-24T00:00:00Z",
+    "moving_time": 330
+  },
+  {
+    "id": 9159851446,
+    "name": "Evening Run",
+    "distance": 790.0,
+    "start_date": "2023-04-24T00:00:00Z",
+    "moving_time": 151
+  },
+  {
+    "id": 9159851458,
+    "name": "Afternoon Run",
+    "distance": 820.0,
+    "start_date": "2023-04-23T00:00:00Z",
+    "moving_time": 217
+  },
+  {
+    "id": 9159851503,
+    "name": "Afternoon Run",
+    "distance": 150.0,
+    "start_date": "2023-04-23T00:00:00Z",
+    "moving_time": 29
+  },
+  {
+    "id": 9159851558,
+    "name": "Afternoon Run",
+    "distance": 140.0,
+    "start_date": "2023-04-23T00:00:00Z",
+    "moving_time": 29
+  },
+  {
+    "id": 9159851522,
+    "name": "Afternoon Run",
+    "distance": 400.0,
+    "start_date": "2023-04-23T00:00:00Z",
+    "moving_time": 77
+  },
+  {
+    "id": 9159851498,
+    "name": "Afternoon Run",
+    "distance": 290.0,
+    "start_date": "2023-04-23T00:00:00Z",
+    "moving_time": 61
+  },
+  {
+    "id": 9159851521,
+    "name": "Evening Run",
+    "distance": 2410.0,
+    "start_date": "2023-04-22T00:00:00Z",
+    "moving_time": 687
+  },
+  {
+    "id": 9190375750,
+    "name": "Afternoon Run",
+    "distance": 4020.0,
+    "start_date": "2023-04-19T00:00:00Z",
+    "moving_time": 1233
+  },
+  {
+    "id": 9190375761,
+    "name": "Afternoon Run",
+    "distance": 7220.0,
+    "start_date": "2023-04-15T00:00:00Z",
+    "moving_time": 2243
+  }
+]
