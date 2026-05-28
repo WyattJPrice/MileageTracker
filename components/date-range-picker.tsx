@@ -15,6 +15,10 @@ import {
 
 const presets: { label: string; range: DateRange }[] = [
   {
+    label: "11th Grade",
+    range: { from: new Date("2026-05-17"), to: new Date() },
+  },
+  {
     label: "10th Grade",
     range: { from: new Date("2025-05-24"), to: new Date("2026-05-23") },
   },

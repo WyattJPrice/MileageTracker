@@ -151,3 +151,13 @@
 *::-webkit-scrollbar-thumb:hover {
   background: oklch(0.35 0.006 285.82);
 }
+
+.zoomable-chart-container * {
+  cursor: inherit !important;
+}
+
+.recharts-reference-area,
+.recharts-reference-area * {
+  pointer-events: none !important;
+  outline: none !important;
+}

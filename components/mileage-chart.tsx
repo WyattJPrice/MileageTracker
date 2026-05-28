@@ -111,23 +111,27 @@ interface MileageChartProps {
   data: ChartDataPoint[]
   highlights?: HighlightRange[]
   isLoading?: boolean
+  className?: string
+  animate?: boolean
 }
 
-export function MileageChart({ data, highlights, isLoading }: MileageChartProps) {
+export function MileageChart({ data, highlights, isLoading, className, animate = true }: MileageChartProps) {
+  const height = className ?? "h-[280px]"
+
   if (isLoading) {
     return <ChartSkeleton />
   }
 
   if (data.length === 0) {
     return (
-      <div className="flex h-[280px] w-full items-center justify-center">
+      <div className={`flex ${height} w-full items-center justify-center`}>
         <p className="text-sm text-zinc-500">No runs in this range</p>
       </div>
     )
   }
 
   return (
-    <ChartContainer config={chartConfig} className="h-[280px] w-full">
+    <ChartContainer config={chartConfig} className={`${height} w-full`}>
       <LineChart
         accessibilityLayer
         data={data}
@@ -145,7 +149,8 @@ export function MileageChart({ data, highlights, isLoading }: MileageChartProps)
             x2={h.x2}
             fill={h.color}
             fillOpacity={0.1}
-            strokeOpacity={0}
+            stroke="none"
+            style={{ pointerEvents: "none", outline: "none" }}
           />
         ))}
         <XAxis
@@ -178,8 +183,8 @@ export function MileageChart({ data, highlights, isLoading }: MileageChartProps)
           strokeWidth={2}
           dot={<RaceDot />}
           activeDot={{ r: 4, strokeWidth: 0, fill: "var(--color-miles)" }}
-          animationDuration={750}
-          animationEasing="ease-out"
+          isAnimationActive={animate}
+          animationDuration={animate ? 750 : 0}
         />
       </LineChart>
     </ChartContainer>
