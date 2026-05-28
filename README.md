@@ -4,7 +4,7 @@ A personal running dashboard built with Next.js that visualizes weekly mileage f
 
 Data is seeded from Strava into Upstash Redis and queried by date range. Weekly mileage is aggregated Sunday through Saturday.
 
-## Race Results (8th Grade XC through 2026 Track Season)
+## Race Results (8th Grade XC through 10th Grade Track)
 
 ### 8th Grade Cross Country (Aug 2023 - Nov 2023)
 
