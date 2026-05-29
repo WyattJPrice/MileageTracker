@@ -108,40 +108,42 @@ export function LiveDashboard() {
           </div>
         </header>
 
-        {/* Desktop: fixed grid that fills remaining height. Mobile: normal scroll. */}
-        <div className="flex-1 min-h-0 grid grid-cols-1 gap-3 lg:content-start lg:grid-cols-5 lg:grid-rows-[auto_auto_auto]">
-          <div className="lg:col-span-1 lg:col-start-1 lg:row-start-1 min-h-0">
+        {/* Desktop: 3×3 equal grid filling remaining height. Mobile: normal scroll. */}
+        <div className="flex-1 min-h-0 grid grid-cols-1 gap-3 lg:grid-cols-3 lg:grid-rows-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+          <div className="lg:col-start-1 lg:row-start-1 h-full">
             <TodayCard runs={todayRuns} isLoading={isLoadingToday} />
           </div>
 
-          <div className="lg:col-span-2 lg:col-start-2 lg:row-start-1">
+          <div className="lg:col-start-2 lg:row-start-1 h-full">
             <TodayWorkoutCard
               events={upcoming.filter((e) => e.date === todayStr())}
               isLoading={isLoadingUpcoming}
             />
           </div>
 
-          <div className="lg:col-span-2 lg:col-start-4 lg:row-span-2 lg:row-start-1 min-h-0">
+          <div className="lg:col-start-3 lg:row-start-1 lg:row-span-2 h-full">
             <UpcomingCard
               events={upcoming.filter((e) => e.date > todayStr())}
               isLoading={isLoadingUpcoming}
             />
           </div>
 
-          <div className="lg:col-span-3 lg:col-start-1 lg:row-start-2">
+          <div className="lg:col-start-1 lg:col-span-2 lg:row-start-2 h-full">
             <WeekRunsList runs={weekRuns} isLoading={isLoadingWeek} />
           </div>
 
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 lg:col-span-5 lg:row-start-3">
-            <p className="mb-2 text-xs font-medium uppercase tracking-wider text-zinc-500">
+          <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 lg:col-span-3 lg:row-start-3 h-full flex flex-col">
+            <p className="mb-2 shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">
               Last 8 Weeks
             </p>
             {isLoadingChart ? (
-              <div className="flex h-40 items-center justify-center">
+              <div className="flex flex-1 items-center justify-center">
                 <p className="text-sm text-zinc-600">Loading…</p>
               </div>
             ) : (
-              <EightWeekChart activities={chartActivities} />
+              <div className="flex-1 min-h-0">
+                <EightWeekChart activities={chartActivities} />
+              </div>
             )}
           </div>
         </div>
