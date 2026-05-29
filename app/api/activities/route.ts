@@ -13,11 +13,19 @@ export async function GET(request: NextRequest) {
     )
   }
 
-  const startTs = Math.floor(new Date(start).getTime() / 1000)
-  const endTs = Math.floor(new Date(end + "T23:59:59").getTime() / 1000)
+  // Fetch a wider UTC window (±14h) so timezone offsets never exclude activities,
+  // then filter precisely by the locally-stored date string.
+  const BUFFER_S = 14 * 3600
+  const startTs = Math.floor(new Date(start).getTime() / 1000) - BUFFER_S
+  const endTs = Math.floor(new Date(end + "T23:59:59").getTime() / 1000) + BUFFER_S
 
-  const results = await redis.zrange("activities:runs", startTs, endTs, {
+  const raw = await redis.zrange("activities:runs", startTs, endTs, {
     byScore: true,
+  })
+
+  const results = raw.filter((r) => {
+    const a = typeof r === "string" ? JSON.parse(r) : r
+    return a.date >= start && a.date <= end
   })
 
   return NextResponse.json(results)

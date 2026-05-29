@@ -156,10 +156,14 @@
   cursor: inherit !important;
 }
 
+.recharts-wrapper,
+.recharts-wrapper * {
+  outline: none !important;
+}
+
 .recharts-reference-area,
 .recharts-reference-area * {
   pointer-events: none !important;
-  outline: none !important;
 }
 
 @keyframes rock {
