@@ -14,13 +14,6 @@ export function Dashboard() {
           <h1 className="text-2xl font-semibold tracking-tight text-zinc-100 [@media(max-height:500px)]:text-sm">
             Wyatt&apos;s Mileage Tracker
           </h1>
-          <Link
-            href="/live"
-            className="flex items-center gap-1.5 rounded-md px-2.5 py-1.5 text-xs text-zinc-500 transition-colors hover:bg-zinc-800 hover:text-zinc-300"
-          >
-            <MonitorPlay className="h-3.5 w-3.5" />
-            Live
-          </Link>
         </div>
         <p className="mt-1 text-sm text-zinc-500 [@media(max-height:500px)]:hidden">
           Analyze patterns over time
