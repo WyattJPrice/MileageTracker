@@ -6,15 +6,14 @@ import { RotateCcw, SlidersHorizontal } from "lucide-react"
 import { ZoomableChart } from "@/components/zoomable-chart"
 import { aggregateActivities } from "@/lib/utils"
 import { seasons, TRACK_COLOR, XC_COLOR } from "@/lib/seasons"
-import { races } from "@/lib/races"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import type { Activity, ChartDataPoint, HighlightRange } from "@/lib/types"
+import type { Activity, ChartDataPoint, HighlightRange, Race } from "@/lib/types"
 
-function attachRaces(points: ChartDataPoint[], daySpan: number) {
+function attachRaces(points: ChartDataPoint[], daySpan: number, races: Race[]) {
   for (const point of points) {
     const end = format(addDays(new Date(point.date + "T00:00:00"), daySpan), "yyyy-MM-dd")
     const matched = races.filter(
@@ -59,9 +58,17 @@ function computeHighlights(
 
 export function OverviewTab() {
   const [activities, setActivities] = React.useState<Activity[]>([])
+  const [races, setRaces] = React.useState<Race[]>([])
   const [isLoading, setIsLoading] = React.useState(true)
   const [showTrack, setShowTrack] = React.useState(false)
   const [showXC, setShowXC] = React.useState(false)
+
+  React.useEffect(() => {
+    fetch("/api/races")
+      .then((r) => r.json())
+      .then((d) => setRaces(d))
+      .catch(() => {})
+  }, [])
 
   React.useEffect(() => {
     fetch("/api/activities?start=2023-01-01&end=2027-01-01")
@@ -75,13 +82,13 @@ export function OverviewTab() {
 
   const weeklyData = React.useMemo(() => {
     if (activities.length === 0) return []
-    return attachRaces(aggregateActivities(activities, "weekly"), 6)
-  }, [activities])
+    return attachRaces(aggregateActivities(activities, "weekly"), 6, races)
+  }, [activities, races])
 
   const dailyData = React.useMemo(() => {
     if (activities.length === 0) return []
-    return attachRaces(aggregateActivities(activities, "daily"), 0)
-  }, [activities])
+    return attachRaces(aggregateActivities(activities, "daily"), 0, races)
+  }, [activities, races])
 
   const weeklyHighlights = React.useMemo(
     () => computeHighlights(weeklyData, 6, showTrack, showXC),
