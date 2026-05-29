@@ -88,9 +88,9 @@ export function LiveDashboard() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-zinc-950 p-4 lg:p-8">
-      <div className="mx-auto max-w-[1600px]">
-        <header className="mb-4 flex items-center justify-between lg:mb-6">
+    <div className="h-[100dvh] overflow-hidden bg-zinc-950 flex flex-col p-4 lg:p-6">
+      <div className="mx-auto w-full max-w-[1600px] flex flex-col flex-1 min-h-0">
+        <header className="mb-3 shrink-0 flex items-center justify-between">
           <h1 className="text-base font-semibold tracking-tight text-zinc-300 lg:text-lg">
             Wyatt&apos;s Training
           </h1>
@@ -107,25 +107,26 @@ export function LiveDashboard() {
           </div>
         </header>
 
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-5 lg:grid-rows-[auto_auto_auto]">
-          <div className="lg:col-span-3 lg:row-start-1">
+        {/* Desktop: fixed grid that fills remaining height. Mobile: normal scroll. */}
+        <div className="flex-1 min-h-0 grid grid-cols-1 gap-3 lg:grid-cols-5 lg:grid-rows-[1fr_1fr_auto]">
+          <div className="lg:col-span-3 lg:row-start-1 min-h-0">
             <TodayCard runs={todayRuns} isLoading={isLoadingToday} />
           </div>
 
-          <div className="lg:col-span-2 lg:row-span-2 lg:row-start-1">
+          <div className="lg:col-span-2 lg:row-span-2 lg:row-start-1 min-h-0">
             <UpcomingCard events={upcoming} isLoading={isLoadingUpcoming} />
           </div>
 
-          <div className="lg:col-span-3 lg:row-start-2">
+          <div className="lg:col-span-3 lg:row-start-2 min-h-0">
             <WeekRunsList runs={weekRuns} isLoading={isLoadingWeek} />
           </div>
 
-          <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 lg:col-span-5 lg:row-start-3">
+          <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 lg:col-span-5 lg:row-start-3">
             <p className="mb-2 text-xs font-medium uppercase tracking-wider text-zinc-500">
               Last 8 Weeks
             </p>
             {isLoadingChart ? (
-              <div className="flex h-52 items-center justify-center lg:h-64">
+              <div className="flex h-40 items-center justify-center">
                 <p className="text-sm text-zinc-600">Loading…</p>
               </div>
             ) : (

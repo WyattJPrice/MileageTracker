@@ -31,8 +31,8 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
   const primary = runs[0]
 
   return (
-    <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full">
-      <p className="mb-3 text-xs font-medium uppercase tracking-wider text-zinc-500">Today</p>
+    <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full flex flex-col overflow-hidden">
+      <p className="mb-3 shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">Today</p>
 
       {isLoading ? (
         <div className="space-y-3">
@@ -45,7 +45,7 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
           <p className="text-sm text-zinc-600">No run recorded yet</p>
         </div>
       ) : (
-        <div className="space-y-4">
+        <div className="flex flex-col gap-4 min-h-0 overflow-y-auto">
           <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
             <span className="font-mono text-5xl font-semibold tabular-nums text-zinc-100 lg:text-6xl">
               {totalMiles.toFixed(2)}

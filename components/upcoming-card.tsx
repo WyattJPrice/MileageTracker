@@ -45,8 +45,8 @@ function formatEventDate(dateStr: string): string {
 
 export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
   return (
-    <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full">
-      <p className="mb-3 text-xs font-medium uppercase tracking-wider text-zinc-500">Upcoming</p>
+    <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full flex flex-col overflow-hidden">
+      <p className="mb-3 shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">Upcoming</p>
 
       {isLoading ? (
         <div className="space-y-3">
@@ -60,7 +60,7 @@ export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
       ) : events.length === 0 ? (
         <p className="text-sm text-zinc-600">No upcoming workouts</p>
       ) : (
-        <div className="space-y-4">
+        <div className="space-y-4 overflow-y-auto min-h-0">
           {groupByDate(events).map(({ date, dayDiff, items }) => (
             <div key={date}>
               <p className="mb-1.5 text-xs text-zinc-500">{formatEventDate(date)}</p>
