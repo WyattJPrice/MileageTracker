@@ -15,6 +15,7 @@ interface StravaActivity {
   name: string
   distance: number
   start_date: string
+  start_date_local: string
   moving_time: number
   type: string
 }
@@ -123,16 +124,20 @@ export async function storeActivity(raw: StravaActivity): Promise<boolean> {
   const exists = await redis.sismember("activities:ids", raw.id)
   if (exists) return false
 
-  const date = new Date(raw.start_date)
+  const utcDate = new Date(raw.start_date)
+  const localDateStr = raw.start_date_local
+    ? raw.start_date_local.split("T")[0]
+    : utcDate.toISOString().split("T")[0]
+
   const stored: StoredActivity = {
     id: raw.id,
     name: raw.name,
     distance_miles: parseFloat((raw.distance * METERS_TO_MILES).toFixed(2)),
-    date: date.toISOString().split("T")[0],
+    date: localDateStr,
     moving_time_seconds: raw.moving_time,
   }
 
-  const score = Math.floor(date.getTime() / 1000)
+  const score = Math.floor(utcDate.getTime() / 1000)
   const pipeline = redis.pipeline()
   pipeline.zadd("activities:runs", { score, member: JSON.stringify(stored) })
   pipeline.sadd("activities:ids", raw.id)
