@@ -109,12 +109,12 @@ export function LiveDashboard() {
         </header>
 
         {/* Desktop: fixed grid that fills remaining height. Mobile: normal scroll. */}
-        <div className="flex-1 min-h-0 grid grid-cols-1 gap-3 lg:grid-cols-5 lg:grid-rows-[auto_1fr_auto]">
+        <div className="flex-1 min-h-0 grid grid-cols-1 gap-3 lg:content-start lg:grid-cols-5 lg:grid-rows-[auto_auto_auto]">
           <div className="lg:col-span-1 lg:col-start-1 lg:row-start-1 min-h-0">
             <TodayCard runs={todayRuns} isLoading={isLoadingToday} />
           </div>
 
-          <div className="lg:col-span-2 lg:col-start-2 lg:row-start-1 min-h-0">
+          <div className="lg:col-span-2 lg:col-start-2 lg:row-start-1">
             <TodayWorkoutCard
               events={upcoming.filter((e) => e.date === todayStr())}
               isLoading={isLoadingUpcoming}
@@ -128,7 +128,7 @@ export function LiveDashboard() {
             />
           </div>
 
-          <div className="lg:col-span-3 lg:col-start-1 lg:row-start-2 lg:h-full">
+          <div className="lg:col-span-3 lg:col-start-1 lg:row-start-2">
             <WeekRunsList runs={weekRuns} isLoading={isLoadingWeek} />
           </div>
 

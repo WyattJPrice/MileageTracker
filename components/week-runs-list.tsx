@@ -26,8 +26,8 @@ export function WeekRunsList({ runs, isLoading }: WeekRunsListProps) {
   }
 
   return (
-    <div className="rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-4 h-full flex flex-col">
-      <div className="mb-3 shrink-0 flex items-center justify-between">
+    <div className="rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-4">
+      <div className="mb-3 flex items-center justify-between">
         <p className="text-xs font-medium uppercase tracking-wider text-zinc-500">This Week</p>
         {runs.length > 0 && (
           <span className="font-mono text-sm tabular-nums text-zinc-300">
@@ -36,12 +36,12 @@ export function WeekRunsList({ runs, isLoading }: WeekRunsListProps) {
         )}
       </div>
 
-      <div className="grid grid-cols-7 gap-1 flex-1 min-h-0">
+      <div className="grid grid-cols-7 gap-1">
         {isLoading
           ? Array.from({ length: 7 }, (_, i) => (
-              <div key={i} className="flex flex-col items-center justify-center gap-2 rounded-lg p-2">
+              <div key={i} className="flex flex-col items-center gap-2 rounded-lg py-4 px-1">
                 <div className="h-3 w-8 rounded bg-zinc-800 animate-pulse" />
-                <div className="h-8 w-10 rounded bg-zinc-800 animate-pulse" />
+                <div className="h-7 w-10 rounded bg-zinc-800 animate-pulse" />
               </div>
             ))
           : week.map((date) => {
@@ -53,7 +53,7 @@ export function WeekRunsList({ runs, isLoading }: WeekRunsListProps) {
               return (
                 <div
                   key={date}
-                  className={`flex flex-col items-center justify-center rounded-lg px-1 ${
+                  className={`flex flex-col items-center rounded-lg py-4 px-1 ${
                     isToday ? "bg-zinc-800" : ""
                   }`}
                 >
@@ -65,7 +65,7 @@ export function WeekRunsList({ runs, isLoading }: WeekRunsListProps) {
                     {dayLabel}
                   </span>
                   <span
-                    className={`mt-2 font-mono text-3xl font-semibold tabular-nums leading-none ${
+                    className={`mt-2 font-mono text-2xl font-semibold tabular-nums leading-none ${
                       mi ? "text-zinc-100" : isFuture ? "text-zinc-700" : "text-zinc-600"
                     }`}
                   >
