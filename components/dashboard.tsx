@@ -6,18 +6,18 @@ import { DetailedTab } from "@/components/detailed-tab"
 
 export function Dashboard() {
   return (
-    <div className="mx-auto max-w-[1400px] px-6 py-8 lg:px-8">
-      <header className="mb-8">
-        <h1 className="text-2xl font-semibold tracking-tight text-zinc-100">
+    <div className="mx-auto max-w-[1400px] px-6 py-8 lg:px-8 [@media(max-height:500px)]:py-2">
+      <header className="mb-8 [@media(max-height:500px)]:mb-1">
+        <h1 className="text-2xl font-semibold tracking-tight text-zinc-100 [@media(max-height:500px)]:text-sm">
           Wyatt's Mileage Tracker
         </h1>
-        <p className="mt-1 text-sm text-zinc-500">
+        <p className="mt-1 text-sm text-zinc-500 [@media(max-height:500px)]:hidden">
           Analyze patterns over time
         </p>
       </header>
 
       <Tabs defaultValue="overview">
-        <TabsList variant="line" className="mb-6">
+        <TabsList variant="line" className="mb-6 [@media(max-height:500px)]:mb-1">
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger value="detailed">Detailed</TabsTrigger>
         </TabsList>

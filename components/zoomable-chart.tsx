@@ -227,24 +227,29 @@ export function ZoomableChart({
   React.useEffect(() => {
     if (!isScrollDragging) return
 
-    const handleMove = (e: MouseEvent) => {
+    const move = (clientX: number) => {
       if (!trackRef.current) return
       const trackWidth = trackRef.current.getBoundingClientRect().width
-      const px = e.clientX - scrollDragRef.current.startX
+      const px = clientX - scrollDragRef.current.startX
       const deltaMs = (px / trackWidth) * fullRange
       const range = scrollDragRef.current.startEnd - scrollDragRef.current.startStart
-
       const ns = scrollDragRef.current.startStart + deltaMs
       clampView(ns, ns + range)
     }
 
+    const handleMouseMove = (e: MouseEvent) => move(e.clientX)
+    const handleTouchMove = (e: TouchEvent) => { e.preventDefault(); move(e.touches[0].clientX) }
     const handleUp = () => setIsScrollDragging(false)
 
-    window.addEventListener("mousemove", handleMove)
+    window.addEventListener("mousemove", handleMouseMove)
     window.addEventListener("mouseup", handleUp)
+    window.addEventListener("touchmove", handleTouchMove, { passive: false })
+    window.addEventListener("touchend", handleUp)
     return () => {
-      window.removeEventListener("mousemove", handleMove)
+      window.removeEventListener("mousemove", handleMouseMove)
       window.removeEventListener("mouseup", handleUp)
+      window.removeEventListener("touchmove", handleTouchMove)
+      window.removeEventListener("touchend", handleUp)
     }
   }, [isScrollDragging, fullRange, clampView])
 
@@ -254,6 +259,14 @@ export function ZoomableChart({
     hasInteracted.current = true
     setIsScrollDragging(true)
     scrollDragRef.current = { startX: e.clientX, startStart: viewStart, startEnd: viewEnd }
+  }
+
+  const handleScrollThumbTouchStart = (e: React.TouchEvent) => {
+    e.stopPropagation()
+    e.preventDefault()
+    hasInteracted.current = true
+    setIsScrollDragging(true)
+    scrollDragRef.current = { startX: e.touches[0].clientX, startStart: viewStart, startEnd: viewEnd }
   }
 
   const handleTrackClick = (e: React.MouseEvent) => {
@@ -292,7 +305,7 @@ export function ZoomableChart({
           data={visibleSlice}
           highlights={visibleHighlights}
           isLoading={isLoading}
-          className="h-[calc(100dvh-17rem)]"
+          className="h-[calc(100dvh-17rem)] [@media(max-height:500px)]:h-[calc(100dvh-8.5rem)]"
           animate={!hasInteracted.current}
           lineType="linear"
         />
@@ -308,7 +321,7 @@ export function ZoomableChart({
         )}
         <div
           ref={trackRef}
-          className="h-1.5 cursor-pointer rounded-full bg-zinc-800/60 md:h-1.5"
+          className="h-3 cursor-pointer rounded-full bg-zinc-800/60 touch-none md:h-1.5"
           onMouseDown={handleTrackClick}
         >
           <div
@@ -319,6 +332,7 @@ export function ZoomableChart({
               cursor: isScrollDragging ? "grabbing" : "grab",
             }}
             onMouseDown={handleScrollThumbDown}
+            onTouchStart={handleScrollThumbTouchStart}
           />
         </div>
       </div>

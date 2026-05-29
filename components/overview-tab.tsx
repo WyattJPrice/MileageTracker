@@ -102,9 +102,9 @@ export function OverviewTab() {
 
   return (
     <div className="overflow-hidden">
-      <div className="mb-3 flex items-center justify-between">
+      <div className="mb-3 flex items-center justify-between [@media(max-height:500px)]:mb-1">
         <div className="flex items-baseline gap-2">
-          <span className="font-mono text-lg tabular-nums text-zinc-100">
+          <span className="font-mono text-lg tabular-nums text-zinc-100 [@media(max-height:500px)]:text-sm">
             {totalMiles.toFixed(1)} mi
           </span>
           <span className="text-xs text-zinc-500">
@@ -193,7 +193,7 @@ export function OverviewTab() {
         </div>
       </div>
 
-      <div className="border-t border-zinc-800 pt-4">
+      <div className="border-t border-zinc-800 pt-4 [@media(max-height:500px)]:pt-1">
         <ZoomableChart
           weeklyData={weeklyData}
           dailyData={dailyData}
