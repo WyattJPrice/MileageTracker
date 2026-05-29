@@ -41,19 +41,19 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
         </div>
       ) : !hasRuns ? (
         <div className="flex flex-col gap-1">
-          <p className="text-4xl font-semibold tabular-nums text-zinc-600 lg:text-5xl">—</p>
+          <p className="text-3xl font-semibold tabular-nums text-zinc-600">—</p>
           <p className="text-sm text-zinc-600">No run recorded yet</p>
         </div>
       ) : (
-        <div className="flex flex-col gap-4 min-h-0 overflow-y-auto">
-          <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
-            <span className="font-mono text-5xl font-semibold tabular-nums text-zinc-100 lg:text-6xl">
+        <div className="flex flex-col gap-3 min-h-0 overflow-y-auto">
+          <div className="flex items-baseline gap-2">
+            <span className="font-mono text-3xl font-semibold tabular-nums text-zinc-100">
               {totalMiles.toFixed(2)}
             </span>
-            <span className="text-xl text-zinc-400">mi</span>
+            <span className="text-base text-zinc-400">mi</span>
           </div>
 
-          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+          <div className="flex flex-wrap gap-x-4 gap-y-1.5 text-sm">
             <div>
               <span className="text-zinc-500">Pace </span>
               <span className="font-mono tabular-nums text-zinc-200">

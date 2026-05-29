@@ -85,7 +85,7 @@ export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
                         <p className="text-sm font-medium text-zinc-200">{e.summary}</p>
                       )}
                       {!isRest && desc && (
-                        <p className="text-xs text-zinc-500 leading-relaxed whitespace-pre-line">
+                        <p className="text-xs text-zinc-500 leading-relaxed whitespace-pre-line line-clamp-2">
                           {desc}
                         </p>
                       )}

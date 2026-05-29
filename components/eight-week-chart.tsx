@@ -53,7 +53,7 @@ export function EightWeekChart({ activities }: EightWeekChartProps) {
           interval={0}
         />
         <YAxis hide />
-        <Bar dataKey="miles" fill="var(--color-miles)" radius={[4, 4, 0, 0]}>
+        <Bar dataKey="miles" fill="var(--color-miles)" radius={[4, 4, 0, 0]} isAnimationActive={false}>
           <LabelList
             dataKey="miles"
             position="top"

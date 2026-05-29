@@ -1,36 +1,13 @@
 "use client"
 
-import { format } from "date-fns"
+import { format, startOfWeek, addDays } from "date-fns"
 import type { Activity } from "@/lib/types"
 
-function formatPace(movingTimeSec: number, distanceMiles: number): string {
-  if (distanceMiles < 0.01) return "—"
-  const paceSecPerMile = movingTimeSec / distanceMiles
-  const min = Math.floor(paceSecPerMile / 60)
-  const sec = Math.round(paceSecPerMile % 60)
-  return `${min}:${sec.toString().padStart(2, "0")}`
-}
-
-interface DayGroup {
-  date: string
-  totalMiles: number
-  runs: Activity[]
-}
-
-function groupByDay(runs: Activity[]): DayGroup[] {
-  const map = new Map<string, Activity[]>()
-  for (const r of runs) {
-    const arr = map.get(r.date) ?? []
-    arr.push(r)
-    map.set(r.date, arr)
-  }
-  return Array.from(map.entries())
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([date, dayRuns]) => ({
-      date,
-      totalMiles: dayRuns.reduce((s, r) => s + r.distance_miles, 0),
-      runs: dayRuns,
-    }))
+function buildWeek(): string[] {
+  const sunday = startOfWeek(new Date(), { weekStartsOn: 0 })
+  return Array.from({ length: 7 }, (_, i) =>
+    format(addDays(sunday, i), "yyyy-MM-dd")
+  )
 }
 
 interface WeekRunsListProps {
@@ -40,46 +17,64 @@ interface WeekRunsListProps {
 
 export function WeekRunsList({ runs, isLoading }: WeekRunsListProps) {
   const totalMiles = runs.reduce((s, r) => s + r.distance_miles, 0)
-  const days = groupByDay(runs)
+  const todayStr = format(new Date(), "yyyy-MM-dd")
+  const week = buildWeek()
+
+  const byDate = new Map<string, number>()
+  for (const r of runs) {
+    byDate.set(r.date, (byDate.get(r.date) ?? 0) + r.distance_miles)
+  }
 
   return (
-    <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full flex flex-col overflow-hidden">
-      <div className="mb-3 shrink-0 flex items-center justify-between">
+    <div className="rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3">
+      <div className="mb-2 flex items-center justify-between">
         <p className="text-xs font-medium uppercase tracking-wider text-zinc-500">This Week</p>
         {runs.length > 0 && (
           <span className="font-mono text-sm tabular-nums text-zinc-300">
-            {totalMiles.toFixed(1)} mi total
+            {totalMiles.toFixed(1)} mi
           </span>
         )}
       </div>
 
-      {isLoading ? (
-        <div className="space-y-2">
-          {[1, 2, 3].map((i) => (
-            <div key={i} className="h-6 rounded bg-zinc-800 animate-pulse" />
-          ))}
-        </div>
-      ) : days.length === 0 ? (
-        <p className="text-sm text-zinc-600">No runs this week</p>
-      ) : (
-        <ul className="space-y-2 overflow-y-auto min-h-0">
-          {days.map((day) => (
-            <li key={day.date} className="flex items-baseline gap-3 text-sm min-w-0">
-              <span className="w-8 shrink-0 text-xs text-zinc-500">
-                {format(new Date(day.date + "T00:00:00"), "EEE")}
-              </span>
-              <span className="font-mono tabular-nums text-zinc-200 shrink-0">
-                {day.totalMiles.toFixed(2)} mi
-              </span>
-              <span className="truncate text-xs text-zinc-500 whitespace-nowrap">
-                {day.runs.map((r) =>
-                  `${r.distance_miles.toFixed(2)}mi ${formatPace(r.moving_time_seconds, r.distance_miles)}/mi`
-                ).join("  ·  ")}
-              </span>
-            </li>
-          ))}
-        </ul>
-      )}
+      <div className="grid grid-cols-7 gap-1">
+        {isLoading
+          ? Array.from({ length: 7 }, (_, i) => (
+              <div key={i} className="flex flex-col items-center gap-1 rounded-lg p-2">
+                <div className="h-3 w-6 rounded bg-zinc-800 animate-pulse" />
+                <div className="h-5 w-8 rounded bg-zinc-800 animate-pulse" />
+              </div>
+            ))
+          : week.map((date) => {
+              const mi = byDate.get(date)
+              const isToday = date === todayStr
+              const isFuture = date > todayStr
+              const dayLabel = format(new Date(date + "T00:00:00"), "EEE")
+
+              return (
+                <div
+                  key={date}
+                  className={`flex flex-col items-center rounded-lg py-2 px-1 ${
+                    isToday ? "bg-zinc-800" : ""
+                  }`}
+                >
+                  <span
+                    className={`text-xs font-medium ${
+                      isToday ? "text-emerald-400" : isFuture ? "text-zinc-600" : "text-zinc-500"
+                    }`}
+                  >
+                    {dayLabel}
+                  </span>
+                  <span
+                    className={`mt-1 font-mono text-lg font-semibold tabular-nums leading-none ${
+                      mi ? "text-zinc-100" : isFuture ? "text-zinc-700" : "text-zinc-600"
+                    }`}
+                  >
+                    {mi ? mi.toFixed(1) : "—"}
+                  </span>
+                </div>
+              )
+            })}
+      </div>
     </div>
   )
 }

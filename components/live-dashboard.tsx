@@ -3,6 +3,7 @@
 import * as React from "react"
 import { format, startOfWeek, endOfWeek, subWeeks } from "date-fns"
 import { TodayCard } from "@/components/today-card"
+import { TodayWorkoutCard } from "@/components/today-workout-card"
 import { WeekRunsList } from "@/components/week-runs-list"
 import { UpcomingCard } from "@/components/upcoming-card"
 import { EightWeekChart } from "@/components/eight-week-chart"
@@ -108,16 +109,26 @@ export function LiveDashboard() {
         </header>
 
         {/* Desktop: fixed grid that fills remaining height. Mobile: normal scroll. */}
-        <div className="flex-1 min-h-0 grid grid-cols-1 gap-3 lg:grid-cols-5 lg:grid-rows-[1fr_1fr_auto]">
-          <div className="lg:col-span-3 lg:row-start-1 min-h-0">
+        <div className="flex-1 min-h-0 grid grid-cols-1 gap-3 lg:grid-cols-5 lg:grid-rows-[1fr_auto_auto]">
+          <div className="lg:col-span-1 lg:col-start-1 lg:row-start-1 min-h-0">
             <TodayCard runs={todayRuns} isLoading={isLoadingToday} />
           </div>
 
-          <div className="lg:col-span-2 lg:row-span-2 lg:row-start-1 min-h-0">
-            <UpcomingCard events={upcoming} isLoading={isLoadingUpcoming} />
+          <div className="lg:col-span-2 lg:col-start-2 lg:row-start-1 min-h-0">
+            <TodayWorkoutCard
+              events={upcoming.filter((e) => e.date === todayStr())}
+              isLoading={isLoadingUpcoming}
+            />
           </div>
 
-          <div className="lg:col-span-3 lg:row-start-2 min-h-0">
+          <div className="lg:col-span-2 lg:col-start-4 lg:row-span-2 lg:row-start-1 min-h-0">
+            <UpcomingCard
+              events={upcoming.filter((e) => e.date > todayStr())}
+              isLoading={isLoadingUpcoming}
+            />
+          </div>
+
+          <div className="lg:col-span-3 lg:col-start-1 lg:row-start-2">
             <WeekRunsList runs={weekRuns} isLoading={isLoadingWeek} />
           </div>
 
