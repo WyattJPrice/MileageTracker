@@ -13,7 +13,7 @@ function paramVal(v: unknown): string {
 
 export async function GET() {
   try {
-    const res = await fetch(ICAL_URL, { next: { revalidate: 300 } })
+    const res = await fetch(ICAL_URL, { cache: 'no-store' })
     if (!res.ok) return NextResponse.json([])
     const body = await res.text()
     const data = icalSync.parseICS(body)
