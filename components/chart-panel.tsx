@@ -8,13 +8,12 @@ import { DateRangePicker } from "@/components/date-range-picker"
 import { MileageChart } from "@/components/mileage-chart"
 import { aggregateActivities } from "@/lib/utils"
 import { seasons, TRACK_COLOR, XC_COLOR } from "@/lib/seasons"
-import { races } from "@/lib/races"
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import type { Activity, ChartDataPoint, HighlightRange } from "@/lib/types"
+import type { Activity, ChartDataPoint, HighlightRange, Race } from "@/lib/types"
 
 interface ChartPanelProps {
   dateRange: DateRange | undefined
@@ -28,9 +27,17 @@ export function ChartPanel({
   onRemove,
 }: ChartPanelProps) {
   const [activities, setActivities] = React.useState<Activity[]>([])
+  const [races, setRaces] = React.useState<Race[]>([])
   const [isLoading, setIsLoading] = React.useState(false)
   const [showTrack, setShowTrack] = React.useState(false)
   const [showXC, setShowXC] = React.useState(false)
+
+  React.useEffect(() => {
+    fetch("/api/races")
+      .then((r) => r.json())
+      .then((d) => setRaces(d))
+      .catch(() => {})
+  }, [])
 
   React.useEffect(() => {
     if (!dateRange?.from || !dateRange?.to) return
