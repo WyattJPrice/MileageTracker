@@ -6,6 +6,17 @@ export interface Activity {
   moving_time_seconds: number
 }
 
+export interface DetailedActivity extends Activity {
+  description?: string | null
+  average_heartrate?: number | null
+}
+
+export interface ICalEvent {
+  date: string
+  summary: string
+  description?: string
+}
+
 export interface Race {
   date: string
   event: string

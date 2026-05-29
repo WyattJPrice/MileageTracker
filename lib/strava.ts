@@ -18,6 +18,8 @@ interface StravaActivity {
   start_date_local: string
   moving_time: number
   type: string
+  description?: string | null
+  average_heartrate?: number | null
 }
 
 interface StoredActivity {

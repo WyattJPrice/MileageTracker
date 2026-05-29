@@ -1,0 +1,107 @@
+"use client"
+
+import type { DetailedActivity } from "@/lib/types"
+
+function formatPace(movingTimeSec: number, distanceMiles: number): string {
+  if (distanceMiles < 0.01) return "—"
+  const paceSecPerMile = movingTimeSec / distanceMiles
+  const min = Math.floor(paceSecPerMile / 60)
+  const sec = Math.round(paceSecPerMile % 60)
+  return `${min}:${sec.toString().padStart(2, "0")}/mi`
+}
+
+function formatDuration(seconds: number): string {
+  const h = Math.floor(seconds / 3600)
+  const m = Math.floor((seconds % 3600) / 60)
+  const s = seconds % 60
+  if (h > 0) return `${h}:${m.toString().padStart(2, "0")}:${s.toString().padStart(2, "0")}`
+  return `${m}:${s.toString().padStart(2, "0")}`
+}
+
+interface TodayCardProps {
+  runs: DetailedActivity[]
+  isLoading: boolean
+}
+
+export function TodayCard({ runs, isLoading }: TodayCardProps) {
+  const hasRuns = runs.length > 0
+  const totalMiles = runs.reduce((s, r) => s + r.distance_miles, 0)
+  const totalSeconds = runs.reduce((s, r) => s + r.moving_time_seconds, 0)
+
+  const primary = runs[0]
+
+  return (
+    <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full">
+      <p className="mb-3 text-xs font-medium uppercase tracking-wider text-zinc-500">Today</p>
+
+      {isLoading ? (
+        <div className="space-y-3">
+          <div className="h-12 w-40 rounded bg-zinc-800 animate-pulse" />
+          <div className="h-4 w-24 rounded bg-zinc-800 animate-pulse" />
+        </div>
+      ) : !hasRuns ? (
+        <div className="flex flex-col gap-1">
+          <p className="text-4xl font-semibold tabular-nums text-zinc-600 lg:text-5xl">—</p>
+          <p className="text-sm text-zinc-600">No run recorded yet</p>
+        </div>
+      ) : (
+        <div className="space-y-4">
+          <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
+            <span className="font-mono text-5xl font-semibold tabular-nums text-zinc-100 lg:text-6xl">
+              {totalMiles.toFixed(2)}
+            </span>
+            <span className="text-xl text-zinc-400">mi</span>
+          </div>
+
+          <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+            <div>
+              <span className="text-zinc-500">Pace </span>
+              <span className="font-mono tabular-nums text-zinc-200">
+                {formatPace(totalSeconds, totalMiles)}
+              </span>
+            </div>
+            <div>
+              <span className="text-zinc-500">Time </span>
+              <span className="font-mono tabular-nums text-zinc-200">
+                {formatDuration(totalSeconds)}
+              </span>
+            </div>
+            {runs.length === 1 && primary?.average_heartrate && (
+              <div>
+                <span className="text-zinc-500">Avg HR </span>
+                <span className="font-mono tabular-nums text-zinc-200">
+                  {Math.round(primary.average_heartrate)} bpm
+                </span>
+              </div>
+            )}
+          </div>
+
+          {runs.length === 1 && primary.name && (
+            <p className="text-sm font-medium text-zinc-300">{primary.name}</p>
+          )}
+
+          {runs.length === 1 && primary.description && (
+            <p className="text-xs text-zinc-500 leading-relaxed line-clamp-3">
+              {primary.description}
+            </p>
+          )}
+
+          {runs.length > 1 && (
+            <div className="space-y-1.5">
+              {runs.map((r) => (
+                <div key={r.id} className="flex items-baseline gap-3 text-sm">
+                  <span className="font-mono tabular-nums text-zinc-200">{r.distance_miles.toFixed(2)} mi</span>
+                  <span className="text-zinc-500">{formatPace(r.moving_time_seconds, r.distance_miles)}</span>
+                  {r.average_heartrate && (
+                    <span className="text-zinc-500">{Math.round(r.average_heartrate)} bpm</span>
+                  )}
+                  {r.name && <span className="text-zinc-600 truncate">{r.name}</span>}
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
