@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { format, startOfWeek, endOfWeek, subWeeks, addDays } from "date-fns"
+import { format, startOfWeek, endOfWeek, subWeeks } from "date-fns"
 import { TodayCard } from "@/components/today-card"
 import { TodayWorkoutCard } from "@/components/today-workout-card"
 import { WeekRunsList } from "@/components/week-runs-list"
@@ -62,7 +62,7 @@ export function LiveDashboard() {
         .then((d) => { setWeekRuns(d); setIsLoadingWeek(false) })
         .catch(() => setIsLoadingWeek(false)),
 
-      fetch("/api/ical")
+      fetch(`/api/ical?tz=${new Date().getTimezoneOffset()}`)
         .then((r) => r.json())
         .then((d) => { setUpcoming(d); setIsLoadingUpcoming(false) })
         .catch(() => setIsLoadingUpcoming(false)),
@@ -88,25 +88,8 @@ export function LiveDashboard() {
     return () => clearInterval(interval)
   }, [])
 
-  const tomorrowStr = format(addDays(new Date(), 1), "yyyy-MM-dd")
-
-  // If Final Surge shifts today's completed workout to tomorrow, pull it back into
-  // the Today's Workout section (only when runs were already logged today).
-  const todayWorkoutEvents = React.useMemo(() => {
-    const todayEvents = upcoming.filter((e) => e.date === todayStr())
-    if (todayEvents.length > 0) return todayEvents
-    if (todayRuns.length > 0) {
-      return upcoming.filter((e) => e.date === tomorrowStr)
-    }
-    return []
-  }, [upcoming, todayRuns, tomorrowStr])
-
-  const upcomingEvents = React.useMemo(() => {
-    const pulledToToday = new Set(todayWorkoutEvents.filter((e) => e.date === tomorrowStr).map((e) => e.summary))
-    return upcoming.filter(
-      (e) => e.date > todayStr() && !pulledToToday.has(e.summary)
-    )
-  }, [upcoming, todayWorkoutEvents, tomorrowStr])
+  const todayWorkoutEvents = upcoming.filter((e) => e.date === todayStr())
+  const upcomingEvents = upcoming.filter((e) => e.date > todayStr())
 
   return (
     <div className="h-[100dvh] overflow-hidden bg-zinc-950 flex flex-col p-4 lg:p-6">
