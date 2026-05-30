@@ -1,7 +1,7 @@
 "use client"
 
 import * as React from "react"
-import { format, startOfWeek, endOfWeek, subWeeks } from "date-fns"
+import { format, startOfWeek, endOfWeek, subWeeks, addDays } from "date-fns"
 import { TodayCard } from "@/components/today-card"
 import { TodayWorkoutCard } from "@/components/today-workout-card"
 import { WeekRunsList } from "@/components/week-runs-list"
@@ -88,6 +88,26 @@ export function LiveDashboard() {
     return () => clearInterval(interval)
   }, [])
 
+  const tomorrowStr = format(addDays(new Date(), 1), "yyyy-MM-dd")
+
+  // If Final Surge shifts today's completed workout to tomorrow, pull it back into
+  // the Today's Workout section (only when runs were already logged today).
+  const todayWorkoutEvents = React.useMemo(() => {
+    const todayEvents = upcoming.filter((e) => e.date === todayStr())
+    if (todayEvents.length > 0) return todayEvents
+    if (todayRuns.length > 0) {
+      return upcoming.filter((e) => e.date === tomorrowStr)
+    }
+    return []
+  }, [upcoming, todayRuns, tomorrowStr])
+
+  const upcomingEvents = React.useMemo(() => {
+    const pulledToToday = new Set(todayWorkoutEvents.filter((e) => e.date === tomorrowStr).map((e) => e.summary))
+    return upcoming.filter(
+      (e) => e.date > todayStr() && !pulledToToday.has(e.summary)
+    )
+  }, [upcoming, todayWorkoutEvents, tomorrowStr])
+
   return (
     <div className="h-[100dvh] overflow-hidden bg-zinc-950 flex flex-col p-4 lg:p-6">
       <div className="mx-auto w-full max-w-[1600px] flex flex-col flex-1 min-h-0">
@@ -116,14 +136,14 @@ export function LiveDashboard() {
 
           <div className="lg:col-start-2 lg:row-start-1 h-full">
             <TodayWorkoutCard
-              events={upcoming.filter((e) => e.date === todayStr())}
+              events={todayWorkoutEvents}
               isLoading={isLoadingUpcoming}
             />
           </div>
 
           <div className="lg:col-start-3 lg:row-start-1 lg:row-span-2 h-full">
             <UpcomingCard
-              events={upcoming.filter((e) => e.date > todayStr())}
+              events={upcomingEvents}
               isLoading={isLoadingUpcoming}
             />
           </div>
