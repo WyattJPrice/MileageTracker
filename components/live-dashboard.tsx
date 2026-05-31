@@ -132,7 +132,7 @@ export function LiveDashboard() {
           </div>
 
           <div className="lg:col-start-1 lg:col-span-2 lg:row-start-2 h-full">
-            <WeekRunsList runs={weekRuns} isLoading={isLoadingWeek} />
+            <WeekRunsList runs={weekRuns} isLoading={isLoadingWeek} upcomingEvents={upcoming} />
           </div>
 
           <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 lg:col-span-3 lg:row-start-3 h-full flex flex-col">

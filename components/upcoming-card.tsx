@@ -71,6 +71,7 @@ export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
                   const desc = e.description
                     ?.replace(/^Workout:\s*/i, "")
                     .replace(new RegExp(`^${e.summary.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "i"), "")
+                    .replace(/\bPlanned:\s*\d+(?:\.\d+)?\s*mi\b\s*[·\n]?\s*/gi, "")
                     .trim()
                     .replace(/\s*\n\s*/g, " · ")
                     || undefined
