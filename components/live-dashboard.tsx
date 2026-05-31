@@ -92,8 +92,8 @@ export function LiveDashboard() {
   const upcomingEvents = upcoming.filter((e) => e.date > todayStr())
 
   return (
-    <div className="h-[100dvh] overflow-hidden bg-zinc-950 flex flex-col p-4 lg:p-6">
-      <div className="mx-auto w-full max-w-[1600px] flex flex-col flex-1 min-h-0">
+    <div className="bg-zinc-950 flex flex-col p-4 lg:p-6 lg:h-[100dvh] lg:overflow-hidden">
+      <div className="mx-auto w-full max-w-[1600px] flex flex-col flex-1 lg:min-h-0">
         <header className="mb-3 shrink-0 flex items-center justify-between">
           <h1 className="text-base font-semibold tracking-tight text-zinc-300 lg:text-lg">
             Wyatt&apos;s Training
@@ -112,7 +112,7 @@ export function LiveDashboard() {
         </header>
 
         {/* Desktop: 3×3 equal grid filling remaining height. Mobile: normal scroll. */}
-        <div className="flex-1 min-h-0 grid grid-cols-1 gap-3 lg:grid-cols-3 lg:grid-rows-[minmax(0,1fr)_auto_minmax(0,1fr)]">
+        <div className="grid grid-cols-1 gap-3 lg:flex-1 lg:min-h-0 lg:grid-cols-3 lg:grid-rows-[minmax(0,1fr)_auto_minmax(0,1fr)]">
           <div className="lg:col-start-1 lg:row-start-1 h-full">
             <TodayCard runs={todayRuns} isLoading={isLoadingToday} />
           </div>

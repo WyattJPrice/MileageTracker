@@ -1,8 +1,10 @@
 "use client"
 
 import * as React from "react"
+import { usePathname } from "next/navigation"
 
 export function RotatePrompt() {
+  const pathname = usePathname()
   const [isPortrait, setIsPortrait] = React.useState(false)
   const [isMobile, setIsMobile] = React.useState(false)
 
@@ -25,7 +27,7 @@ export function RotatePrompt() {
     }
   }, [])
 
-  if (!isMobile || !isPortrait) return null
+  if (!isMobile || !isPortrait || pathname === "/live") return null
 
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-4 bg-zinc-950/95 px-8 backdrop-blur-sm">
