@@ -32,7 +32,7 @@ function groupByDate(events: ICalEvent[]) {
             other.summary.length > e.summary.length
         )
     )
-    return { date, dayDiff: dayDiff(date), items: deduped }
+    return { date, items: deduped }
   })
 }
 
@@ -61,20 +61,19 @@ export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
         <p className="text-sm text-zinc-600">No upcoming workouts</p>
       ) : (
         <div className="space-y-4 overflow-y-auto min-h-0">
-          {groupByDate(events).map(({ date, dayDiff, items }) => (
+          {groupByDate(events).map(({ date, items }) => (
             <div key={date}>
               <p className="mb-1.5 text-xs text-zinc-500">{formatEventDate(date)}</p>
               <div className="space-y-3">
                 {items.map((e, i) => {
                   const isRest = /rest\s*day/i.test(e.summary)
                   const isRace = /race/i.test(e.summary)
-                  const showDesc = dayDiff <= 1
-                  const desc = showDesc
-                    ? e.description
-                        ?.replace(/^Workout:\s*/i, "")
-                        .replace(new RegExp(`^${e.summary.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "i"), "")
-                        .trim()
-                    : undefined
+                  const desc = e.description
+                    ?.replace(/^Workout:\s*/i, "")
+                    .replace(new RegExp(`^${e.summary.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "i"), "")
+                    .trim()
+                    .replace(/\s*\n\s*/g, " · ")
+                    || undefined
                   return (
                     <div key={i} className="space-y-0.5">
                       {isRest ? (
@@ -85,7 +84,7 @@ export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
                         <p className="text-sm font-medium text-zinc-200">{e.summary}</p>
                       )}
                       {!isRest && desc && (
-                        <p className="text-xs text-zinc-500 leading-relaxed whitespace-pre-line line-clamp-2">
+                        <p className="text-xs text-zinc-500 leading-relaxed line-clamp-3">
                           {desc}
                         </p>
                       )}
