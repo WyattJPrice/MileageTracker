@@ -37,7 +37,7 @@ export function WeekRunsList({ runs, isLoading, upcomingEvents = [] }: WeekRunsL
   for (const e of upcomingEvents) {
     if (!weekSet.has(e.date)) continue
     const mi = parsePlannedMiles(e.description)
-    if (mi !== null) plannedByDate.set(e.date, mi)
+    if (mi !== null) plannedByDate.set(e.date, (plannedByDate.get(e.date) ?? 0) + mi)
   }
 
   const plannedTotal = week.reduce((s, date) => {

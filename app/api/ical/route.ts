@@ -35,12 +35,10 @@ export async function GET(request: NextRequest) {
     const localNow = new Date(Date.now() - tzOffset * 60000)
     const todayStr = localNow.toISOString().split("T")[0]
 
-    const events: ICalEvent[] = Object.values(data)
+    const sorted = Object.values(data)
       .filter((e): e is VEvent => e?.type === "VEVENT")
       .map((e) => {
         const start = e.start instanceof Date ? e.start : new Date(e.start as string)
-        // All-day (VALUE=DATE): Final Surge stores the intended local date, already correct.
-        // Timed (with Z suffix): stored in UTC, convert to client's local date.
         const dateStr = isAllDay(start)
           ? start.toISOString().split("T")[0]
           : new Date(start.getTime() - tzOffset * 60000).toISOString().split("T")[0]
@@ -49,8 +47,16 @@ export async function GET(request: NextRequest) {
       })
       .filter((e) => e.date >= todayStr)
       .sort((a, b) => a._sort.localeCompare(b._sort))
-      .slice(0, 7)
-      .map(({ _sort: _, ...e }) => e)
+
+    const limited: typeof sorted = []
+    const seenDates = new Set<string>()
+    for (const e of sorted) {
+      if (seenDates.size >= 7 && !seenDates.has(e.date)) break
+      seenDates.add(e.date)
+      limited.push(e)
+    }
+
+    const events: ICalEvent[] = limited.map(({ _sort: _, ...e }) => e)
 
     return NextResponse.json(events)
   } catch {
