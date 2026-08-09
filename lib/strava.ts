@@ -140,9 +140,10 @@ function downsample(values: number[], targetCount = 180): number[] {
 
 export async function fetchActivityHrStream(id: number): Promise<number[] | null> {
   const token = await getAccessToken()
+  const headers = { Authorization: "Bearer " + token }
   const res = await fetch(
     `${STRAVA_API_BASE}/activities/${id}/streams?keys=heartrate&key_by_type=true`,
-    { headers: { Authorization: `****** } }
+    { headers }
   )
   if (!res.ok) throw new Error(`Fetch activity ${id} HR stream failed: ${res.status}`)
 
