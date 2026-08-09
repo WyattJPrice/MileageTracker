@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { redis } from "@/lib/redis"
-import { fetchActivityById } from "@/lib/strava"
+import { fetchActivityById, fetchActivityHrStream } from "@/lib/strava"
 import type { Activity, DetailedActivity } from "@/lib/types"
 
 const BUFFER_S = 14 * 3600
@@ -23,11 +23,20 @@ export async function GET(request: NextRequest) {
   const detailed: DetailedActivity[] = await Promise.all(
     activities.map(async (a): Promise<DetailedActivity> => {
       try {
-        const full = await fetchActivityById(a.id)
+        const [full, hrStream] = await Promise.all([
+          fetchActivityById(a.id),
+          fetchActivityHrStream(a.id).catch(() => null),
+        ])
+
         return {
           ...a,
-          description: full.description ?? null,
           average_heartrate: full.average_heartrate ?? null,
+          hr_stream: hrStream,
+          weather_temp_c: full.average_weather_temp ?? full.average_temp ?? null,
+          weather_feels_like_c: full.average_feels_like ?? null,
+          weather_wind_speed: full.average_wind_speed ?? null,
+          weather_clouds: full.average_clouds ?? null,
+          weather_summary: full.weather_summary ?? null,
         }
       } catch {
         return a

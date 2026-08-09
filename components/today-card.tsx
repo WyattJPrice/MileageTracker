@@ -18,6 +18,58 @@ function formatDuration(seconds: number): string {
   return `${m}:${s.toString().padStart(2, "0")}`
 }
 
+function formatDegrees(value?: number | null): string | null {
+  if (value == null || !Number.isFinite(value)) return null
+  return `${Math.round(value)}°C`
+}
+
+function hasWeather(run: DetailedActivity): boolean {
+  return Boolean(
+    run.weather_temp_c != null ||
+    run.weather_feels_like_c != null ||
+    run.weather_wind_speed != null ||
+    run.weather_clouds != null ||
+    run.weather_summary
+  )
+}
+
+function HeartRateTrend({ data }: { data: number[] }) {
+  if (data.length < 2) return null
+
+  const width = 220
+  const height = 52
+  const min = Math.min(...data)
+  const max = Math.max(...data)
+  const range = Math.max(1, max - min)
+
+  const points = data
+    .map((value, i) => {
+      const x = (i / (data.length - 1)) * width
+      const y = height - ((value - min) / range) * height
+      return `${x},${y}`
+    })
+    .join(" ")
+
+  return (
+    <div className="mt-1 rounded-md border border-zinc-800 bg-zinc-950/60 px-2 py-1.5">
+      <div className="mb-1 flex items-center justify-between text-[10px] text-zinc-500">
+        <span>HR Trend</span>
+        <span className="font-mono tabular-nums">{min}–{max} bpm</span>
+      </div>
+      <svg viewBox={`0 0 ${width} ${height}`} className="h-12 w-full">
+        <polyline
+          fill="none"
+          stroke="oklch(0.7 0.18 155)"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          points={points}
+        />
+      </svg>
+    </div>
+  )
+}
+
 interface TodayCardProps {
   runs: DetailedActivity[]
   isLoading: boolean
@@ -28,7 +80,19 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
   const totalMiles = runs.reduce((s, r) => s + r.distance_miles, 0)
   const totalSeconds = runs.reduce((s, r) => s + r.moving_time_seconds, 0)
 
-  const primary = runs[0]
+  const weightedHr = (() => {
+    const withHr = runs.filter((r) => typeof r.average_heartrate === "number")
+    if (withHr.length === 0) return null
+    const weighted = withHr.reduce(
+      (sum, run) => sum + (run.average_heartrate ?? 0) * run.moving_time_seconds,
+      0
+    )
+    const duration = withHr.reduce((sum, run) => sum + run.moving_time_seconds, 0)
+    if (duration <= 0) return null
+    return Math.round(weighted / duration)
+  })()
+  const streamRun = runs.find((r) => (r.hr_stream?.length ?? 0) > 1)
+  const weatherRun = runs.find(hasWeather)
 
   return (
     <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full flex flex-col overflow-hidden">
@@ -66,24 +130,39 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
                 {formatDuration(totalSeconds)}
               </span>
             </div>
-            {runs.length === 1 && primary?.average_heartrate && (
+            {weightedHr && (
               <div>
                 <span className="text-zinc-500">Avg HR </span>
                 <span className="font-mono tabular-nums text-zinc-200">
-                  {Math.round(primary.average_heartrate)} bpm
+                  {weightedHr} bpm
                 </span>
               </div>
             )}
           </div>
 
-          {runs.length === 1 && primary.name && (
-            <p className="text-sm font-medium text-zinc-300">{primary.name}</p>
-          )}
+          {streamRun?.hr_stream && <HeartRateTrend data={streamRun.hr_stream} />}
 
-          {runs.length === 1 && primary.description && (
-            <p className="text-xs text-zinc-500 leading-relaxed line-clamp-3">
-              {primary.description}
-            </p>
+          {weatherRun && (
+          <div className="rounded-md border border-zinc-800 bg-zinc-950/60 px-3 py-2 text-xs">
+            <p className="mb-1 text-[10px] uppercase tracking-wider text-zinc-500">Weather</p>
+            <div className="flex flex-wrap gap-x-3 gap-y-1 text-zinc-300">
+              {formatDegrees(weatherRun.weather_temp_c) && (
+                <span>Temp {formatDegrees(weatherRun.weather_temp_c)}</span>
+              )}
+              {formatDegrees(weatherRun.weather_feels_like_c) && (
+                <span>Feels {formatDegrees(weatherRun.weather_feels_like_c)}</span>
+              )}
+              {weatherRun.weather_wind_speed != null && (
+                <span>Wind {weatherRun.weather_wind_speed.toFixed(1)}</span>
+              )}
+              {weatherRun.weather_clouds != null && (
+                <span>Clouds {Math.round(weatherRun.weather_clouds)}%</span>
+              )}
+              {weatherRun.weather_summary && (
+                <span className="text-zinc-400">{weatherRun.weather_summary}</span>
+              )}
+            </div>
+          </div>
           )}
 
           {runs.length > 1 && (
@@ -95,7 +174,6 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
                   {r.average_heartrate && (
                     <span className="text-zinc-500">{Math.round(r.average_heartrate)} bpm</span>
                   )}
-                  {r.name && <span className="text-zinc-600 truncate">{r.name}</span>}
                 </div>
               ))}
             </div>

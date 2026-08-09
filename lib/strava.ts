@@ -20,6 +20,12 @@ interface StravaActivity {
   type: string
   description?: string | null
   average_heartrate?: number | null
+  average_temp?: number | null
+  average_weather_temp?: number | null
+  average_feels_like?: number | null
+  average_wind_speed?: number | null
+  average_clouds?: number | null
+  weather_summary?: string | null
 }
 
 interface StoredActivity {
@@ -120,6 +126,36 @@ export async function fetchRecentActivities(after?: number): Promise<StravaActiv
   }
 
   return all
+}
+
+function downsample(values: number[], targetCount = 180): number[] {
+  if (values.length <= targetCount) return values
+  const step = (values.length - 1) / (targetCount - 1)
+  const sampled: number[] = []
+  for (let i = 0; i < targetCount; i++) {
+    sampled.push(values[Math.round(i * step)])
+  }
+  return sampled
+}
+
+export async function fetchActivityHrStream(id: number): Promise<number[] | null> {
+  const token = await getAccessToken()
+  const res = await fetch(
+    `${STRAVA_API_BASE}/activities/${id}/streams?keys=heartrate&key_by_type=true`,
+    { headers: { Authorization: `****** } }
+  )
+  if (!res.ok) throw new Error(`Fetch activity ${id} HR stream failed: ${res.status}`)
+
+  const data: unknown = await res.json()
+  const stream = (data as { heartrate?: { data?: unknown } })?.heartrate?.data
+  if (!Array.isArray(stream)) return null
+
+  const values = stream
+    .map((value) => (typeof value === "number" ? value : NaN))
+    .filter((value) => Number.isFinite(value) && value > 0)
+  if (values.length === 0) return null
+
+  return downsample(values)
 }
 
 export async function storeActivity(raw: StravaActivity): Promise<boolean> {

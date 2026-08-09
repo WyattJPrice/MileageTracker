@@ -9,6 +9,12 @@ export interface Activity {
 export interface DetailedActivity extends Activity {
   description?: string | null
   average_heartrate?: number | null
+  hr_stream?: number[]
+  weather_temp_c?: number | null
+  weather_feels_like_c?: number | null
+  weather_wind_speed?: number | null
+  weather_clouds?: number | null
+  weather_summary?: string | null
 }
 
 export interface ICalEvent {
