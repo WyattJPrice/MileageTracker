@@ -1,5 +1,6 @@
 "use client"
 
+import { TodayRunChart } from "@/components/today-run-chart"
 import type { DetailedActivity } from "@/lib/types"
 
 function formatPace(movingTimeSec: number, distanceMiles: number): string {
@@ -28,8 +29,6 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
   const totalMiles = runs.reduce((s, r) => s + r.distance_miles, 0)
   const totalSeconds = runs.reduce((s, r) => s + r.moving_time_seconds, 0)
 
-  const primary = runs[0]
-
   return (
     <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full flex flex-col overflow-hidden">
       <p className="mb-3 shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">Today</p>
@@ -45,7 +44,7 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
           <p className="text-sm text-zinc-600">No run recorded yet</p>
         </div>
       ) : (
-        <div className="flex flex-col gap-3 min-h-0 overflow-y-auto">
+        <div className="flex flex-col gap-3 min-h-0">
           <div className="flex items-baseline gap-2">
             <span className="font-mono text-3xl font-semibold tabular-nums text-zinc-100">
               {totalMiles.toFixed(2)}
@@ -66,40 +65,50 @@ export function TodayCard({ runs, isLoading }: TodayCardProps) {
                 {formatDuration(totalSeconds)}
               </span>
             </div>
-            {runs.length === 1 && primary?.average_heartrate && (
+            {runs.length === 1 && runs[0].average_heartrate && (
               <div>
                 <span className="text-zinc-500">Avg HR </span>
                 <span className="font-mono tabular-nums text-zinc-200">
-                  {Math.round(primary.average_heartrate)} bpm
+                  {Math.round(runs[0].average_heartrate)} bpm
                 </span>
               </div>
             )}
           </div>
 
-          {runs.length === 1 && primary.name && (
-            <p className="text-sm font-medium text-zinc-300">{primary.name}</p>
-          )}
+          {runs.map((r) => (
+            <div key={r.id} className="border-t border-zinc-800 pt-2">
+              <div className="mb-2 flex items-baseline justify-between">
+                <span className="font-mono tabular-nums text-zinc-200">
+                  {r.distance_miles.toFixed(2)} mi
+                </span>
+                {runs.length === 1 ? (
+                  <div className="flex gap-3 font-mono text-xs tabular-nums text-zinc-500">
+                    <span>{formatPace(r.moving_time_seconds, r.distance_miles)}</span>
+                    <span>{formatDuration(r.moving_time_seconds)}</span>
+                    {r.average_heartrate && <span>{Math.round(r.average_heartrate)} bpm</span>}
+                  </div>
+                ) : (
+                  <div className="flex gap-3 font-mono text-xs tabular-nums text-zinc-500">
+                    <span>{formatPace(r.moving_time_seconds, r.distance_miles)}</span>
+                    {r.average_heartrate && (
+                      <span>
+                        Avg <span className="text-zinc-300">{Math.round(r.average_heartrate)} bpm</span>
+                      </span>
+                    )}
+                    {r.maximum_heartrate && (
+                      <span>
+                        Max <span className="text-rose-400">{Math.round(r.maximum_heartrate)} bpm</span>
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
 
-          {runs.length === 1 && primary.description && (
-            <p className="text-xs text-zinc-500 leading-relaxed line-clamp-3">
-              {primary.description}
-            </p>
-          )}
-
-          {runs.length > 1 && (
-            <div className="space-y-1.5">
-              {runs.map((r) => (
-                <div key={r.id} className="flex items-baseline gap-3 text-sm">
-                  <span className="font-mono tabular-nums text-zinc-200">{r.distance_miles.toFixed(2)} mi</span>
-                  <span className="text-zinc-500">{formatPace(r.moving_time_seconds, r.distance_miles)}</span>
-                  {r.average_heartrate && (
-                    <span className="text-zinc-500">{Math.round(r.average_heartrate)} bpm</span>
-                  )}
-                  {r.name && <span className="text-zinc-600 truncate">{r.name}</span>}
-                </div>
-              ))}
+              {runs.length === 1 && r.stream && (
+                <TodayRunChart stream={r.stream} maxHeartrate={r.maximum_heartrate} />
+              )}
             </div>
-          )}
+          ))}
         </div>
       )}
     </div>

@@ -2,7 +2,7 @@ import fs from "fs"
 import path from "path"
 import { Redis } from "@upstash/redis"
 
-interface StravaActivity {
+interface RawActivity {
   id: number
   name: string
   distance: number
@@ -11,7 +11,7 @@ interface StravaActivity {
 }
 
 interface StoredActivity {
-  id: number
+  id: string
   name: string
   distance_miles: number
   date: string
@@ -35,7 +35,7 @@ async function seed() {
     path.join(process.cwd(), "data", "activities.json"),
     "utf-8"
   )
-  const activities: StravaActivity[] = JSON.parse(raw)
+  const activities: RawActivity[] = JSON.parse(raw)
 
   await redis.del("activities:runs")
 
@@ -44,7 +44,7 @@ async function seed() {
   for (const activity of activities) {
     const date = new Date(activity.start_date)
     const stored: StoredActivity = {
-      id: activity.id,
+      id: String(activity.id),
       name: activity.name,
       distance_miles: parseFloat((activity.distance * METERS_TO_MILES).toFixed(2)),
       date: date.toISOString().split("T")[0],

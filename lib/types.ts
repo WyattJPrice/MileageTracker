@@ -1,14 +1,32 @@
 export interface Activity {
-  id: number
+  id: string
   name: string
   distance_miles: number
   date: string
   moving_time_seconds: number
 }
 
+export interface ActivityInterval {
+  id: number
+  distance: number
+  moving_time: number
+  average_heartrate?: number | null
+  start_index: number
+  end_index: number
+}
+
+export interface ActivityStream {
+  heartrate: number[]
+  distance: number[]
+  time: number[]
+}
+
 export interface DetailedActivity extends Activity {
   description?: string | null
   average_heartrate?: number | null
+  maximum_heartrate?: number | null
+  intervals?: ActivityInterval[]
+  stream?: ActivityStream
 }
 
 export interface ICalEvent {
