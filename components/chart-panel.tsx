@@ -237,7 +237,7 @@ export function ChartPanel({
   const filtersActive = showTrack || showXC
 
   const chartHeight = large
-    ? "h-[calc(100dvh-17rem)]"
+    ? "h-[calc(100svh-17rem)] [@media(max-height:500px)]:h-[calc(100svh-8.5rem)]"
     : "h-[280px]"
 
   return (
