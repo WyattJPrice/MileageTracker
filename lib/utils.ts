@@ -1,12 +1,33 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 import { startOfWeek, startOfMonth, format } from "date-fns"
-import type { Activity, ChartDataPoint } from "@/lib/types"
+import type { Activity, ActivityStream, ChartDataPoint } from "@/lib/types"
 
 export type AggregationMode = "daily" | "weekly" | "monthly"
 
+export const SPARKLINE_MAX_POINTS = 150
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
+}
+
+export function downsampleStream(
+  stream: ActivityStream,
+  maxPoints: number = SPARKLINE_MAX_POINTS
+): ActivityStream {
+  const n = stream.time.length
+  if (n <= maxPoints) return stream
+  const step = (n - 1) / (maxPoints - 1)
+  const pick = (arr: number[]) => {
+    const out: number[] = []
+    for (let i = 0; i < maxPoints; i++) out.push(arr[Math.round(i * step)] ?? 0)
+    return out
+  }
+  return {
+    heartrate: pick(stream.heartrate),
+    distance: pick(stream.distance),
+    time: pick(stream.time),
+  }
 }
 
 export function aggregateActivities(

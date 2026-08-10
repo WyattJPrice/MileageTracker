@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server"
-import { redis } from "@/lib/redis"
-import { races } from "@/lib/races"
+import { syncNewRuns } from "@/lib/intervals"
 
 export async function POST(request: NextRequest) {
   const secret = request.nextUrl.searchParams.get("secret")
@@ -8,6 +7,11 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ error: "Forbidden" }, { status: 403 })
   }
 
-  await redis.set("races", races)
-  return NextResponse.json({ seeded: races.length })
+  try {
+    const synced = await syncNewRuns()
+    return NextResponse.json({ synced })
+  } catch (err) {
+    console.error("Intervals sync error:", err)
+    return NextResponse.json({ error: "Sync failed" }, { status: 500 })
+  }
 }

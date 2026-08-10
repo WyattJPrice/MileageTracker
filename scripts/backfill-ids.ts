@@ -23,7 +23,7 @@ async function backfill() {
   for (const member of members) {
     const activity = typeof member === "string" ? JSON.parse(member) : member
     if (activity.id) {
-      pipeline.sadd("activities:ids", activity.id)
+      pipeline.sadd("activities:ids", String(activity.id))
       count++
     }
   }
