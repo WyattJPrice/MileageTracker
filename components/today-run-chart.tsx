@@ -93,21 +93,21 @@ export function TodayRunChart({ stream, maxHeartrate }: TodayRunChartProps) {
           Heart Rate & Pace
         </p>
       </div>
-      <div className="h-36 w-full">
+      <div className="h-40 w-full">
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart
             data={data}
-            margin={{ left: 0, right: 0, top: 6, bottom: 0 }}
+            margin={{ left: 10, right: 10, top: 6, bottom: 28 }}
           >
           <XAxis
             dataKey="mi"
             type="number"
-            domain={[0, "dataMax"]}
+            domain={[0, maxMile]}
             ticks={mileTicks}
             tickFormatter={(v: number) => `${v}mi`}
             tickLine={false}
             axisLine={false}
-            tickMargin={6}
+            tickMargin={8}
             tick={{ fill: "var(--color-muted-foreground)", fontSize: 10 }}
           />
           <YAxis
