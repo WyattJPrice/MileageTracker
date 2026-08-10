@@ -29,6 +29,13 @@ export interface DetailedActivity extends Activity {
   stream?: ActivityStream
 }
 
+export interface NamedPreset {
+  id: string
+  name: string
+  from: string
+  to: string
+}
+
 export interface ICalEvent {
   date: string
   summary: string
