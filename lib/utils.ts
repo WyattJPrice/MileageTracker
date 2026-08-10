@@ -1,14 +1,57 @@
 import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
-import { startOfWeek, startOfMonth, format } from "date-fns"
+import {
+  startOfWeek,
+  startOfMonth,
+  startOfYear,
+  format,
+  addDays,
+  differenceInCalendarWeeks,
+} from "date-fns"
 import type { Activity, ActivityStream, ChartDataPoint } from "@/lib/types"
 
 export type AggregationMode = "daily" | "weekly" | "monthly"
 
 export const SPARKLINE_MAX_POINTS = 150
 
+export function weekOfYear(date: Date): number {
+  return (
+    differenceInCalendarWeeks(date, startOfYear(date), {
+      weekStartsOn: 0,
+    }) + 1
+  )
+}
+
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
+}
+
+export function buildWeeklyByRange(
+  activities: Activity[],
+  range: { from?: Date; to?: Date } | undefined
+): { date: string; week: number; miles: number | null }[] {
+  if (!range?.from || !range?.to) return []
+  const from = startOfWeek(range.from, { weekStartsOn: 0 })
+  const to = range.to
+
+  const buckets: { date: string; week: number; miles: number | null }[] = []
+  let cursor = new Date(from)
+  while (cursor <= to) {
+    const weekStart = format(cursor, "yyyy-MM-dd")
+    const weekEnd = format(addDays(cursor, 6), "yyyy-MM-dd")
+    const week = weekOfYear(cursor)
+    let miles = 0
+    for (const a of activities) {
+      if (a.date >= weekStart && a.date <= weekEnd) miles += a.distance_miles
+    }
+    buckets.push({
+      date: weekStart,
+      week,
+      miles: miles > 0 ? parseFloat(miles.toFixed(1)) : null,
+    })
+    cursor = addDays(cursor, 7)
+  }
+  return buckets
 }
 
 export function downsampleStream(

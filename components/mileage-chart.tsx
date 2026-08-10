@@ -23,9 +23,9 @@ const chartConfig = {
   },
 } satisfies ChartConfig
 
-function ChartSkeleton() {
+function ChartSkeleton({ className }: { className?: string }) {
   return (
-    <div className="flex h-[280px] w-full flex-col gap-3 p-4">
+    <div className={`flex ${className ?? "h-[280px]"} w-full flex-col gap-3 p-4`}>
       <div className="flex items-end gap-2 h-full">
         {Array.from({ length: 12 }).map((_, i) => (
           <Skeleton
@@ -120,7 +120,7 @@ export function MileageChart({ data, highlights, isLoading, className, animate =
   const height = className ?? "h-[280px]"
 
   if (isLoading) {
-    return <ChartSkeleton />
+    return <ChartSkeleton className={height} />
   }
 
   if (data.length === 0) {
