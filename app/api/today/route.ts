@@ -1,8 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
 import { format, subDays } from "date-fns"
 import { redis } from "@/lib/redis"
-import { getActivity, getStreams, ensureSynced } from "@/lib/intervals"
-import { downsampleStream } from "@/lib/utils"
+import { getDetailedActivity, ensureSynced } from "@/lib/intervals"
 import type { Activity, ActivityInterval, ActivityStream, DetailedActivity } from "@/lib/types"
 
 const BUFFER_S = 14 * 3600
@@ -12,6 +11,11 @@ interface CachedDetail {
   description?: string | null
   average_heartrate?: number | null
   maximum_heartrate?: number | null
+  elapsed_time?: number | null
+  total_elevation_gain?: number | null
+  calories?: number | null
+  average_cadence?: number | null
+  average_stride?: number | null
   intervals?: ActivityInterval[]
   stream?: ActivityStream
 }
@@ -22,25 +26,21 @@ async function detailFor(a: Activity): Promise<DetailedActivity> {
   if (cached) return { ...a, ...cached }
 
   try {
-    const [full, rawStream] = await Promise.all([getActivity(a.id), getStreams(a.id)])
-    const detail: CachedDetail = {
-      description: full.description ?? null,
-      average_heartrate: full.average_heartrate ?? null,
-      maximum_heartrate: full.max_heartrate ?? null,
-      intervals: (full.icu_intervals ?? [])
-        .filter((i) => i.type === "WORK" || !i.type)
-        .map((i) => ({
-          id: i.id,
-          distance: i.distance,
-          moving_time: i.moving_time,
-          average_heartrate: i.average_heartrate ?? null,
-          start_index: i.start_index,
-          end_index: i.end_index,
-        })),
-      stream: downsampleStream(rawStream),
+    const detail = await getDetailedActivity(a.id)
+    const cachedDetail: CachedDetail = {
+      description: detail.description ?? null,
+      average_heartrate: detail.average_heartrate ?? null,
+      maximum_heartrate: detail.maximum_heartrate ?? null,
+      elapsed_time: detail.elapsed_time ?? null,
+      total_elevation_gain: detail.total_elevation_gain ?? null,
+      calories: detail.calories ?? null,
+      average_cadence: detail.average_cadence ?? null,
+      average_stride: detail.average_stride ?? null,
+      intervals: detail.intervals,
+      stream: detail.stream,
     }
-    await redis.set(cacheKey, detail, { ex: DETAIL_TTL })
-    return { ...a, ...detail }
+    await redis.set(cacheKey, cachedDetail, { ex: DETAIL_TTL })
+    return detail
   } catch {
     return a
   }

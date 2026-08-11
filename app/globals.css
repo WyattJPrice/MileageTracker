@@ -23,6 +23,7 @@
   --color-chart-3: var(--chart-3);
   --color-chart-2: var(--chart-2);
   --color-chart-1: var(--chart-1);
+  --color-neon: var(--neon);
   --color-ring: var(--ring);
   --color-input: var(--input);
   --color-border: var(--border);
@@ -119,6 +120,8 @@
 
 :root {
   --color-emerald: oklch(0.765 0.177 163.22);
+  --neon: #00d69b;
+  --color-neon: #00d69b;
 }
 
 @layer base {

@@ -4,8 +4,8 @@ import { useMemo } from "react"
 import { ComposedChart, Line, ReferenceDot, ResponsiveContainer, XAxis, YAxis } from "recharts"
 import type { ActivityStream } from "@/lib/types"
 
-const HR_COLOR = "#f87171"
-const PACE_COLOR = "#4ade80"
+const HR_COLOR = "#00d69b"
+const PACE_COLOR = "#71717a"
 
 interface TodayRunChartProps {
   stream: ActivityStream
@@ -72,33 +72,18 @@ export function TodayRunChart({ stream, maxHeartrate }: TodayRunChartProps) {
     return { peak, peakMi: peakIdx >= 0 ? data[peakIdx].mi : 0 }
   }, [data, maxHeartrate])
 
-  const maxHr = Math.max(
-    ...data.map((d) => d.hr ?? 0),
-    stats.peak ?? 0,
-    0
-  ) + 10
-  const minHr = data.some((d) => d.hr != null)
-    ? Math.max(0, Math.min(...data.map((d) => d.hr ?? Infinity)) - 10)
-    : 100
-
   const maxMile = data.length > 0 ? data[data.length - 1].mi : 0
   const mileTicks = Array.from({ length: Math.floor(maxMile) + 1 }, (_, i) => i)
 
   if (data.length < 2) return null
 
   return (
-    <div>
-      <div className="mb-1 flex items-center justify-between">
-        <p className="text-xs font-medium uppercase tracking-wider text-zinc-500">
-          Heart Rate & Pace
-        </p>
-      </div>
-      <div className="h-40 w-full">
-        <ResponsiveContainer width="100%" height="100%">
-          <ComposedChart
-            data={data}
-            margin={{ left: 10, right: 10, top: 18, bottom: 28 }}
-          >
+    <div className="h-full w-full">
+      <ResponsiveContainer width="100%" height="100%">
+        <ComposedChart
+          data={data}
+          margin={{ left: 4, right: 10, top: 18, bottom: 0 }}
+        >
           <XAxis
             dataKey="mi"
             type="number"
@@ -107,23 +92,29 @@ export function TodayRunChart({ stream, maxHeartrate }: TodayRunChartProps) {
             tickFormatter={(v: number) => `${v}mi`}
             tickLine={false}
             axisLine={false}
-            tickMargin={8}
-            tick={{ fill: "var(--color-muted-foreground)", fontSize: 10 }}
+            tickMargin={6}
+            tick={{ fill: "var(--color-muted-foreground)", fontSize: 9 }}
           />
           <YAxis
             yAxisId="hr"
-            hide
-            domain={[minHr, maxHr]}
+            domain={[80, 190]}
+            ticks={[90, 120, 150, 180]}
+            tickLine={false}
+            axisLine={false}
+            width={24}
+            tickMargin={2}
+            tick={{ fill: "var(--color-muted-foreground)", fontSize: 9 }}
           />
+          <YAxis yAxisId="pace" hide domain={["auto", "auto"]} />
 
           {stats.peak > 0 && (
             <ReferenceDot
               yAxisId="hr"
               x={stats.peakMi}
               y={stats.peak}
-              r={4}
+              r={3.5}
               fill={HR_COLOR}
-              stroke="var(--color-background)"
+              stroke="#18181b"
               strokeWidth={1.5}
               label={{
                 value: `${stats.peak}`,
@@ -149,13 +140,13 @@ export function TodayRunChart({ stream, maxHeartrate }: TodayRunChartProps) {
             dataKey="pace"
             type="monotone"
             stroke={PACE_COLOR}
-            strokeWidth={1.5}
+            strokeWidth={1.25}
+            strokeOpacity={0.6}
             dot={false}
             isAnimationActive={false}
           />
-          </ComposedChart>
-        </ResponsiveContainer>
-      </div>
+        </ComposedChart>
+      </ResponsiveContainer>
     </div>
   )
 }

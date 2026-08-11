@@ -46,7 +46,7 @@ function formatEventDate(dateStr: string): string {
 export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
   return (
     <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full flex flex-col overflow-hidden">
-      <p className="mb-3 shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">Upcoming</p>
+      <p className="mb-3 shrink-0 text-[11px] font-medium uppercase tracking-wider text-zinc-500">Upcoming</p>
 
       {isLoading ? (
         <div className="space-y-3">
@@ -60,7 +60,7 @@ export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
       ) : events.length === 0 ? (
         <p className="text-sm text-zinc-600">No upcoming workouts</p>
       ) : (
-        <div className="space-y-4 overflow-y-auto min-h-0">
+        <div className="space-y-4 overflow-y-auto min-h-0 pr-1">
           {groupByDate(events).map(({ date, items }) => (
             <div key={date}>
               <p className="mb-1.5 text-xs text-zinc-500">{formatEventDate(date)}</p>
@@ -80,7 +80,7 @@ export function UpcomingCard({ events, isLoading }: UpcomingCardProps) {
                       {isRest ? (
                         <p className="text-sm italic text-zinc-600">Rest day</p>
                       ) : isRace ? (
-                        <p className="text-sm font-medium text-emerald-400">{e.summary}</p>
+                        <p className="text-sm font-medium text-neon">{e.summary}</p>
                       ) : (
                         <p className="text-sm font-medium text-zinc-200">{e.summary}</p>
                       )}

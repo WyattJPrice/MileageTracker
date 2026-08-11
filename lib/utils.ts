@@ -104,3 +104,15 @@ export function aggregateActivities(
       miles: parseFloat(miles.toFixed(1)),
     }))
 }
+
+export function fillWeeklyByRange(
+  activities: Activity[],
+  range: { from?: Date; to?: Date } | undefined
+): ChartDataPoint[] {
+  const buckets = buildWeeklyByRange(activities, range)
+  return buckets.map((b) => ({
+    date: b.date,
+    label: format(new Date(b.date + "T00:00:00"), "MMM d"),
+    miles: b.miles ?? 0,
+  }))
+}

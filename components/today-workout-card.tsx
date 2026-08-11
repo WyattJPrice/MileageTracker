@@ -1,6 +1,5 @@
 "use client"
 
-import * as React from "react"
 import type { ICalEvent } from "@/lib/types"
 
 function cleanDesc(summary: string, description?: string | null): string | undefined {
@@ -11,36 +10,13 @@ function cleanDesc(summary: string, description?: string | null): string | undef
     .trim() || undefined
 }
 
-function useFitText(deps: unknown[]) {
-  const ref = React.useRef<HTMLDivElement>(null)
-  const [scale, setScale] = React.useState(1)
-
-  React.useLayoutEffect(() => {
-    const el = ref.current
-    if (!el) return
-    // Reset to full size then measure
-    el.style.fontSize = ""
-    const parent = el.parentElement
-    if (!parent) return
-
-    let s = 1
-    while (el.scrollHeight > parent.clientHeight && s > 0.4) {
-      s -= 0.05
-      el.style.fontSize = `${s * 100}%`
-    }
-    setScale(s)
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, deps)
-
-  return ref
-}
-
 interface TodayWorkoutCardProps {
   events: ICalEvent[]
   isLoading: boolean
+  expanded?: boolean
 }
 
-export function TodayWorkoutCard({ events, isLoading }: TodayWorkoutCardProps) {
+export function TodayWorkoutCard({ events, isLoading, expanded = false }: TodayWorkoutCardProps) {
   const deduped = events.filter(
     (e) =>
       !events.some(
@@ -52,43 +28,50 @@ export function TodayWorkoutCard({ events, isLoading }: TodayWorkoutCardProps) {
   )
 
   const isRest = deduped.length === 1 && /rest\s*day/i.test(deduped[0]?.summary ?? "")
-  const contentRef = useFitText([deduped])
 
   return (
     <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-5 h-full flex flex-col overflow-hidden">
-      <p className="mb-3 shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-400">
+      <p className="mb-2 shrink-0 text-xs font-semibold uppercase tracking-wider text-zinc-300">
         Today&apos;s Workout
       </p>
 
       {isLoading ? (
-        <div className="space-y-3">
-          <div className="h-7 w-48 rounded bg-zinc-800 animate-pulse" />
-          <div className="h-4 w-32 rounded bg-zinc-800 animate-pulse" />
+        <div className="space-y-2">
+          <div className="h-6 w-44 rounded bg-zinc-800 animate-pulse" />
+          <div className="h-3 w-32 rounded bg-zinc-800 animate-pulse" />
         </div>
+      ) : deduped.length === 0 ? (
+        <p className="text-base font-semibold text-zinc-600">No planned workout</p>
+      ) : isRest ? (
+        <p className="text-xl font-bold italic text-zinc-500">Rest Day</p>
       ) : (
-        <div ref={contentRef} className="flex-1 min-h-0 flex flex-col justify-start">
-          {deduped.length === 0 ? (
-            <p className="text-lg font-semibold text-zinc-600">No planned workout</p>
-          ) : isRest ? (
-            <p className="text-2xl font-bold italic text-zinc-500">Rest Day</p>
-          ) : (
-            deduped.map((e, i) => {
-              const isRace = /race/i.test(e.summary)
-              const desc = cleanDesc(e.summary, e.description)
-              return (
-                <div key={i} className={i > 0 ? "mt-4" : ""}>
-                  <p className={`text-xl lg:text-2xl font-bold leading-tight ${isRace ? "text-emerald-400" : "text-zinc-100"}`}>
-                    {e.summary}
+        <div className={expanded ? "flex-1 min-h-0 overflow-y-auto pr-1" : ""}>
+          {deduped.map((e, i) => {
+            const isRace = /race/i.test(e.summary)
+            const desc = cleanDesc(e.summary, e.description)
+            const planned = e.description?.match(/planned[:\s]+(\d+(?:\.\d+)?)\s*mi/i)
+            return (
+              <div key={i} className={i > 0 ? "mt-2" : ""}>
+                <p className={`text-lg font-bold leading-tight truncate ${isRace ? "text-neon" : "text-zinc-100"}`}>
+                  {e.summary}
+                </p>
+                {planned && (
+                  <p className="mt-0.5 text-sm text-zinc-400">
+                    Planned: {planned[1]} mi
                   </p>
-                  {desc && (
-                    <p className="mt-2 text-sm text-zinc-400 whitespace-pre-line leading-relaxed">
-                      {desc}
-                    </p>
-                  )}
-                </div>
-              )
-            })
-          )}
+                )}
+                {desc && (
+                  <p
+                    className={`mt-1 text-sm text-zinc-300 whitespace-pre-line leading-relaxed ${
+                      expanded ? "line-clamp-none" : "line-clamp-2"
+                    }`}
+                  >
+                    {desc}
+                  </p>
+                )}
+              </div>
+            )
+          })}
         </div>
       )}
     </div>

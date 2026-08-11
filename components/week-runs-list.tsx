@@ -45,25 +45,25 @@ export function WeekRunsList({ runs, isLoading, upcomingEvents = [] }: WeekRunsL
   }, 0)
 
   return (
-    <div className="rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-4">
-      <div className="mb-3 flex items-center justify-between">
+    <div className="rounded-xl border border-zinc-800 bg-zinc-900 px-4 py-3 h-full flex flex-col">
+      <div className="mb-2 shrink-0 flex items-center justify-between">
         <p className="text-xs font-medium uppercase tracking-wider text-zinc-500">This Week</p>
         <div className="flex items-center gap-3 font-mono text-sm tabular-nums">
           {plannedTotal > 0 && (
             <span className="text-zinc-600">{plannedTotal.toFixed(1)} planned</span>
           )}
           {totalMiles > 0 && (
-            <span className="text-zinc-300">{totalMiles.toFixed(1)} mi</span>
+            <span className="text-zinc-100">{totalMiles.toFixed(1)} mi</span>
           )}
         </div>
       </div>
 
-      <div className="grid grid-cols-7 gap-1">
+      <div className="flex-1 min-h-0 grid grid-cols-7 content-center gap-1">
         {isLoading
           ? Array.from({ length: 7 }, (_, i) => (
-              <div key={i} className="flex flex-col items-center gap-2 rounded-lg py-4 px-1">
-                <div className="h-3 w-8 rounded bg-zinc-800 animate-pulse" />
-                <div className="h-7 w-10 rounded bg-zinc-800 animate-pulse" />
+              <div key={i} className="flex flex-col items-center justify-center gap-1.5 rounded-[10px] py-1 px-1">
+                <div className="h-2.5 w-8 rounded bg-zinc-800 animate-pulse" />
+                <div className="h-6 w-10 rounded bg-zinc-800 animate-pulse" />
               </div>
             ))
           : week.map((date) => {
@@ -76,20 +76,26 @@ export function WeekRunsList({ runs, isLoading, upcomingEvents = [] }: WeekRunsL
               return (
                 <div
                   key={date}
-                  className={`flex flex-col items-center rounded-lg py-4 px-1 ${
-                    isToday ? "bg-zinc-800" : ""
+                  className={`flex flex-col items-center justify-center rounded-[10px] py-1 px-1 ${
+                    isToday ? "bg-[#27272A]" : ""
                   }`}
                 >
                   <span
                     className={`text-sm font-medium ${
-                      isToday ? "text-emerald-400" : isFuture ? "text-zinc-600" : "text-zinc-500"
+                      isToday ? "text-neon" : isFuture ? "text-zinc-600" : "text-zinc-500"
                     }`}
                   >
                     {dayLabel}
                   </span>
                   <span
-                    className={`mt-2 font-mono text-2xl font-semibold tabular-nums leading-none ${
-                      mi ? "text-zinc-100" : plannedMi ? "text-zinc-600" : isFuture ? "text-zinc-700" : "text-zinc-600"
+                    className={`mt-1 font-mono text-xl font-semibold tabular-nums leading-none ${
+                      mi
+                        ? "text-zinc-100"
+                        : plannedMi
+                          ? "text-zinc-600"
+                          : isFuture
+                            ? "text-zinc-700"
+                            : "text-zinc-600"
                     }`}
                   >
                     {mi ? mi.toFixed(1) : plannedMi ? plannedMi.toFixed(1) : "—"}

@@ -4,6 +4,7 @@ export interface Activity {
   distance_miles: number
   date: string
   moving_time_seconds: number
+  start_date_local?: string | null
 }
 
 export interface ActivityInterval {
@@ -25,6 +26,11 @@ export interface DetailedActivity extends Activity {
   description?: string | null
   average_heartrate?: number | null
   maximum_heartrate?: number | null
+  elapsed_time?: number | null
+  total_elevation_gain?: number | null
+  calories?: number | null
+  average_cadence?: number | null
+  average_stride?: number | null
   intervals?: ActivityInterval[]
   stream?: ActivityStream
 }

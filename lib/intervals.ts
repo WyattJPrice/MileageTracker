@@ -1,6 +1,7 @@
 import { format, subDays } from "date-fns"
 import { redis } from "@/lib/redis"
-import type { Activity, ActivityInterval, ActivityStream } from "@/lib/types"
+import { downsampleStream } from "@/lib/utils"
+import type { Activity, ActivityInterval, ActivityStream, DetailedActivity } from "@/lib/types"
 
 const API_BASE = "https://intervals.icu/api/v1"
 const ATHLETE_ID = process.env.INTERVALS_ATHLETE_ID ?? "0"
@@ -20,6 +21,10 @@ interface IntervalsActivity {
 }
 
 interface IntervalsActivityDetail extends IntervalsActivity {
+  total_elevation_gain?: number | null
+  calories?: number | null
+  average_cadence?: number | null
+  average_stride?: number | null
   icu_intervals?: (Pick<
     ActivityInterval,
     "id" | "distance" | "moving_time" | "average_heartrate" | "start_index" | "end_index"
@@ -89,6 +94,59 @@ export async function getActivity(id: string): Promise<IntervalsActivityDetail> 
   return res.json()
 }
 
+/**
+ * Builds a full DetailedActivity for any activity id, mirroring how the
+ * /api/today route shapes cached data: summary fields, WORK-type intervals,
+ * and a downsampled heartrate/distance/time stream. Used by the dev-only
+ * test-run picker so a past run renders identically to a real one.
+ */
+export async function getDetailedActivity(id: string): Promise<DetailedActivity> {
+  const [full, rawStream] = await Promise.all([getActivity(id), getStreams(id)])
+
+  const date = full.start_date_local
+    ? full.start_date_local.slice(0, 10)
+    : new Date().toISOString().split("T")[0]
+
+  return {
+    id,
+    name: full.name ?? "",
+    distance_miles: parseFloat(((full.distance ?? 0) * METERS_TO_MILES).toFixed(2)),
+    date,
+    moving_time_seconds: full.moving_time ?? full.elapsed_time ?? 0,
+    start_date_local: full.start_date_local ?? null,
+    description: full.description ?? null,
+    average_heartrate: full.average_heartrate ?? null,
+    maximum_heartrate: full.max_heartrate ?? null,
+    elapsed_time: full.elapsed_time ?? null,
+    total_elevation_gain: full.total_elevation_gain ?? null,
+    calories: full.calories ?? null,
+    average_cadence: full.average_cadence ?? null,
+    average_stride: full.average_stride ?? null,
+    intervals: (full.icu_intervals ?? [])
+      .filter((i) => i.type === "WORK" || !i.type)
+      .map((i) => ({
+        id: i.id,
+        distance: i.distance,
+        moving_time: i.moving_time,
+        average_heartrate: i.average_heartrate ?? null,
+        start_index: i.start_index,
+        end_index: i.end_index,
+      })),
+    stream: downsampleStream(rawStream),
+  }
+}
+
+/**
+ * Lists recent Run-type activities newest-first for the dev test-run picker.
+ */
+export async function listRecentRuns(oldest: string, limit: number): Promise<IntervalsActivity[]> {
+  const all = await listActivities(oldest)
+  return all
+    .filter((a) => a.type === "Run")
+    .sort((a, b) => (b.start_date_local ?? "").localeCompare(a.start_date_local ?? ""))
+    .slice(0, limit)
+}
+
 export async function getStreams(id: string): Promise<ActivityStream> {
   const res = await fetchIntervals(
     `${API_BASE}/activity/${id}/streams.json?types=time,heartrate,distance`
@@ -120,6 +178,7 @@ export async function storeActivity(raw: IntervalsActivity): Promise<boolean> {
     distance_miles: parseFloat(((raw.distance ?? 0) * METERS_TO_MILES).toFixed(2)),
     date,
     moving_time_seconds: raw.moving_time ?? raw.elapsed_time ?? 0,
+    start_date_local: raw.start_date_local ?? null,
   }
 
   const score = Math.floor(new Date(date + "T00:00:00").getTime() / 1000)
