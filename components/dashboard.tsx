@@ -34,11 +34,11 @@ export function Dashboard({
           <TabsTrigger value="detailed">Detailed</TabsTrigger>
         </TabsList>
 
-        <TabsContent value="overview">
+        <TabsContent value="overview" keepMounted>
           <OverviewTab />
         </TabsContent>
 
-        <TabsContent value="detailed">
+        <TabsContent value="detailed" keepMounted>
           <DetailedTab initialView={initialView} />
         </TabsContent>
       </Tabs>

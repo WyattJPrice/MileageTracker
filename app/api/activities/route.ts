@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
+import { format, subDays } from "date-fns"
 import { redis } from "@/lib/redis"
-import { syncNewRuns } from "@/lib/intervals"
+import { ensureSynced } from "@/lib/intervals"
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
@@ -14,16 +15,15 @@ export async function GET(request: NextRequest) {
     )
   }
 
-  // Lazily pull in any new runs from Intervals.icu when the requested range
-  // reaches today, so both the live dashboard (5-min poll) and the home charts
-  // stay current without a cron or webhook.
-  const today = new Date().toISOString().split("T")[0]
-  if (end >= today) {
-    try {
-      await syncNewRuns()
-    } catch (err) {
-      console.error("Lazy sync failed:", err)
-    }
+  // Lazily pull in any new runs from Intervals.icu when the requested range is
+  // recent, so both the live dashboard (5-min poll) and the home charts stay
+  // current without a cron or webhook. Uses a 3-day lookback so timezone
+  // differences between the server (UTC) and the athlete's local date never
+  // skip today. ensureSynced throttles and locks so concurrent requests never
+  // hammer the API or run duplicate syncs.
+  const recentCutoff = format(subDays(new Date(), 3), "yyyy-MM-dd")
+  if (end >= recentCutoff) {
+    await ensureSynced()
   }
 
   // Fetch a wider UTC window (±14h) so timezone offsets never exclude activities,

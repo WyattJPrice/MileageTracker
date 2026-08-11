@@ -1,3 +1,4 @@
+import { format, subDays } from "date-fns"
 import { redis } from "@/lib/redis"
 import type { Activity, ActivityInterval, ActivityStream } from "@/lib/types"
 
@@ -30,11 +31,28 @@ interface IntervalsStream {
   data: number[]
 }
 
+const MAX_ATTEMPTS = 4
+
 function authHeaders(): Record<string, string> {
   const key = process.env.INTERVALS_API_KEY
   if (!key) throw new Error("Missing INTERVALS_API_KEY in .env.local")
   return {
     Authorization: `Basic ${Buffer.from(`API_KEY:${key}`).toString("base64")}`,
+  }
+}
+
+async function fetchIntervals(url: string): Promise<Response> {
+  for (let attempt = 1; ; attempt++) {
+    const res = await fetch(url, {
+      headers: authHeaders(),
+      cache: "no-store",
+    })
+
+    if (res.status !== 429 || attempt >= MAX_ATTEMPTS) return res
+
+    const retryAfter = Number(res.headers.get("retry-after"))
+    const waitMs = Number.isFinite(retryAfter) ? retryAfter * 1000 : 15_000
+    await new Promise((r) => setTimeout(r, waitMs))
   }
 }
 
@@ -49,10 +67,9 @@ export async function listActivities(oldest?: string): Promise<IntervalsActivity
       page: String(page),
     })
 
-    const res = await fetch(`${API_BASE}/athlete/${ATHLETE_ID}/activities?${params}`, {
-      headers: authHeaders(),
-      cache: "no-store",
-    })
+    const res = await fetchIntervals(
+      `${API_BASE}/athlete/${ATHLETE_ID}/activities?${params}`
+    )
     if (!res.ok) throw new Error(`List activities failed: ${res.status}`)
 
     const batch: IntervalsActivity[] = await res.json()
@@ -67,18 +84,14 @@ export async function listActivities(oldest?: string): Promise<IntervalsActivity
 }
 
 export async function getActivity(id: string): Promise<IntervalsActivityDetail> {
-  const res = await fetch(`${API_BASE}/activity/${id}?intervals=true`, {
-    headers: authHeaders(),
-    cache: "no-store",
-  })
+  const res = await fetchIntervals(`${API_BASE}/activity/${id}?intervals=true`)
   if (!res.ok) throw new Error(`Fetch activity ${id} failed: ${res.status}`)
   return res.json()
 }
 
 export async function getStreams(id: string): Promise<ActivityStream> {
-  const res = await fetch(
-    `${API_BASE}/activity/${id}/streams.json?types=time,heartrate,distance`,
-    { headers: authHeaders(), cache: "no-store" }
+  const res = await fetchIntervals(
+    `${API_BASE}/activity/${id}/streams.json?types=time,heartrate,distance`
   )
   if (!res.ok) throw new Error(`Fetch streams ${id} failed: ${res.status}`)
 
@@ -118,13 +131,68 @@ export async function storeActivity(raw: IntervalsActivity): Promise<boolean> {
   return true
 }
 
+const SYNC_LOCK_KEY = "intervals:sync:lock"
+const SYNC_LAST_RUN_KEY = "intervals:sync:last"
+const SYNC_MIN_INTERVAL_MS = 60_000
+const SYNC_LOCK_TTL_SECONDS = 120
+const SYNC_WAIT_TIMEOUT_MS = 30_000
+
+async function acquireSyncLock(): Promise<boolean> {
+  const deadline = Date.now() + SYNC_WAIT_TIMEOUT_MS
+  while (Date.now() < deadline) {
+    const lock = await redis.set(SYNC_LOCK_KEY, "1", {
+      nx: true,
+      ex: SYNC_LOCK_TTL_SECONDS,
+    })
+    if (lock === "OK") return true
+    await new Promise((r) => setTimeout(r, 200))
+  }
+  return false
+}
+
+/**
+ * Throttled, concurrency-safe sync entry point.
+ *
+ * At most one sync runs at a time. Concurrent callers wait for the in-flight
+ * sync to finish (up to a timeout) instead of reading stale data, so a run and
+ * a chart requested at the same moment both see fresh data. At most one sync
+ * runs per minute. Failures are logged and re-attempted by the next caller
+ * once the cooldown elapses.
+ */
+export async function ensureSynced(): Promise<void> {
+  const last = await redis.get<number>(SYNC_LAST_RUN_KEY)
+  if (last && Date.now() - last < SYNC_MIN_INTERVAL_MS) return
+
+  if (!(await acquireSyncLock())) return // timed out waiting; caller reads what's there
+
+  try {
+    // A sync may have completed while we waited for the lock; no need to rerun.
+    const refreshed = await redis.get<number>(SYNC_LAST_RUN_KEY)
+    if (refreshed && Date.now() - refreshed < SYNC_MIN_INTERVAL_MS) return
+
+    await syncNewRuns()
+  } catch (err) {
+    console.error("Intervals sync failed:", err)
+  } finally {
+    await redis.del(SYNC_LOCK_KEY)
+    await redis.set(SYNC_LAST_RUN_KEY, Date.now())
+  }
+}
+
 export async function syncNewRuns(): Promise<number> {
   const latest = await redis.zrange<string[]>("activities:runs", -1, -1)
-  let oldest: string | undefined
+  const today = format(new Date(), "yyyy-MM-dd")
+  const yesterday = format(subDays(new Date(), 1), "yyyy-MM-dd")
+
+  // Sync from the earliest of (newest stored run, yesterday) so a run uploaded
+  // today is always in scope even when the newest stored run is also dated
+  // today, and so timezone differences never exclude today's activity.
+  let oldest = today
   if (latest.length > 0) {
     const parsed = typeof latest[0] === "string" ? JSON.parse(latest[0]) : latest[0]
-    oldest = parsed.date
+    if (parsed.date < oldest) oldest = parsed.date
   }
+  if (yesterday < oldest) oldest = yesterday
 
   const activities = await listActivities(oldest)
 

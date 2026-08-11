@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server"
-import { syncNewRuns } from "@/lib/intervals"
+import { ensureSynced } from "@/lib/intervals"
 
 export async function POST(request: NextRequest) {
   const secret = request.nextUrl.searchParams.get("secret")
@@ -8,8 +8,8 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const synced = await syncNewRuns()
-    return NextResponse.json({ synced })
+    await ensureSynced()
+    return NextResponse.json({ ok: true })
   } catch (err) {
     console.error("Intervals sync error:", err)
     return NextResponse.json({ error: "Sync failed" }, { status: 500 })

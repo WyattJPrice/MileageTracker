@@ -38,6 +38,7 @@ async function seed() {
   const activities: RawActivity[] = JSON.parse(raw)
 
   await redis.del("activities:runs")
+  await redis.del("activities:ids")
 
   const pipeline = redis.pipeline()
 
@@ -55,6 +56,7 @@ async function seed() {
       score: Math.floor(date.getTime() / 1000),
       member: JSON.stringify(stored),
     })
+    pipeline.sadd("activities:ids", stored.id)
   }
 
   await pipeline.exec()

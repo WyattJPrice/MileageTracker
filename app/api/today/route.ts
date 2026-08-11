@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server"
+import { format, subDays } from "date-fns"
 import { redis } from "@/lib/redis"
-import { getActivity, getStreams } from "@/lib/intervals"
+import { getActivity, getStreams, ensureSynced } from "@/lib/intervals"
 import { downsampleStream } from "@/lib/utils"
 import type { Activity, ActivityInterval, ActivityStream, DetailedActivity } from "@/lib/types"
 
@@ -49,6 +50,14 @@ export async function GET(request: NextRequest) {
   const date = request.nextUrl.searchParams.get("date")
   if (!date) {
     return NextResponse.json({ error: "date query param required" }, { status: 400 })
+  }
+
+  // Always sync recent data (3-day lookback for timezone safety) so a run
+  // uploaded to Intervals.icu today is reflected here even if the previous
+  // page views never touched the /api/activities path.
+  const recentCutoff = format(subDays(new Date(), 3), "yyyy-MM-dd")
+  if (date >= recentCutoff) {
+    await ensureSynced()
   }
 
   const startTs = Math.floor(new Date(date).getTime() / 1000) - BUFFER_S
