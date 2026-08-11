@@ -97,7 +97,7 @@ export function TodayRunChart({ stream, maxHeartrate }: TodayRunChartProps) {
         <ResponsiveContainer width="100%" height="100%">
           <ComposedChart
             data={data}
-            margin={{ left: 10, right: 10, top: 6, bottom: 28 }}
+            margin={{ left: 10, right: 10, top: 18, bottom: 28 }}
           >
           <XAxis
             dataKey="mi"

@@ -39,7 +39,7 @@ export function EightWeekChart({ activities }: EightWeekChartProps) {
   }
 
   return (
-    <ChartContainer config={chartConfig} className="h-full w-full">
+    <ChartContainer config={chartConfig} className="aspect-auto h-full w-full">
       <BarChart data={data} margin={{ left: 8, right: 8, top: 24, bottom: 0 }}>
         <CartesianGrid vertical={false} strokeDasharray="3 3" stroke="oklch(0.27 0.006 285.82)" />
         <XAxis
