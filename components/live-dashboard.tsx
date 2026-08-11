@@ -159,8 +159,8 @@ export function LiveDashboard() {
           </div>
         ) : (
           /* No run: 2x2 grid. Today's Run + This Week on the top row, Today's Workout + Upcoming below.
-             Row 1 shrinks to fit the This Week content so the big day numbers stay intact. */
-          <div className="flex flex-col gap-3.5 lg:flex-1 lg:min-h-0 lg:grid lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-3.5">
+             Top row sized up, middle row (Workout + Upcoming) shrunk, Last 8 Weeks enlarged below. */
+          <div className="flex flex-col gap-3.5 lg:flex-1 lg:min-h-0 lg:grid lg:grid-cols-2 lg:grid-rows-[0.45fr_1.3fr] lg:gap-3.5">
             <div className="lg:min-h-0">
               <TodayCard runs={displayTodayRuns} isLoading={todayLoading} />
             </div>
@@ -180,7 +180,11 @@ export function LiveDashboard() {
           </div>
         )}
 
-        <div className="mt-3.5 lg:h-[240px] lg:shrink-0 lg:mt-4">
+        <div
+          className={`mt-3.5 lg:shrink-0 lg:mt-4 ${
+            hasTodayRun ? "lg:h-[240px]" : "lg:h-[290px]"
+          }`}
+        >
           <div className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 h-full flex flex-col">
             <p className="mb-2 shrink-0 text-xs font-medium uppercase tracking-wider text-zinc-500">
               Last 8 Weeks
