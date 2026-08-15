@@ -7,6 +7,7 @@ function cleanDesc(summary: string, description?: string | null): string | undef
   return description
     .replace(/^Workout:\s*/i, "")
     .replace(new RegExp(`^${summary.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\s*`, "i"), "")
+    .replace(/\bPlanned:\s*\d+(?:\.\d+)?\s*mi\b\s*[·\n]?\s*/gi, "")
     .trim() || undefined
 }
 

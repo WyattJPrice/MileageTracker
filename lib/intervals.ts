@@ -38,6 +38,8 @@ interface IntervalsStream {
 
 const MAX_ATTEMPTS = 4
 
+const RUN_TYPES = new Set(["Run", "VirtualRun", "TrailRun"])
+
 function authHeaders(): Record<string, string> {
   const key = process.env.INTERVALS_API_KEY
   if (!key) throw new Error("Missing INTERVALS_API_KEY in .env.local")
@@ -78,7 +80,7 @@ export async function listActivities(oldest?: string): Promise<IntervalsActivity
     if (!res.ok) throw new Error(`List activities failed: ${res.status}`)
 
     const batch: IntervalsActivity[] = await res.json()
-    const runs = batch.filter((a) => a.type === "Run")
+    const runs = batch.filter((a) => a.type && RUN_TYPES.has(a.type))
     all.push(...runs)
 
     if (batch.length < 1000) break
@@ -142,7 +144,7 @@ export async function getDetailedActivity(id: string): Promise<DetailedActivity>
 export async function listRecentRuns(oldest: string, limit: number): Promise<IntervalsActivity[]> {
   const all = await listActivities(oldest)
   return all
-    .filter((a) => a.type === "Run")
+    .filter((a) => a.type && RUN_TYPES.has(a.type))
     .sort((a, b) => (b.start_date_local ?? "").localeCompare(a.start_date_local ?? ""))
     .slice(0, limit)
 }
